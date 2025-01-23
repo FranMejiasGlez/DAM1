@@ -1,0 +1,20 @@
+Programa: Ud5Ej13c
+Autor:	Francisco Mejias Gonzalez
+Entorno: 
+	suma,multiplicacion,cont es numérico entero
+	esPar es boolenano
+Algoritmo:
+	suma <-- 0
+	multiplicacion <-- 1
+	esPar <-- VERDADERO
+	Para cont de 0 a 19 hacer
+		Si esPar entonces
+			suma <-- suma + cont
+		Sino
+			multiplicacion <-- multiplicacion * cont 
+		Fin Si
+		esPar <-- no esPar
+	Fin Para
+	Escribir "La suma de pares es ",suma
+	Escribir "La multiplicacion de pares es ",multiplicacion
+Fin Programa

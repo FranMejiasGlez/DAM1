@@ -1,0 +1,19 @@
+Programa: Ud5Ej15
+Autor: Francisco Mejias 
+Entorno:
+	a,b,c,discriminante,raiz,xMas,xMenos es numérico real
+Algoritmo:
+	Repetir
+		Escribir "a: "
+		Leer a
+	Hasta a >0
+	discriminante <-- b**2-4*a*c
+	Si discriminante >=0 entonces
+		raiz <-- discriminante**0.5
+		xMas <-- -b+raiz/(2*a)
+		xMenos <-- -b-raiz/(2*a)
+		Escribir "Para a: ",a," Para b: ",b," y c: ",c,": ",xMas," y ",xMenos
+	Sino 
+		Escribir "No existe solucion real"
+	Fin Si
+Fin Programa

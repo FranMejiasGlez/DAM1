@@ -1,0 +1,12 @@
+Programa: Ud5Ej13a
+Autor:	Francisco Mejias Gonzalez
+Entorno: 
+	suma,multiplicacion,cont es numérico entero
+Algoritmo:
+	Para cont de 0 a 18 con incremento 2 hacer
+		suma <--  suma + cont
+		multiplicacion <-- multiplicacion * (cont + 1 )
+	Fin Para
+	Escribir "suma de los diez primeros pares: ",suma
+	Escribir "multiplicacion de los diez primeros impares: ",multiplicacion
+Fin Programa

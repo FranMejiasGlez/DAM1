@@ -1,0 +1,19 @@
+Programa: Ud5Ej16
+Autor: Francisco Mejias 
+Entorno:
+	media,nota,acumuladorNota es numérico real
+	totalNotas es numérico entero
+Algoritmo:
+	totalNotas <-- 0
+	acumuladorNota <-- 0
+	Escribir "Nota: "
+	Leer nota
+	Mientras nota <> 0 entonces
+		acumuladorNota <-- acumuladorNota + nota
+		totalNotas <-- totalNotas + 1
+		Escribir "Nota: "
+		Leer nota
+	Fin Mientras
+	media <-- acumuladorNota/totalNotas
+	Escribir "La media es: ",media
+Fin Programa

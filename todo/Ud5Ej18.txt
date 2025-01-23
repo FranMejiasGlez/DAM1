@@ -1,0 +1,18 @@
+Programa: Ud5Ej18
+Autor: Francisco Mejias Gonzalez
+Entorno:
+	numero,divisores,i es numérico entero
+Algoritmo:
+	i <-- 1
+	divisores <-- 0
+	Escribir "Introduzca número: "
+	Leer numero
+	Repetir 
+		numero mod i 
+		Si numero mod i = 0 
+			divisores <-- divisores + 1
+		Fin Si
+		i <-- i + 1
+	Hasta i = numero
+	Escribir "El numero: ",numero,"tiene ",divisores,"divisores"
+Fin Programa

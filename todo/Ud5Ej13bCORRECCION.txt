@@ -1,0 +1,17 @@
+Programa: Ud5Ej13bCORRECCION
+Autor:	Francisco Mejias Gonzalez
+Entorno: 
+	cont,suma,multiplicacion es numérico entero
+	interruptor es boolenano
+Algoritmo:
+	suma <-- 0 
+	Para cont de 2 a 18 con incremento 2 hacer
+		suma <-- suma+cont
+	Fin Para
+	multiplicacion <-- 1
+	Para cont de 1 a 18 con incremento 2 hacer
+		multiplicacion <-- multiplicacion * cont
+	Fin Para
+	Escribir "La suma es ",suma
+	Escribir "La multiplicacion es ",multiplicacion
+Fin Programa

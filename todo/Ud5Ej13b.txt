@@ -1,0 +1,22 @@
+Programa: Ud5Ej13b
+Autor:	Francisco Mejias Gonzalez
+Entorno: 
+	pares,suma,multiplicacion es numérico entero
+	
+	interruptor es boolenano
+Algoritmo:
+	esPar <-- VERDADERO
+	suma <-- 0
+	multiplicacion <-- 1
+	Repetir
+		Si interruptor = VERDADERO entonces
+			suma <-- suma + 2 
+			esPar <-- no esPar
+		Sino
+			multiplicacion <-- multiplicacion * suma + 1
+			esPar <-- no interruptor
+		Fin Si
+	Hasta suma = 90 y multiplicacion = 654.729.075
+	Escribir "suma de los diez primeros pares: ",suma
+	Escribir "multiplicacion de los diez primeros impares: ",multiplicacion
+Fin Programa

@@ -1,0 +1,14 @@
+Programa: Ud5Ej14
+Autor: Francisco Mejias 
+Entorno:
+	numero,cuadrado es numérico real
+Algoritmo:
+	Repetir
+		Escribir "Numero: "
+		Leer numero
+	Hasta numero !=0 
+	Si numero > 0 entonces
+		cuadrado <-- numero**2
+		Escribir cuadrado
+	Fin Si
+Fin Programa
