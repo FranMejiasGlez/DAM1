@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Empresa>
+    <Empleado>
+        <Nombre>Ana</Nombre>
+        <Apellido>Garcia</Apellido>
+        <Edad>30</Edad>
+        <Departamento>Ventas</Departamento>
+        <Cargo>Ejecutivo de ventas</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>Luis</Nombre>
+        <Apellido>Rodríguez</Apellido>
+        <Edad>45</Edad>
+        <Departamento>Finanzas</Departamento>
+        <Cargo>Analista financiero</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>María</Nombre>
+        <Apellido>López</Apellido>
+        <Edad>28</Edad>
+        <Departamento>Marketing</Departamento>
+        <Cargo>Especialista en redes sociales</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>Francisco</Nombre>
+        <Apellido>Mejias</Apellido>
+        <Edad>27</Edad>
+        <Departamento>Programación</Departamento>
+        <Cargo>Programador en prácticas</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>Lorena</Nombre>
+        <Apellido>Conde</Apellido>
+        <Edad>25</Edad>
+        <Departamento>Gestión de calidad</Departamento>
+        <Cargo>Encargada en sistemas y calidad</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>Andy</Nombre>
+        <Apellido>Jan</Apellido>
+        <Edad>29</Edad>
+        <Departamento>Programación</Departamento>
+        <Cargo>Programador en prácticas</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>Luisa</Nombre>
+        <Apellido>Mejias</Apellido>
+        <Edad>20</Edad>
+        <Departamento>Finanzas</Departamento>
+        <Cargo>Analista financiera</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>Pedro</Nombre>
+        <Apellido>Jiménez</Apellido>
+        <Edad>55</Edad>
+        <Departamento>Recursos Humanos</Departamento>
+        <Cargo>Ojeador de CV</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>Isabel</Nombre>
+        <Apellido>Manchado</Apellido>
+        <Edad>56</Edad>
+        <Departamento>Gestión de calidad</Departamento>
+        <Cargo>Jefa de Sistemas y Calidad</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>Mariana</Nombre>
+        <Apellido>González</Apellido>
+        <Edad>33</Edad>
+        <Departamento>Marketing</Departamento>
+        <Cargo>Analista</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>Curro</Nombre>
+        <Apellido>Jiménez</Apellido>
+        <Edad>25</Edad>
+        <Departamento>Programación</Departamento>
+        <Cargo>Programador Senior</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>Jesus</Nombre>
+        <Apellido>Fernández</Apellido>
+        <Edad>45</Edad>
+        <Departamento>Programación</Departamento>
+        <Cargo>Programador Analista</Cargo>
+    </Empleado>
+    <Empleado>
+        <Nombre>Pepito</Nombre>
+        <Apellido>Grillo</Apellido>
+        <Edad>33</Edad>
+        <Departamento>Programación</Departamento>
+        <Cargo>Programador Junior</Cargo>
+    </Empleado>
+</Empresa>
