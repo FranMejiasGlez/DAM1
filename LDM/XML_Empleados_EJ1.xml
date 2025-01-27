@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ValidacionXSD_Empleados_EJ1.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <Empresa>
     <Empleado>
         <Nombre>Ana</Nombre>
@@ -58,35 +59,35 @@
     </Empleado>
     <Empleado>
         <Nombre>Isabel</Nombre>
-        <Apellido>Manchado</Apellido>
+        <Apellido>Manchado Perez</Apellido>
         <Edad>56</Edad>
         <Departamento>Gestión de calidad</Departamento>
         <Cargo>Jefa de Sistemas y Calidad</Cargo>
     </Empleado>
     <Empleado>
         <Nombre>Mariana</Nombre>
-        <Apellido>González</Apellido>
+        <Apellido>Gonzalez Fernandez</Apellido>
         <Edad>33</Edad>
         <Departamento>Marketing</Departamento>
         <Cargo>Analista</Cargo>
     </Empleado>
     <Empleado>
         <Nombre>Curro</Nombre>
-        <Apellido>Jiménez</Apellido>
+        <Apellido>Jimenez Garrido</Apellido>
         <Edad>25</Edad>
         <Departamento>Programación</Departamento>
         <Cargo>Programador Senior</Cargo>
     </Empleado>
     <Empleado>
         <Nombre>Jesus</Nombre>
-        <Apellido>Fernández</Apellido>
+        <Apellido>Fernandez Gonzalez</Apellido>
         <Edad>45</Edad>
         <Departamento>Programación</Departamento>
         <Cargo>Programador Analista</Cargo>
     </Empleado>
     <Empleado>
         <Nombre>Pepito</Nombre>
-        <Apellido>Grillo</Apellido>
+        <Apellido>Grillo Gorila</Apellido>
         <Edad>33</Edad>
         <Departamento>Programación</Departamento>
         <Cargo>Programador Junior</Cargo>
