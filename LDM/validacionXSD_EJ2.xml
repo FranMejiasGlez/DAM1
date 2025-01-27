@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogo>
+    <Producto id="PROD001">
+        <Nombre>Camiseta de algodón orgánico</Nombre>    
+        <Descripcion>Camiseta de algodón orgánico suave y transpirable, ideal para el día a día. Disponible en varios colores.</Descripcion>
+        <Precio>19.99€</Precio>
+        <Categoria>Ropa</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>
+   <Producto id="PROD002">
+        <Nombre>Auriculares inalámbricos</Nombre>    
+        <Descripcion>Auriculares inalámbricos con cancelación de ruido activa para una experiencia de audio inmersiva.</Descripcion>
+        <Precio>99.99€</Precio>
+        <Categoria>Electrónica</Categoria>
+        <Disponibilidad>No disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>
+  <Producto id="PROD003">
+        <Nombre>Libro de cocina vegetariana</Nombre>    
+        <Descripcion>Recetas deliciosas y saludables para una alimentación basada en plantas.</Descripcion>
+        <Precio>24.95€</Precio>
+        <Categoria>Libros</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>  
+ <Producto id="PROD004">
+        <Nombre>Zapatillas deportivas</Nombre>    
+        <Descripcion>Zapatillas deportivas ligeras y cómodas, perfectas para correr o hacer ejercicio.</Descripcion>
+        <Precio>69.99€</Precio>
+        <Categoria>Deportes</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>  
+ <Producto id="PROD005">
+        <Nombre>Juego de mesa de estrategia</Nombre>    
+        <Descripcion>Juego de mesa para 2-4 jugadores, ideal para pasar un rato divertido en compañía.</Descripcion>
+        <Precio>39.99€</Precio>
+        <Categoria>Juegos</Categoria>
+        <Disponibilidad>No disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>  
+ <Producto id="PROD006">
+        <Nombre>Taza personalizada</Nombre>    
+        <Descripcion> Tazas de cerámica de alta calidad que puedes personalizar con fotos, frases o diseños exclusivos.</Descripcion>
+        <Precio>8.50€</Precio>
+        <Categoria>Hogar y cocina</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>  
+ <Producto id="PROD007">
+        <Nombre>Aceite esencial de lavanda</Nombre>    
+        <Descripcion>Aceite esencial puro de lavanda para aromaterapia y relajación.</Descripcion>
+        <Precio>12.99€</Precio>
+        <Categoria>Belleza y cuidado personal</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>  
+ <Producto id="PROD008">
+        <Nombre>Juego de sábanas de algodón egipcio</Nombre>    
+        <Descripcion>Juego de sábanas de algodón egipcio suave y duradero.</Descripcion>
+        <Precio>79.99€</Precio>
+        <Categoria>	Hogar</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto> 
+ <Producto id="PROD009">
+        <Nombre>Cámara instantánea mini</Nombre>    
+        <Descripcion>Cámara instantánea compacta y divertida para capturar momentos especiales.</Descripcion>
+        <Precio>59.99€</Precio>
+        <Categoria>Fotografía</Categoria>
+        <Disponibilidad>No disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>  
+ <Producto id="PROD010">
+        <Nombre>Mochila de hidratación</Nombre>    
+        <Descripcion>Mochila de hidratación con depósito de agua integrado, ideal para deportes al aire libre.</Descripcion>
+        <Precio>49.99€</Precio>
+        <Categoria>Deportes</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>  
+ <Producto id="PROD011">
+        <Nombre>Smartwatch para niños</Nombre>    
+        <Descripcion>Smartwatch resistente y seguro para niños, con funciones de seguimiento y comunicación.</Descripcion>
+        <Precio>69.99€</Precio>
+        <Categoria>Electrónica</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>  
+ <Producto id="PROD012">
+        <Nombre>Plantas suculentas</Nombre>    
+        <Descripcion>Variedad de suculentas en macetas pequeñas y decorativas.</Descripcion>
+        <Precio>9.99€</Precio>
+        <Categoria>Hogar y jardín</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>  
+ <Producto id="PROD013">
+        <Nombre>Juego de ajedrez magnético</Nombre>    
+        <Descripcion>Juego de ajedrez magnético portátil y fácil de transportar.</Descripcion>
+        <Precio>29.99€</Precio>
+        <Categoria>Juegos</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>  
+ <Producto id="PROD014">
+        <Nombre>Set de té matcha</Nombre>    
+        <Descripcion>Set completo para preparar té matcha de forma tradicional.</Descripcion>
+        <Precio>34.99€</Precio>
+        <Categoria>Cocina y alimentación</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>  
+ <Producto id="PROD015">
+        <Nombre>Lentes de sol polarizadas</Nombre>    
+        <Descripcion>Lentes de sol polarizadas con protección UV para un estilo moderno.</Descripcion>
+        <Precio></Precio>
+        <Categoria>39.99€</Categoria>
+        <Disponibilidad>Moda</Disponibilidad>
+        <Imagen></Imagen>
+    </Producto>         
+</Catalogo>
