@@ -25,11 +25,12 @@ public class ProbarFunciones {
         } while (posicion < 1);
         System.out.println("El digito es: "
                 +Utilidades.sacarDigito(numero, posicion));
-        //Probar Funcion: esFechaValida
-        System.out.println("Año: ");
-        anio=Leer.datoShort();
-        esValido=esBisiesto;
-        if(esBisiesto(anio)){
+        //Probar Funcion: esBisiesto
+        do{
+            System.out.println("Año: ");
+            anio=Leer.datoShort();
+        } while(anio<0);
+        if(Utilidades.esBisiesto(anio)){
             System.out.println("Año bisiesto");
         }else{
             System.out.println("Año no bisiesto");

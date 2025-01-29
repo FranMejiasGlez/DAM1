@@ -31,13 +31,19 @@ public class Utilidades {
      }//Fin Funcion
    public static boolean esBisiesto(short anio){
        //Entorno:
-            boolean esValido;
+            boolean bisiesto;
        //Algoritmo:
           if(anio % 4 == 0 && anio % 100 != 0 || anio % 400 == 0){
-              esValido=true;
+              bisiesto=true;
           }else{
-              esValido= false;
+              bisiesto= false;
           }
-          return esValido;
+          return bisiesto;
     }//Fin Funcion
+  // public static boolean esFechaValida(byte d, byte m,short a){
+       //Entorno:
+         //  boolean esValido;
+       //Algoritmo:
+            
+   //}
 }
