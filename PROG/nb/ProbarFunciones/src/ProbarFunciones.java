@@ -6,14 +6,15 @@ public class ProbarFunciones {
     public static void main(String[] args){
     //Entorno:
         int numero;
-        byte posicion;
+        byte posicion,dia,mes;
+        short anio;
     //Algoritmo:
-        //Probar la funcion: cifras 
+        //Probar Funcion: cifras 
         System.out.println("Numero: ");
         numero=Leer.datoInt();
         System.out.println("El numero de cifras es : "
                 +Utilidades.cifras(numero));
-        //Probar funcion: sacarDigito
+        //Probar Funcion: sacarDigito
         do {
             System.out.println("Numero:");
             numero = Leer.datoInt();
@@ -24,5 +25,14 @@ public class ProbarFunciones {
         } while (posicion < 1);
         System.out.println("El digito es: "
                 +Utilidades.sacarDigito(numero, posicion));
+        //Probar Funcion: esFechaValida
+        System.out.println("Año: ");
+        anio=Leer.datoShort();
+        esValido=esBisiesto;
+        if(esBisiesto(anio)){
+            System.out.println("Año bisiesto");
+        }else{
+            System.out.println("Año no bisiesto");
+        }//Fin Si
     }//Fin Programa
 }

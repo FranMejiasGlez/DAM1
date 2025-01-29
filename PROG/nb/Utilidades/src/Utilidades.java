@@ -1,11 +1,6 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
- * @author Administrador
+ * @author Francisco Mejias
  */
 public class Utilidades {
     public static byte cifras(int numero){
@@ -34,10 +29,15 @@ public class Utilidades {
         resultado = (byte) (auxiliar / Math.pow(10, j) % 10);
         return resultado;
      }//Fin Funcion
-   public static esFechaValida(byte dia,byte mes,short anio){
+   public static boolean esBisiesto(short anio){
        //Entorno:
-            byte d,m,a;
+            boolean esValido;
        //Algoritmo:
-            
-}//Fin Funcion
+          if(anio % 4 == 0 && anio % 100 != 0 || anio % 400 == 0){
+              esValido=true;
+          }else{
+              esValido= false;
+          }
+          return esValido;
+    }//Fin Funcion
 }
