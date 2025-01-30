@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="XSD_EJ2.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <Catalogo>
     <Producto id="PROD001">
-        <Nombre>Camiseta de algodón orgánico</Nombre>    
+        <Nombre>Camiseta de algodon organico</Nombre>    
         <Descripcion>Camiseta de algodón orgánico suave y transpirable, ideal para el día a día. Disponible en varios colores.</Descripcion>
-        <Precio>19.99€</Precio>
+        <Precio>19,99€</Precio>
         <Categoria>Ropa</Categoria>
         <Disponibilidad>Disponible</Disponibilidad>
         <Imagen></Imagen>
     </Producto>
    <Producto id="PROD002">
-        <Nombre>Auriculares inalámbricos</Nombre>    
+        <Nombre>Auriculares inalambricos</Nombre>    
         <Descripcion>Auriculares inalámbricos con cancelación de ruido activa para una experiencia de audio inmersiva.</Descripcion>
         <Precio>99.99€</Precio>
         <Categoria>Electrónica</Categoria>
@@ -60,7 +61,7 @@
         <Nombre>Juego de sábanas de algodón egipcio</Nombre>    
         <Descripcion>Juego de sábanas de algodón egipcio suave y duradero.</Descripcion>
         <Precio>79.99€</Precio>
-        <Categoria>	Hogar</Categoria>
+        <Categoria>Hogar</Categoria>
         <Disponibilidad>Disponible</Disponibilidad>
         <Imagen></Imagen>
     </Producto> 
@@ -75,7 +76,7 @@
  <Producto id="PROD010">
         <Nombre>Mochila de hidratación</Nombre>    
         <Descripcion>Mochila de hidratación con depósito de agua integrado, ideal para deportes al aire libre.</Descripcion>
-        <Precio>49.99€</Precio>
+        <Precio>49.9€</Precio>
         <Categoria>Deportes</Categoria>
         <Disponibilidad>Disponible</Disponibilidad>
         <Imagen></Imagen>
@@ -83,7 +84,7 @@
  <Producto id="PROD011">
         <Nombre>Smartwatch para niños</Nombre>    
         <Descripcion>Smartwatch resistente y seguro para niños, con funciones de seguimiento y comunicación.</Descripcion>
-        <Precio>69.99€</Precio>
+        <Precio>66.9€</Precio>
         <Categoria>Electrónica</Categoria>
         <Disponibilidad>Disponible</Disponibilidad>
         <Imagen></Imagen>
@@ -97,7 +98,7 @@
         <Imagen></Imagen>
     </Producto>  
  <Producto id="PROD013">
-        <Nombre>Juego de ajedrez magnético</Nombre>    
+        <Nombre>Juego de ajedrez magnetico</Nombre>    
         <Descripcion>Juego de ajedrez magnético portátil y fácil de transportar.</Descripcion>
         <Precio>29.99€</Precio>
         <Categoria>Juegos</Categoria>
@@ -105,19 +106,19 @@
         <Imagen></Imagen>
     </Producto>  
  <Producto id="PROD014">
-        <Nombre>Set de té matcha</Nombre>    
+        <Nombre>Set de te matcha</Nombre>    
         <Descripcion>Set completo para preparar té matcha de forma tradicional.</Descripcion>
         <Precio>34.99€</Precio>
-        <Categoria>Cocina y alimentación</Categoria>
+        <Categoria>Cocina y alimentacion</Categoria>
         <Disponibilidad>Disponible</Disponibilidad>
         <Imagen></Imagen>
     </Producto>  
  <Producto id="PROD015">
         <Nombre>Lentes de sol polarizadas</Nombre>    
         <Descripcion>Lentes de sol polarizadas con protección UV para un estilo moderno.</Descripcion>
-        <Precio></Precio>
-        <Categoria>39.99€</Categoria>
-        <Disponibilidad>Moda</Disponibilidad>
+        <Precio>20.50€</Precio>
+        <Categoria>Moda</Categoria>
+        <Disponibilidad>Disponible</Disponibilidad>
         <Imagen></Imagen>
     </Producto>         
 </Catalogo>
