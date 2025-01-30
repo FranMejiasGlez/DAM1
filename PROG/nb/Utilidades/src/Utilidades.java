@@ -40,10 +40,68 @@ public class Utilidades {
           }
           return bisiesto;
     }//Fin Funcion
-  // public static boolean esFechaValida(byte d, byte m,short a){
+  public static boolean esFechaValida(byte dia, byte mes,short anio){
        //Entorno:
-         //  boolean esValido;
+           boolean esValido;
        //Algoritmo:
-            
-   //}
+           esValido=false;
+            switch (mes){
+                case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                    if (dia>=1 && dia <=31){
+                        esValido=true;
+                break;
+                    }//Fin Si
+                case 4: case 6: case 9: case 11:
+                    if(dia >=1 && dia <=30){
+                        esValido=true;
+                    }
+                 break;
+                case 2:
+                    if(Utilidades.esBisiesto(anio)){
+                        if(dia>=1 && dia <=29)
+                        esValido=true;
+                    }
+                break;
+               }//Fin Segun Sea
+            return esValido;
+       }//Fin Funcion
+  public static int potencia(int base, int exponente){
+	//Entorno:
+		int resultado;
+	//Algoritmo
+		resultado=1;
+		if (exponente == 0){
+			System.out.println("");
+		}else{
+			resultado = base * potencia(base,exponente-1);
+		}//Fin Si
+		return resultado;
+	}//Fin Funcion
+  public static int invierte(int numero){
+      //Entorno:
+            int invertido;
+            byte cifras;
+      //Algoritmo:
+         invertido = 0;
+        cifras = cifras(numero);
+        while(numero!=0){
+            if (numero % 10 != 0){
+            invertido = invertido * 10 + numero % 10;
+            numero = numero / 10;
+            }//Fin Si
+        }//Fin Mientras
+            return invertido;
+  }//Fin Funcion
+  public static boolean continuar(char caracter){
+      //Entorno:
+            boolean esContinuar;
+      //Algoritmo:
+            esContinuar=false;
+            if (caracter == 's' || caracter == 'S'){
+                esContinuar=true;
+            }
+            return esContinuar;
+  }//Fin Funcion
 }
+  
+

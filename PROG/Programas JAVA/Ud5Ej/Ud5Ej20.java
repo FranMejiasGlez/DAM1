@@ -13,27 +13,20 @@ Algoritmo:
 			Leer b
 			Escribir "Introduzca número"
 			Leer c
-			Si a > b entonces
-				Si b > c entonces
-					Si a > c entonces
-						Escribir a,b,c
-					Sino 
-						auxiliar <-- c
-						c <-- a 
-						a <-- auxiliar 
-						Escribir a,b,c				
-					Fin Si
-				Sino 
-					auxiliar <-- c
-					c <-- b 
-					b <-- auxiliar
-					Escribir a,b,c
-				Fin Si
-			Sino 
-				auxiliar <-- b 
+			Si a < b entonces
+				auxiliar <-- b
 				b <-- a
-				a <-- auxiliar 
-				Escribir a,b,c
+				a <-- auxiliar
+				Si b < c entonces
+					auxiliar <-- b
+					b <-- c
+					c <-- auxiliar
+					Si a < b entonces
+						auxiliar <-- b
+						b <-- a
+						a <-- auxiliar			
+					Fin Si
+				Fin Si
 			Fin Si
 		Fin Para
 	Fin Para
@@ -56,7 +49,23 @@ public class Ud5Ej20{
 				b=Leer.datoFloat();
 				System.out.print("Introduzca número");
 				c=Leer.datoFloat();
-			
+				if( a < b ){
+					auxiliar = b;
+					b = a;
+					a = auxiliar;
+					if( b < c) {
+						auxiliar = b;
+						b = c;
+						c = auxiliar;
+						if( a < b ){
+							auxiliar = b;
+							b = a;
+							a = auxiliar;		
+						}//Fin Si
+					}//	Fin Si
+				}//Fin Si
+			}//Fin Para
+		}//Fin Para
 	}//Fin Programa
 }
 
