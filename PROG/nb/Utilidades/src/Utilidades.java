@@ -102,6 +102,21 @@ public class Utilidades {
             }
             return esContinuar;
   }//Fin Funcion
+  /*public static char nombreMes(byte numeroMes){
+   * //Entorno:
+   * char nombre;
+   * //Algoritmo:
+   * nombre='a'+'a';
+   * switch (nombre){
+   * case 1:
+   * nombre="E"+"n"+"e"+"r"+"o";
+   * break;
+   * case 2:
+   * nombre='F'+'e'+'b'+'r'+'e'+'r'+'o';
+   * break;
+   * }//Fin Segun Sea
+   * return nombre;  */
+ //}//Fin Funcion
 }
   
 
