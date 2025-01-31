@@ -62,7 +62,7 @@ public class Utilidades {
                         esValido=true;
                     }
                 break;
-               }//Fin Segun Sea
+            }//Fin Segun Sea
             return esValido;
        }//Fin Funcion
   public static int potencia(int base, int exponente){
