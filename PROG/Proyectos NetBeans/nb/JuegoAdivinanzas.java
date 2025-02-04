@@ -72,7 +72,7 @@
                         " intentos!");
                }//Fin Si
             }//Fin Si
-         }//Fin Mientras
+        }//Fin Mientras
         if (intentos==8){
             System.out.println("!Has usado todos los intentos!");
         }
