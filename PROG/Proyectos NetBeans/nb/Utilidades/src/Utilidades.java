@@ -1,6 +1,6 @@
 /**
  *
- * @author Francisco Mejias
+ * @author Mejias Gonzalez Francisco
  */
 public class Utilidades {
     public static byte cifras(int numero){
@@ -60,23 +60,14 @@ public class Utilidades {
                     if(Utilidades.esBisiesto(anio)){
                         if(dia>=1 && dia <=29)
                         esValido=true;
+                    }else{
+                       if(dia>=1 && dia <=28)
+                        esValido=true; 
                     }
                 break;
-            }//Fin Segun Sea
+               }//Fin Segun Sea
             return esValido;
        }//Fin Funcion
-  public static int potencia(int base, int exponente){
-	//Entorno:
-		int resultado;
-	//Algoritmo
-		resultado=1;
-		if (exponente == 0){
-			System.out.println("");
-		}else{
-			resultado = base * potencia(base,exponente-1);
-		}//Fin Si
-		return resultado;
-	}//Fin Funcion
   public static int invierte(int numero){
       //Entorno:
             int invertido;
@@ -102,21 +93,7 @@ public class Utilidades {
             }
             return esContinuar;
   }//Fin Funcion
-  /*public static char nombreMes(byte numeroMes){
-   * //Entorno:
-   * char nombre;
-   * //Algoritmo:
-   * nombre='a'+'a';
-   * switch (nombre){
-   * case 1:
-   * nombre="E"+"n"+"e"+"r"+"o";
-   * break;
-   * case 2:
-   * nombre='F'+'e'+'b'+'r'+'e'+'r'+'o';
-   * break;
-   * }//Fin Segun Sea
-   * return nombre;  */
- //}//Fin Funcion
+ 
 }
   
 
