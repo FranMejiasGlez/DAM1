@@ -4,8 +4,8 @@
  * @author Mejias Gonzalez Francisco
  */
 public class Prueba {
-
-    public static short indexarDigito(short numero, byte digito) {
+    
+    public static short indexarDigito(short numero, byte digito){
         //Entorno:
         short anexo;
         byte cifras;
