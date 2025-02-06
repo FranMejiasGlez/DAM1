@@ -1,186 +1,79 @@
-
-SQL*Plus: Release 8.1.7.0.0 - Production on Mié Feb 5 16:49:07 2025
-
-(c) Copyright 2000 Oracle Corporation.  All rights reserved.
-
-Conectado.
-
-Tabla creada.
-
-
-Tabla creada.
-
-
-Tabla creada.
-
+DROP TABLE INCIDENCIAS CASCADE CONSTRAINTS;
+DROP TABLE PRECIOS CASCADE CONSTRAINTS;
+DROP TABLE HABITACIONES CASCADE CONSTRAINTS;
+DROP TABLE CLIENTES CASCADE CONSTRAINTS;
+DROP TABLE TEMPORADAS CASCADE CONSTRAINTS;
+DROP TABLE TIPOS CASCADE CONSTRAINTS;
+CREATE TABLE TIPOS(
+	CODIGO CHAR(9),
+	NOMBRE VARCHAR2(20) NOT NULL,
+	CONSTRAINT PK_TIPOS PRIMARY KEY (CODIGO)
+	);
+CREATE TABLE PAISES(
+	CODIGO CHAR(3),
+	NOMBRE VARCHAR2(50) NOT NULL,
+	CONSTRAINT PK_PAISES PRIMARY KEY (CODIGO)
+	);
+CREATE TABLE TEMPORADAS(
+	CODIGO CHAR(9),
+	NOMBRE VARCHAR2(15) NOT NULL,
+	CONSTRAINT PK_TEMPORADAS PRIMARY KEY (CODIGO)
+	);
 CREATE TABLE CLIENTES(
-             *
-ERROR en línea 1:
-ORA-00955: este nombre ya está siendo usado por otro objeto existente
-
-
-
-Tabla creada.
-
-
-Tabla creada.
-
+	DNI CHAR(9),
+	NOMBRE VARCHAR2(50) NOT NULL,
+	TELEFONO CHAR(9),
+	DOMICILIO VARCHAR2(50),
+	POBLACION VARCHAR2(50),
+	PROVINCIA VARCHAR2(20),
+	CP VARCHAR2(5),
+	PAIS CHAR(3) NOT NULL,
+	FECHA_NAC DATE NOT NULL,
+	SEXO CHAR(1),
+	CONSTRAINT PK_CLIENTES PRIMARY KEY (DNI),
+	CONSTRAINT FK_CLIENTES_PAISES FOREIGN KEY (PAIS)
+		REFERENCES PAISES ON DELETE CASCADE,
+	CONSTRAINT CK_CLIENTES_SEXO CHECK(SEXO IN('H','M'))
+	);
+CREATE TABLE HABITACIONES(
+	CODIGO NUMBER(3),
+	TIPO CHAR(9) NOT NULL,
+	BANIO CHAR(1) NOT NULL,
+	PREPARADA CHAR(1) NOT NULL,
+	CONSTRAINT PK_HABITACIONES PRIMARY KEY (CODIGO),
+	CONSTRAINT FK_HABITACIONES_TIPOS FOREIGN KEY (TIPO)
+		REFERENCES TIPOS ON DELETE CASCADE,
+	CONSTRAINT CK_HABITACIONES_BANIO CHECK (BANIO IN('S','N'))
+	);
+CREATE TABLE PRECIOS(
+	TIPO CHAR(9),
+	TEMPORADA CHAR(9),
+	OCUPANTES NUMBER(1) NOT NULL,
+	PRECIO NUMBER(6,2) DEFAULT 50,
+	CONSTRAINT PK_PRECIOS PRIMARY KEY (TIPO,TEMPORADA,OCUPANTES),
+	CONSTRAINT FK_PRECIOS_TIPOS FOREIGN KEY (TIPO)
+		REFERENCES TIPOS ON DELETE CASCADE,
+	CONSTRAINT FK_PRECIOS_TEMPORADAS FOREIGN KEY (TEMPORADA)
+		REFERENCES TEMPORADAS ON DELETE CASCADE
+	);
+CREATE TABLE INCIDENCIAS(
+	DNI CHAR(9),
+	HABITACION NUMBER(3),
+	FEC_ENTRADA DATE NOT NULL,
+	FEC_SALIDA_PREVISTA DATE NOT NULL,
+	FEC_SALIDA_REAL DATE NOT NULL,
+	OCUPANTES NUMBER(1) NOT NULL,
+	TEMPORADA CHAR(9) NOT NULL,
+	CUNA CHAR(1) NOT NULL,
+	RESERVA CHAR(1) NOT NULL,
+	TIPO CHAR(9) NOT NULL,
+	CONSTRAINT PK_INCIDENCIAS PRIMARY KEY (DNI,HABITACION,FEC_ENTRADA),
 	CONSTRAINT FK_INCIDENCIAS_CLIENTES FOREIGN KEY (DNI)
-	                                                *
-ERROR en línea 13:
-ORA-02267: tipo de columna incompatible con tipo de columna referida
-
-
- Nombre                                    ¿Nulo?   Tipo
- ----------------------------------------- -------- ----------------------------
- DNI                                       NOT NULL NUMBER(9)
- DIRECCION                                 NOT NULL VARCHAR2(30)
- POBLACION                                 NOT NULL VARCHAR2(20)
- PROVINCIA                                 NOT NULL VARCHAR2(20)
- CODIGO_POSTAL                             NOT NULL VARCHAR2(5)
- EMAIL                                     NOT NULL VARCHAR2(30)
-
-DROP TABLE CLIENTES
-           *
-ERROR en línea 1:
-ORA-02449: claves ajenas hacen referencia a las claves única/primaria de la
-tabla
-
-
-DROP TABLE INCIDENCIAS
-           *
-ERROR en línea 1:
-ORA-00942: la tabla o vista no existe
-
-
-
-Tabla borrada.
-
-
-Tabla borrada.
-
-DROP TABLE CLIENTES
-           *
-ERROR en línea 1:
-ORA-02449: claves ajenas hacen referencia a las claves única/primaria de la
-tabla
-
-
-
-Tabla borrada.
-
-
-Tabla borrada.
-
-
-Tabla borrada.
-
-DROP TABLE CLIENTES
-           *
-ERROR en línea 1:
-ORA-02449: claves ajenas hacen referencia a las claves única/primaria de la
-tabla
-
-
-ERROR:
-ORA-04043: el objeto HABITACIONES no existe
-
-
-ERROR:
-ORA-04043: el objeto PRECIOS no existe
-
-
- Nombre                                    ¿Nulo?   Tipo
- ----------------------------------------- -------- ----------------------------
- DNI                                       NOT NULL NUMBER(9)
- DIRECCION                                 NOT NULL VARCHAR2(30)
- POBLACION                                 NOT NULL VARCHAR2(20)
- PROVINCIA                                 NOT NULL VARCHAR2(20)
- CODIGO_POSTAL                             NOT NULL VARCHAR2(5)
- EMAIL                                     NOT NULL VARCHAR2(30)
-
-ERROR:
-ORA-04043: el objeto TEMPORADAS no existe
-
-
-ERROR:
-ORA-04043: el objeto TIPOS no existe
-
-
-ERROR:
-ORA-04043: el objeto PAISES no existe
-
-
-ALTER TABLE INCIDENCIAS DROP CONSTRAINT FK_INCIDENCIAS_CLIENTES
-*
-ERROR en línea 1:
-ORA-00942: la tabla o vista no existe
-
-
-
-CONSTRAINT_NAME                TABLE_NAME
------------------------------- ------------------------------
-FK_ANUNCIOS_CLIENTES           ANUNCIOS
-
-DROP TABLE ANUNCIOS
-           *
-ERROR en línea 1:
-ORA-02449: claves ajenas hacen referencia a las claves única/primaria de la
-tabla
-
-
-DROP TABLE WEB
-           *
-ERROR en línea 1:
-ORA-00942: la tabla o vista no existe
-
-
-DROP TABLE WEBS
-           *
-ERROR en línea 1:
-ORA-02449: claves ajenas hacen referencia a las claves única/primaria de la
-tabla
-
-
-
-Tabla borrada.
-
-
-Tabla borrada.
-
-
-Tabla borrada.
-
-
-Tabla borrada.
-
-
-Tabla borrada.
-
-DROP TABLE CLIENTES
-           *
-ERROR en línea 1:
-ORA-00942: la tabla o vista no existe
-
-
-
-Tabla creada.
-
-
-Tabla creada.
-
-
-Tabla creada.
-
-
-Tabla creada.
-
-
-Tabla creada.
-
-
-Tabla creada.
-
-
-Tabla creada.
-
+		REFERENCES CLIENTES ON DELETE CASCADE,
+	CONSTRAINT FK_INCIDENCIAS_HABITACIONES FOREIGN KEY (HABITACION)
+		REFERENCES HABITACIONES ON DELETE CASCADE,
+	CONSTRAINT FK_INCIDENCIAS_PRECIOS FOREIGN KEY (TIPO,TEMPORADA,OCUPANTES)
+		REFERENCES PRECIOS ON DELETE CASCADE,
+	CONSTRAINT CK_INCIDENCIAS_RESERVA CHECK (RESERVA IN('S','N')),
+	CONSTRAINT CK_INCIDENCIAS_CUNA CHECK (CUNA BETWEEN 1 AND 3)
+	);
