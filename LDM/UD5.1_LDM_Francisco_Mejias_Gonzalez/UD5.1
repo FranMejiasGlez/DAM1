@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="compania">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="cliente">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="NIF" type="xs:string" />
+                        <xs:element name="Nombre" type="xs:string" />
+                        <xs:element name="Facturacion" type="xs:string" />
+                        <xs:element name="Ciudad" type="xs:string" />
+                        <xs:element name="Calle" type="xs:string" />
+                        <xs:element name="Numero" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="empresa">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="CIF" type="xs:string" />
+                        <xs:element name="Nombre" type="xs:string" />
+                        <xs:element name="Facturacion" type="xs:string" />
+                        <xs:element name="Ciudad" type="xs:string" />
+                        <xs:element name="Calle" type="xs:string" />
+                        <xs:element name="Numero" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+              <xs:element name="LLamada" id="NIF">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Fecha" type="xs:string" />
+                        <xs:element name="Hora_inicio" type="xs:date" />
+                        <xs:element name="Hora_Fin" type="xs:string" />
+                        <xs:element name="Duracion" type="xs:string" />
+                        <xs:element name="Numero_llamada" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>
