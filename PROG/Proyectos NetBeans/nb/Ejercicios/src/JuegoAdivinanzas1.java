@@ -1,4 +1,4 @@
-/*
+ /*
  *Programa: JuegoAdivinanzas1
  *Autor: Mejias Gonzalez Francisco
  *Entorno:
