@@ -17,11 +17,12 @@ public class Yeti{
     public void Yeti(char sexo){
     //Entorno:
     //Algoritmo:
-        
+        this.sexo=sexo;
     }//Fin Constructor
     public void Yeti(boolean hambriento){
     //Entorno:
-    //Algoritmo:   
+    //Algoritmo:
+		this.hambriento=hambriento;
     }
     public void Yeti(char color,char sexo){
     //Entorno:
@@ -39,7 +40,7 @@ public class Yeti{
     public void alimentarYeti(){
         //Entorno:
         //Algoritmo:
-            if (this.hambriento==false){
+            if (!this.hambriento){
                this.hambriento=true;
             }else{
                System.out.print("mmmm no gacias ya he comido");
