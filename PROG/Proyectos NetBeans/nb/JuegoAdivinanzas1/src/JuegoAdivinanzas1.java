@@ -2,28 +2,53 @@
 //Programa: JuegoAdivinanzas1
 //Autor: Mejias Gonzalez Francisco
 //Entorno:
-	numero,suposicion,intentos es numérico entero
+	numeroSecreto,numeroEstimado,intentos es numérico entero
 //Algoritmo:
 	Escribir "Jugador 1 Introduce número entre 0 y 99:"
-	Leer numero
+	Leer numeroSecreto
 	intentos <-- 0
 	Hacer 
-		Escribir "Jugador 1 Introduce número entre 0 y 99:"
-		Leer suposicion
-		Si numero = suposicion entonces
-			Escribir "Has acertado con :",(8-intentos)," intentos"
-			Sino
-				Si suposicion < numero entonces
-					intentos = intentos - 1
-					Escribir "Has tirado bajo te quedan: ",intentos," intentos"
+		Escribir "Jugador 1: Introduce número entre 0 y 99:"
+		Leer numeroEstimado
+		intentos <-- 8
+		Si numeroSecreto = numeroEstimado entonces
+			intentos <-- intentos - 1
+			Escribir "!Correcto! El número secreto era: "
+                        ,numeroSecreto," Adivinaste en: "
+					,(8 - intentos), " intentos"
+		Sino
+			Si numeroEstimado < numeroSecreto entonces
+				intentos = intentos - 1
+				Si intentos=1 entonces
+                    Escribir "Última oportunidad."
+                                + ", Adivina sabiamente");
+                    Escribir "PISTA: El número secreto "
+                            , "es mayor que el introducido, te quedan: "
+                            , intentos , " intentos"
 				Sino
-					intentos = intentos - 1
-					Escribir "Has tirado alto te quedan: ",intentos," intentos"
+					Escribir "Intento fallido"
+					Escribir "PISTA: El número secreto es mayor que ",numeroEstimado,
+						", te quedan: ",intentos," intentos"
 				Fin Si
+			Sino
+				intentos = intentos - 1
+				Si intentos=1 entonces
+                    Escribir "Última oportunidad."
+                                + ", Adivina sabiamente");
+                    Escribir "PISTA: El número secreto "
+                            , "es mayor que el introducido, te quedan: "
+                            , intentos , " intentos"
+				Sino
+					Escribir "Intento fallido"
+					Escribir "PISTA: El número secreto es menor que ",numeroEstimado,
+						", te quedan: ",intentos," intentos"
+				Fin Si
+			Fin Si
 		Fin Si
-	Hasta intentos = 0 o numero = suposicion
-	Si intentos = 0 y numero != suposicion entonces
-		Escribir "Has perdido buena suerte la proxima vez! "
+	Hasta intentos = 0 o numeroSecreto = numeroEstimado
+	Si intentos = 0 y numeroSecreto != numeroEstimado entonces
+		Escribir "Has agotado tus 8 intentos, el número era: "
+		,numeroSecreto
 	Fin Si
 	Fin Programa
 	*/
@@ -46,31 +71,57 @@ public class JuegoAdivinanzas1 {
 
     public static void main(String[] args) {
         //Entorno:
-        byte numero, suposicion, intentos;
+        byte numeroSecreto, numeroEstimado, intentos;
         //Algoritmo:
         System.out.println("Jugador 1");
-        numero = JuegoAdivinanzas2.Leebyte();
+        numeroSecreto = JuegoAdivinanzas1.Leebyte();
         intentos = 8;
+        for (int i =0;i<30;i++){
+            System.out.println();
+        }//Fin Para
         do {
-            System.out.println("Jugador 2 toca adivinar");
-            suposicion = JuegoAdivinanzas2.Leebyte();
-            if (numero == suposicion) {
-                System.out.println("Has acertado con: "
-                        + (8 - intentos) + " intentos");
+            System.out.println("Jugador 2 toca adivinar: ");
+            numeroEstimado = JuegoAdivinanzas1.Leebyte();
+            if (numeroSecreto == numeroEstimado) {
+                intentos--;
+                System.out.println("!Correcto! El número secreto era: "
+                        +numeroSecreto+" Adivinaste en: "
+					+(8 - intentos) + " intentos");
             } else {
-                if (suposicion < numero) {
+                if (numeroEstimado < numeroSecreto) {
                     intentos--;
-                    System.out.println("Has tirado bajo te quedan: "
+                    if(intentos==1){
+                        System.out.println("Última oportunidad."
+                                + ", Adivina sabiamente");
+                        System.out.println("PISTA: El número secreto "
+                            + "es mayor que el introducido, te quedan: "
                             + intentos + " intentos");
+                    }else{
+                    System.out.println("Intento fallido.");
+                    System.out.println("PISTA: El número secreto "
+                            + "es mayor que "+numeroEstimado+", te quedan: "
+                            + intentos + " intentos");
+                    }//Fin Si
                 } else {
                     intentos--;
-                    System.out.println("Has tirado alto te quedan: "
+                     if(intentos==1){
+                        System.out.println("Última oportunidad."
+                                + ", Adivina sabiamente");
+                        System.out.println("PISTA: El número secreto "
+                            + "es menor que "+numeroEstimado+" te quedan: "
                             + intentos + " intentos");
+                    }else{
+                    System.out.println("Intento fallido.");
+                    System.out.println("PISTA: El número secreto "
+                            + "es menor que "+numeroEstimado+" te quedan: "
+                            + intentos + " intentos");
+                     }//Fin Si
                 }//Fin Si
             }//Fin Si
-        } while (numero != suposicion && intentos != 0);
-        if (intentos == 0 && numero != suposicion) {
-            System.out.println("Has perdido buena suerte la proxima vez!");
+        } while (numeroSecreto != numeroEstimado && intentos != 0);
+        if (intentos == 0 && numeroSecreto != numeroEstimado) {
+            System.out.println("Has agotado tus 8 intentos, el número era: "
+                    +numeroSecreto);
         }//Fin Si
     }//Fin Programa
 }
