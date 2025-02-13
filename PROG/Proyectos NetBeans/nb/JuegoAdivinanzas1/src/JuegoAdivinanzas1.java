@@ -1,6 +1,6 @@
 /*
 //Programa: JuegoAdivinanzas1
-//Autor: Mejias Gonzalez Francisco
+//Autor: Mejias Gonzalez Francisco, Ruiz Alfonso, Martin Jaime, Ochavo Marcos, Maurolagoitia Ignacio
 //Entorno:
 	numeroSecreto,numeroEstimado,intentos es numérico entero
 //Algoritmo:
@@ -20,8 +20,7 @@
 			Si numeroEstimado < numeroSecreto entonces
 				intentos = intentos - 1
 				Si intentos=1 entonces
-                    Escribir "Última oportunidad."
-                                + ", Adivina sabiamente");
+                    Escribir "Última oportunidad. Adivina sabiamente"
                     Escribir "PISTA: El número secreto "
                             , "es mayor que el introducido, te quedan: "
                             , intentos , " intentos"
@@ -33,8 +32,7 @@
 			Sino
 				intentos = intentos - 1
 				Si intentos=1 entonces
-                    Escribir "Última oportunidad."
-                                + ", Adivina sabiamente");
+                    Escribir "Última oportunidad. Adivina sabiamente"
                     Escribir "PISTA: El número secreto "
                             , "es mayor que el introducido, te quedan: "
                             , intentos , " intentos"
