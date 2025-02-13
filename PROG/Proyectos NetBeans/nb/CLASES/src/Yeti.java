@@ -14,27 +14,45 @@ public class Yeti{
     private boolean hambriento = false;
     private static byte zona = 1;
  //Constructores:
-    public void Yeti(char sexo){
-    //Entorno:
-    //Algoritmo:
-        this.sexo=sexo;
-    }//Fin Constructor
-    public void Yeti(boolean hambriento){
-    //Entorno:
-    //Algoritmo:
-		this.hambriento=hambriento;
+    public Yeti(){
     }
-    public void Yeti(char color,char sexo){
+    public Yeti(char sexo){
     //Entorno:
     //Algoritmo:
+        if(sexo == 'm'||sexo == 'M'||sexo == 'h'||sexo == 'H'){
+            this.sexo=sexo;
+        }
     }//Fin Constructor
-    public void Yeti(char sexo,boolean hambriento){
+    public Yeti(boolean hambriento){
     //Entorno:
     //Algoritmo:
+        this.hambriento=hambriento;
+    }
+    public Yeti(char color,char sexo){
+    //Entorno:
+    //Algoritmo:
+        this.color=color;
+        if(sexo == 'm'||sexo == 'M'||sexo == 'h'||sexo == 'H'){
+            this.sexo=sexo;
+        }
     }//Fin Constructor
-    public void Yeti(char color,char sexo,boolean hambriento,byte zona){
+    public Yeti(char sexo,boolean hambriento){
     //Entorno:
     //Algoritmo:
+        if(sexo == 'm'||sexo == 'M'||sexo == 'h'||sexo == 'H'){
+            this.sexo=sexo;
+        }
+        this.hambriento=hambriento;
+    }//Fin Constructor
+    public Yeti(char color,char sexo,boolean hambriento,byte zona){
+    //Entorno:
+    //Algoritmo:
+        this.color=color;
+        if(sexo == 'm'||sexo == 'M'||sexo == 'h'||sexo == 'H'){
+            this.sexo=sexo;
+        }
+        this.hambriento=hambriento;
+        Yeti.zona=zona;
     }//Fin Constructor
  //Metodos:
     public void alimentarYeti(){

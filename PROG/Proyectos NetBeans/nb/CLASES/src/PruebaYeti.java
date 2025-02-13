@@ -10,14 +10,16 @@
 public class PruebaYeti {
      public static void main(String[] args){
     //Entorno:
-        Yeti j;
+      
+        Yeti u;
     //Algoritmo:
-        j = new Yeti();
-        j.mostrarAtributos();
+        u = new Yeti('H');
+        u.mostrarAtributos();
         System.out.println("Dandole de comer al Yeti...");
-        j.alimentarYeti();
-        j.mostrarAtributos();
+        u.alimentarYeti();
+        u.mostrarAtributos();
         System.out.println("¿Quieres un poco más?");
-        j.alimentarYeti();
+        u.alimentarYeti();
+        
     }//Fin Programa
 }
