@@ -6,7 +6,6 @@
 //Algoritmo:
 	Escribir "Jugador 1 Introduce número entre 0 y 99:"
 	Leer numeroSecreto
-	intentos <-- 0
 	Hacer 
 		Escribir "Jugador 1: Introduce número entre 0 y 99:"
 		Leer numeroEstimado

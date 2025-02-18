@@ -16,7 +16,7 @@ public class Utilidades {
 }//Fin Funcion
    public static byte sacarDigito(int numero, byte posicion){
     //Entorno:
-        byte cifras,digitos,j,resultado;
+        byte digitos,j,resultado;
         int auxiliar;
     //Algoritmo:
         digitos = 1;
