@@ -17,14 +17,16 @@ public class Consumo {
         public Consumo(){
         }//Fin Constructor
         public Consumo(float kms,float litros,float vmed){
-            
+           this.kms=kms;
+           this.litros=litros;
+           this.vmed=vmed;
         }//Fin Constructor
     //Metodos:
         public float consumoMedio(){
             return this.litros*(100/this.kms);
         }//Fin Metodo
         public float consumoEuros(){
-            return this.consumoMedio()*this.precio;
+            return this.litros*this.precio;
         }//Fin Metodo
         public byte getTiempo(){
             return (byte)(this.kms/this.vmed);
