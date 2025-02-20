@@ -22,8 +22,8 @@ public class Contador {
             this.incremento=incremento;
         }//Fin Constructor
         public Contador(Contador original){
-        //    this.valor = original;
-        //    this.incremento = original;
+           this.valor = original.valor;
+           this.incremento = original.incremento;
         }//Fin Constructor
     //Metododos:
         public void incrementaCuenta(){

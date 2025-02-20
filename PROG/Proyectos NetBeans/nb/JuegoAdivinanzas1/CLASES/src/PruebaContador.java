@@ -76,7 +76,7 @@ public class PruebaContador {
              System.out.println("");
              System.out.println("");
              System.out.println("Pruebo a copiar el último Contador");
-             d = new Contador();
+             d = new Contador(c);
              System.out.println("Muestro el valor del nuevo Contador que"
                      + " tiene los valores del anterior");
              System.out.println(d.obtenerCuenta());
