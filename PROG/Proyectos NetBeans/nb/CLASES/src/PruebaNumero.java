@@ -13,6 +13,7 @@ public class PruebaNumero {
             Numero a,b;
       //Algoritmo:
             a = new Numero();
+            a.aniade(2);
             System.out.println("El valor es: ");
             System.out.println(a.getValor());
             System.out.println("El Doble es: ");

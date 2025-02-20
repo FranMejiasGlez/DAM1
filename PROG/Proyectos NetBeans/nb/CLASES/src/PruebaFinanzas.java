@@ -20,6 +20,7 @@ public class PruebaFinanzas {
             b = new Finanzas(2.5);
             System.out.println("El valor de 20 euros en dolares:"+
                     +b.eurosToDolares(20)+" Dolares");
+            System.out.println();
             
    }//Fin Programa
 }

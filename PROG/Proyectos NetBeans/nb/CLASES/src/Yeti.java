@@ -16,6 +16,11 @@ public class Yeti{
  //Constructores:
     public Yeti(){
     }
+    public Yeti(Yeti j){
+        this.color=j.color;
+        this.sexo=j.color;
+        this.hambriento=j.hambriento;
+    }//Fin Constructor
     public Yeti(char sexo){
     //Entorno:
     //Algoritmo:
@@ -70,6 +75,31 @@ public class Yeti{
             System.out.println("Color: "+this.color);
             System.out.println("Sexo: "+this.sexo);
             System.out.println("Hambre: "+this.hambriento);
-            System.out.println("Zona: "+this.zona);
+            System.out.println("Zona: "+Yeti.zona);
     }//Fin Metodo
-}
+    //Getters/Setters:
+    public char getColor(){
+        return this.color;
+    }//Fin Getter
+    public char getSexo(){
+        return this.sexo;
+    }//Fin Getter
+    public boolean isHambriento(){
+        return this.hambriento;
+    }//Fin Getter
+    public byte getZona(){
+        return Yeti.zona;
+    }//Fin Getter
+    public void setColor(char color){
+      this.color=color;
+    }//Fin Setter
+    public void setSexo(char sexo){
+        this.sexo=sexo;
+    }//Fin Setter
+    public void setHambre(boolean hambriento){
+         this.hambriento=hambriento;
+    }//Fin Setter
+    public void setZona(byte zona){
+         Yeti.zona=zona;
+    }//Fin Setter
+    }

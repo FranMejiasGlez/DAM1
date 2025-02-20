@@ -12,16 +12,22 @@ public class Consumo {
         private float kms;
         private float litros;
         private float vmed;
-        private float precio;
+        private float precio=1.50F;
     //Constructores:
         public Consumo(){
         }//Fin Constructor
+        public Consumo(float kms,float litros,float vmed){
+            
+        }//Fin Constructor
     //Metodos:
         public float consumoMedio(){
-            return this.litros/100;
+            return this.litros*(100/this.kms);
         }//Fin Metodo
         public float consumoEuros(){
-            return (float)(this.consumoMedio()*this.precio);
+            return this.consumoMedio()*this.precio;
+        }//Fin Metodo
+        public byte getTiempo(){
+            return (byte)(this.kms/this.vmed);
         }//Fin Metodo
     //Getters/Setters:
         public void setKms(float kms){
@@ -36,7 +42,4 @@ public class Consumo {
         public void setPrecio(float precio){
             this.precio=precio;
         }//Fin Setter
-        public byte getTiempo(){
-            return (byte)(this.kms/this.vmed);
-        }//Fin Getter
 }//Fin Clase

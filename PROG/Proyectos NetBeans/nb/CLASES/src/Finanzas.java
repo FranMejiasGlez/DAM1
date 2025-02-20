@@ -9,19 +9,19 @@
  */
 public class Finanzas {
     //Atributos:
-        private double importeCambio=1.37;
+        private static double importeCambio=1.37;
     //Constructores:
         public Finanzas(){
         }//Fin Constructor
         public Finanzas(double dolares){
-            this.importeCambio=dolares;
+            Finanzas.importeCambio=dolares;
         }//Fin Constructor
     //Metodos:
         public double dolaresToEuros(double dolares){
-            return dolares/this.importeCambio;
+            return dolares/Finanzas.importeCambio;
         }//Fin Metodo
         public double eurosToDolares(double euros){
-            return euros*this.importeCambio;
+            return euros*Finanzas.importeCambio;
         }//Fin Metodo
     //Getters/Setters:
 }

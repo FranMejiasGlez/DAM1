@@ -9,7 +9,7 @@
  */
 public class Numero {
    //Atributos:
-        private int valor=2;
+        private int valor;
    //Constructores:
         public Numero(){
         }//Fin Constructor
