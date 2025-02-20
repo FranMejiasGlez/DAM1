@@ -11,10 +11,10 @@ public class Temperatura {
     //Atributos
     //Constructores
     //Metodos
-        public float celsiusToFahrenheit(float celsius){
+        public static float celsiusToFahrenheit(float celsius){
             return (celsius * 9 / 5) + 32;
         }//Fin metodo
-        public float fahrenheitToCelsius(float fahrenheit){
+        public static float fahrenheitToCelsius(float fahrenheit){
             return (fahrenheit - 32) * 5 / 9;
             
         }//Fin metodo
