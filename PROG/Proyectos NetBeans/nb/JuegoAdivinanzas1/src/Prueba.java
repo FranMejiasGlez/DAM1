@@ -5,7 +5,7 @@
 
 /**
  *
- * @author Administrador
+ * @author Mejias Gonzalez Francisco
  */
 public class Prueba {
 
