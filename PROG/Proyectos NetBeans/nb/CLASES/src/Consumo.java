@@ -31,6 +31,24 @@ public class Consumo {
         public byte getTiempo(){
             return (byte)(this.kms/this.vmed);
         }//Fin Metodo
+         /**
+     *
+     * @param obj
+     * @return
+     */
+    @Override
+    public boolean equals(Object obj) {
+        //Entorno
+        Consumo j;
+        boolean esIgual = false;
+        //Algoritmo
+        if (obj instanceof Consumo) {
+            j = (Consumo) obj;
+            esIgual = this.kms == j.kms && this.litros == j.litros 
+                    && this.vmed == j.vmed;
+        }
+        return esIgual;
+    }//Fin Metodo
     //Getters/Setters:
         public void setKms(float kms){
             this.kms=kms;

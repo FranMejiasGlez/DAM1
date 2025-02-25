@@ -22,6 +22,6 @@ public class Finanzas {
         }//Fin Metodo
         public double eurosToDolares(double euros){
             return euros*Finanzas.importeCambio;
-        }//Fin Metodo
+        }//Fin Metodo        
     //Getters/Setters:
 }

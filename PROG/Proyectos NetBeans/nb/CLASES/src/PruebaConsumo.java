@@ -10,7 +10,7 @@
 public class PruebaConsumo {
   public static void main(String[]args){
       //Entorno
-            Consumo a,b;
+            Consumo a,b,c;
       //Algoritmo
             System.out.println("");
             System.out.println("Instancio nuevo objeto de la clase  Consumo");
@@ -51,5 +51,21 @@ public class PruebaConsumo {
              System.out.println("Calculo sabiendo que el precio del litro "
                     + "está a 0.50 Euros");
             System.out.println(b.consumoEuros()+" Euros");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("Comprobar si A y B son Iguales: "+a.equals(b));
+            System.out.println("Creo un nuevo objeto por defecto como A: ");
+            System.out.println("Instancio nuevo objeto de la clase  Consumo");
+            c = new Consumo();
+            System.out.println("Pongo valor de kms recorridos a 500");
+            c.setKms(500);
+            System.out.println("Pongo valor de litros consumidos a 80");
+            c.setLitros(80);
+            System.out.println("Pongo valor de velocidad media a 50km/h");
+            c.setVmed(50);
+            System.out.println("Comprobar si A y C son Iguales: "+a.equals(c));
+          
   }//Fin Programa  
 }

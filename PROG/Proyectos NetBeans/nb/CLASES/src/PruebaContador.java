@@ -5,12 +5,12 @@
 
 /**
  *
- * @author Administrador
+ * @author Mejias Gonzalez Francisco
  */
 public class PruebaContador {
     public static void main(String[] args){
         //Entorno:
-            Contador a,b,c,d;
+            Contador a,b,c,d,e;
         //Algoritmo:
             System.out.println("Probar contador por defecto");
             a = new Contador();
@@ -76,10 +76,33 @@ public class PruebaContador {
              System.out.println("");
              System.out.println("");
              System.out.println("Pruebo a copiar el último Contador");
-             d = new Contador();
+             d = new Contador(c);
              System.out.println("Muestro el valor del nuevo Contador que"
                      + " tiene los valores del anterior");
              System.out.println(d.obtenerCuenta());
-              
+             System.out.println("Compruebo si contador a y contador b son "
+                     + "iguales: "+a.equals(b));
+             
+             System.out.println("Cambio valor de contador a para igualar:"
+                     + "iguales: ");
+             a.incrementaCuenta();
+             a.incrementaCuenta();
+              System.out.println("Nuevo valor de A: "+a.obtenerCuenta()
+                      +"\nValor de B: "+b.obtenerCuenta());
+              System.out.println("Compruebo si contador A y contador B son "
+                     + "iguales: "+a.equals(b));
+               System.out.println("A y B no son iguales porque fueron creados "
+                       + "con incrementos diferentes");
+               System.out.println("");
+               System.out.println("");
+               System.out.println("");
+               System.out.println("");               
+               System.out.println("Creo otro contador con el constructor por defecto: ");
+               e = new Contador();
+               System.out.println("Valor por defecto de E: "+e.obtenerCuenta());
+               System.out.println("Inicio la cuenta en 14: ");
+               e.iniciaCuenta(14);
+               System.out.println("Valor de E: "+e.obtenerCuenta());
+               System.out.println("Comparo A y E: "+a.equals(e));
     }//Fin Programa
 }
