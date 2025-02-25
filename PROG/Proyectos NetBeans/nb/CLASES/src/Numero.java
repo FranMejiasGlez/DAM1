@@ -23,6 +23,22 @@ public class Numero {
         public void resta(int valor){
             this.valor=this.valor-valor;
         }//Fin Metodo
+        @Override
+        public boolean equals(Object obj){
+            //Entorno:
+            boolean esIgual=false;
+            Numero n1;
+            //Algoritmo:
+            if (obj instanceof Numero){
+                n1 = (Numero)obj;
+                esIgual=this.valor == n1.valor;
+            }
+            return esIgual;
+        }//Fin Metodo
+      //  @Override
+       // public String toString(){
+         //  return getClass().getName()+'@'+ ;
+        //}//Fin Metodo 
    //Getter/Setters:
         public int getValor(){
             return this.valor;

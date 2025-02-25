@@ -10,7 +10,7 @@
 public class PruebaNumero {
   public static void main(String[] args){
       //Entorno:
-            Numero a,b;
+            Numero a,b,n1;
       //Algoritmo:
             a = new Numero();
             a.aniade(2);
@@ -58,5 +58,13 @@ public class PruebaNumero {
             System.out.println(b.getTriple());
             System.out.println("El Cuadruple es: ");
             System.out.println(b.getCuadruple());
-  }  
+            n1 = new Numero(2);
+            System.out.println("Compruebo que el Objeto Numero n1 creado en valor 2 sea igual que el a que tiene valor 3: "
+                    +a.equals(n1));
+            System.out.println("Valor de a: "+a.getValor()+" Valor de n1: "+n1.getValor());
+            n1.aniade(1);
+            System.out.println("Añado 1 a n1 y compruebo si es igual: "+a.equals(n1));
+            System.out.println("Valor de a: "+a.getValor()+" Valor de n1: "+n1.getValor());
+            System.out.println(a.toString());
+  }//Fin Programa  
 }
