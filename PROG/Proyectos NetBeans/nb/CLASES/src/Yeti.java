@@ -77,6 +77,16 @@ public class Yeti{
             System.out.println("Hambre: "+this.hambriento);
             System.out.println("Zona: "+Yeti.zona);
     }//Fin Metodo
+    public boolean equals(Object obj){
+        //Entorno:
+            Yeti j;
+        //Algoritmo
+        if (obj instanceof Yeti){
+            j = (Yeti) obj;
+        }
+    return this.color == color  && this.sexo == sexo;
+    }
+    
     //Getters/Setters:
     public char getColor(){
         return this.color;
