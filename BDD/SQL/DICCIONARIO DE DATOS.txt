@@ -1,0 +1,18 @@
+1º Que tablas encontramos en el script?
+	SELECT TABLE_NAME FROM USER_TABLES;
+2º Cual es la estructura de cada una de las tablas?
+	DESC EMPLE;
+	DESC DEPART;
+3º Cuales son las claves primarias y _foráneas en el SCRIPT? Realiza la consulta usando
+	un solo SELECT.
+	SELECT TABLE_NAME,CONSTRAINT_NAME
+	FROM USER_CONSTRAINTS
+	WHERE CONSTRAINT_TYPE 
+	AND TABLE_NAME IN ('EMPLE','DEPART');
+4º Realiza una consulta que indique el nombre del constraint, el tipo y en que tabla se encuentra
+	SELECT TABLE_NAME,CONSTRAINT_NAME,CONSTRAINT_TYPE 
+	FROM USER_CONSTRAINTS
+	WHERE TABLE_NAME IN ('EMPLE','DEPART');
+5º 
+	SELECT TABLE_NAME,CONSTRAINT_NAME,COLUMN_NAME
+	FROM USER_CONS_COLUMNS;

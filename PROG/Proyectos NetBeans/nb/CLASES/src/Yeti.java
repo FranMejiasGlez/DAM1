@@ -18,7 +18,7 @@ public class Yeti{
     }
     public Yeti(Yeti j){
         this.color=j.color;
-        this.sexo=j.color;
+        this.sexo=j.sexo;
         this.hambriento=j.hambriento;
     }//Fin Constructor
     public Yeti(char sexo){
@@ -66,7 +66,7 @@ public class Yeti{
             if (!this.hambriento){
                this.hambriento=true;
             }else{
-               System.out.print("mmmm no gacias ya he comido");
+               System.out.println("mmmm no gacias ya he comido");
             }
     }//Fin Metodo
     public void mostrarAtributos(){
@@ -77,14 +77,17 @@ public class Yeti{
             System.out.println("Hambre: "+this.hambriento);
             System.out.println("Zona: "+Yeti.zona);
     }//Fin Metodo
+    @Override
     public boolean equals(Object obj){
         //Entorno:
             Yeti j;
+            boolean esIgual=false;
         //Algoritmo
         if (obj instanceof Yeti){
-            j = (Yeti) obj;
+            j = (Yeti)obj; 
+            esIgual= this.color == j.color && this.sexo == j.sexo;
         }
-    return this.color == color  && this.sexo == sexo;
+    return esIgual;
     }
     
     //Getters/Setters:

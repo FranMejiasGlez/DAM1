@@ -11,7 +11,7 @@ public class PruebaYeti {
      public static void main(String[] args){
     //Entorno:
       
-        Yeti u;
+        Yeti u,a;
     //Algoritmo:
         u = new Yeti('H');
         u.mostrarAtributos();
@@ -20,6 +20,7 @@ public class PruebaYeti {
         u.mostrarAtributos();
         System.out.println("¿Quieres un poco más?");
         u.alimentarYeti();
-        
+        a = new Yeti('M');
+        System.out.println(u.equals(a));
     }//Fin Programa
 }
