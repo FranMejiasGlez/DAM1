@@ -1,8 +1,6 @@
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
- */
-
 /**
  *
  * @author Mejias Gonzalez Francisco
@@ -88,8 +86,12 @@ public class Yeti{
             esIgual= this.color == j.color && this.sexo == j.sexo;
         }
     return esIgual;
-    }
-    
+    }//Fin Metodo
+    @Override
+    public String toString(){
+    return "Este Yeti es de color: "+this.color+" Es: "+this.sexo
+            +" y su hambre es: "+this.hambriento;
+    }//Fin Metodo
     //Getters/Setters:
     public char getColor(){
         return this.color;
@@ -115,4 +117,4 @@ public class Yeti{
     public void setZona(byte zona){
          Yeti.zona=zona;
     }//Fin Setter
-    }
+}

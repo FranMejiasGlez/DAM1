@@ -22,5 +22,9 @@ public class PruebaYeti {
         u.alimentarYeti();
         a = new Yeti('M');
         System.out.println(u.equals(a));
+         System.out.println("toString de Yeti A");
+        System.out.println(a.toString());
+         System.out.println("tString de Yeti B");
+        System.out.println(u.toString());
     }//Fin Programa
 }
