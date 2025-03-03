@@ -23,15 +23,10 @@ public class PruebaString4 {
            System.out.println("Introduce un numero: ");
            numero=Leer.datoInt();
            cadena = Integer.toString(numero);
-           caracteres=cadena.length();
+           caracteres = cadena.length();
            System.out.println("Longitud: "+caracteres);
-         for (int i = 0; i < caracteres; i++) {
-            caracter = cadena.charAt(i);
-            if (caracter == '5' || caracter == '2') {
-                cadena=cadena.replace('2','A');
-                cadena=cadena.replace('5','Z');
-            }//Fin Si
-        }//Fin Para      
-         System.out.println(cadena);
+           cadena=cadena.replace('2','A').replace('5','Z');
+           System.out.println(cadena);
+        
     }//Fin Programa
 }

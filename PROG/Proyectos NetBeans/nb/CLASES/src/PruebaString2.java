@@ -19,11 +19,13 @@ public class PruebaString2 {
             System.out.println("");
            System.out.println("Introduce tu nombre: ");
            nom=Leer.dato();
+           nom=nom.trim();
+           
+           
            System.out.println("Introduce tu primer apellido: ");
            ape1=Leer.dato();
            System.out.println("Introduce tu segundo apellido: ");
            ape2=Leer.dato();
-           nombre=nom.toLowerCase()+" "+ape1.toLowerCase()+" "+ape2.toLowerCase();
-           System.out.println(nombre);
+           
     }
 }
