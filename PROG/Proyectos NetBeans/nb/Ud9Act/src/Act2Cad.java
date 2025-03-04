@@ -8,35 +8,28 @@
  * @author Mejias Gonzalez Francisco
  */
 public class Act2Cad {
-    public static byte sacarDigito(int numero, byte posicion){
-    //Entorno:
-        byte digitos,j,resultado;
-        int auxiliar;
-    //Algoritmo:
-        digitos = 1;
-        auxiliar = numero;
-        while (numero >= 10) {
-            numero = (int) numero / 10;
-            digitos++;
-        }//Fin Mientras
-        j = (byte) (digitos - posicion);
-        resultado = (byte) (auxiliar / Math.pow(10, j) % 10);
-        return resultado;
-     }//Fin Funcion
+
     public static void main(String[] args) {
         //Entorno
             String cadena;
-            byte caracteres,caracter;
+            byte caracteres,i,posicion,cBien;
         //Algoritmo
-            cadena = "aba";
+            System.out.println("Introduce una frase o palabra: ");
+            cadena = Leer.dato();
+            cadena=cadena.trim().toLowerCase().replaceAll("\\s+","");
             caracteres = (byte)cadena.length();
-            for (int i = 0; i < caracteres-1; i++) {
-                if (cadena.charAt(i)== cadena.charAt(caracteres-1)) {
-                    System.out.println("Es Palindromo");
+            posicion=(byte)(caracteres-1);
+            cBien=0;
+            for (i = 0; i < caracteres/2; i++) {
+                if (cadena.charAt(i)==cadena.charAt(posicion)) {
+                       cBien++;
+                       posicion--;
+                }else{
+                    System.out.println("No es Palindromo");
                 }//Fin Si
-      
             }//Fin Para
-            
-            
+            if (cBien==caracteres/2) {
+                System.out.println("Palindromo");
+            }//Fin Si
     }//Fin Programa
 }
