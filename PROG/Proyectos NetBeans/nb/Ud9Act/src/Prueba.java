@@ -5,10 +5,9 @@
 
 /**
  *
- * @author Mejias Gonzalez Francisco
+ * @author Administrador
  */
-public class Act2Cad {
-
+public class Prueba {
     public static void main(String[] args) {
         //Entorno
             String cadena;
@@ -19,17 +18,18 @@ public class Act2Cad {
             cadena=cadena.trim().toLowerCase().replaceAll(" +","");
             caracteres = (byte)cadena.length();
             posicion=(byte)(caracteres-1);
-            i=0;
-            do{
+            cBien=0;
+            for (i = 0; i < caracteres/2; i++) {
                 if (cadena.charAt(i)==cadena.charAt(posicion)) {
-                    i++;
-                    posicion--;
+                       cBien++;
+                       posicion--;
+                }else{
+                    System.out.println("No es Palindromo");
                 }//Fin Si
-            }while(i<posicion && cadena.charAt(i)==cadena.charAt(posicion));
-            if (i<posicion) {
-                System.out.println("No es un Palindromo");
-            }else{
-                System.out.println("Es un Palindromo");
+            }//Fin Para
+            if (cBien==caracteres/2) {
+                System.out.println("Palindromo");
             }//Fin Si
     }//Fin Programa
 }
+

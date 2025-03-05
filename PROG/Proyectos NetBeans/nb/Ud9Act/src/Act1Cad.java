@@ -17,7 +17,7 @@ public class Act1Cad {
             System.out.println("Cadena de: "+cadena.length()+" caracteres");
             resto=(byte)cadena.length();
             System.out.println("Trim y quitar espacios extra");
-            cadena = cadena.replaceAll("\\s{2,}", " ").trim();
+            cadena = cadena.replaceAll(" +", " ").trim();
             System.out.println("La cadena se reduce a: "+cadena.length()+" caracteres");
             resto= (byte)(resto - cadena.length());
             System.out.println("Numero de espacios para rellenar: "+resto);
