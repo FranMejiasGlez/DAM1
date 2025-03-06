@@ -12,7 +12,7 @@ public class Act2Cad {
     public static void main(String[] args) {
         //Entorno
             String cadena;
-            byte caracteres,i,posicion,cBien;
+            byte caracteres,i,posicion;
         //Algoritmo
             System.out.println("Introduce una frase o palabra: ");
             cadena = Leer.dato();

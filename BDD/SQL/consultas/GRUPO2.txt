@@ -1,0 +1,86 @@
+
+EMPLE Y DEPART
+
+1. Seleccionar de la tabla EMPLE aquellas filas cuyo APELLIDO empiece por "A" y el OFICIO tenga
+una "E" en cualquier posición.
+
+SELECT * FROM EMPLE WHERE UPPER (APELLIDO) LIKE 'A%' AND UPPER (OFICIO) LIKE '%E%'; 
+
+2.Seleccionar el apellido, el oficio y la localidad de los empleados de los departamentos donde trabajan
+los ANALISTAS.
+
+SELECT APELLIDO,OFICIO,DIR FROM EMPLE
+WHERE UPPER(OFICIO) LIKE 'ANALISTA';
+
+3.Mostrar los empleados (nombre, oficio, salario y fecha de alta) que desempeñen el mismo oficio que
+"JIMÉNEZ" o que tengan un salario mayor o igual que "FERNÁNDEZ".
+
+SELECT APELLIDO,OFICIO,SALARIO,FECHA_ALT FROM EMPLE
+WHERE UPPER(OFICIO) LIKE
+(SELECT OFICIO FROM EMPLE WHERE UPPER (APELLIDO) LIKE 'JIMÉNEZ')
+OR SALARIO >=(SELECT SALARIO FROM EMPLE WHERE UPPER (APELLIDO) LIKE 'FERNÁNDEZ');
+
+4.Mostrar en pantalla el nombre, oficio y salario, de los empleados del departamento de
+"FERNÁNDEZ" que tengan su mismo salario.
+
+SELECT APELLIDO,OFICIO,SALARIO FROM EMPLE WHERE UPPER (DEPT_NO) LIKE
+(SELECT DEPT_NO FROM EMPLE WHERE UPPER (APELLIDO) LIKE 'FERNÁNDEZ');
+
+5.Presentar los nombres y oficios de los empleados que tienen el mismo trabajo que" JIMÉNEZ".
+
+SELECT APELLIDO,OFICIO FROM EMPLE WHERE UPPER (OFICIO) LIKE
+(SELECT OFICIO FROM EMPLE WHERE UPPER (APELLIDO) LIKE 'JIMÉNEZ');
+
+LIBRERIA
+
+6.Visualizar el tema, estante y ejemplares de las filas de LIBRERIA con ejemplares comprendidos
+entre 8 y 15.
+
+SELECT TEMA,ESTANTE,EJEMPLARES FROM LIBRERIA WHERE EJEMPLARES BETWEEN 8 AND 15;
+
+7. Visualizar las columnas TEMA, ESTANTE Y EJEMPLARES de las filas cuyo ESTANTE no esté
+comprendido entre la "B" y la "D".
+
+SELECT TEMA,ESTANTE,EJEMPLARES FROM LIBRERIA WHERE ESTANTE NOT IN('B','D');
+
+8. Visualizar con una sola orden SELECT todos los temas de LIBRERÍA cuyo número de ejemplares
+sea inferior a los que hay en "Medicina".
+
+SELECT TEMA FROM LIBRERIA WHERE EJEMPLARES < 16;
+
+9. Visualizar los temas de LIBRERÍA cuyo número de ejemplares no esté entre 15 y 20, ambos
+incluidos.
+
+SELECT TEMA,EJEMPLARES FROM LIBRERIA WHERE EJEMPLARES NOT BETWEEN 15 AND 20;
+
+
+ALUMNOS,ASIGNATURAS Y NOTAS
+
+10. Visualizar todas las asignaturas que contengan tres letras "o" en su interior y tengan alumnos
+matriculados de "Madrid".
+
+SELECT NOMBRE FROM ASIGNATURAS WHERE UPPER (NOMBRE) LIKE '%O%O%O%'
+AND (SELECT POBLA FROM ALUMNOS WHERE UPPER (POBLA) LIKE 'MADRID');
+
+ESTA ESTA MAL..
+
+11. Visualizar los nombres de alumnos que tengan una nota entre 7 y 8 en la asignatura de "FOL "
+
+SELECT APENOM FROM ALUMNOS WHERE DNI = 
+(SELECT DNI FROM NOTAS WHERE COD = (SELECT COD FROM ASIGNATURAS WHERE UPPER (NOMBRE) LIKE 'FOL') AND NOTA IN ('7','8'));
+
+12. Visualizar los nombres de asignaturas que no tengan suspensos.
+
+SELECT NOMBRE FROM ASIGNATURAS WHERE COD = (SELECT COD FROM NOTAS WHERE NOTA >=5);
+
+DEVUELVE MAS DE UNA FILA.
+
+13. Visualizar los nombres de alumnos de Madrid que tengan alguna asignatura suspendida.
+
+SELECT APENOM FROM ALUMNOS WHERE UPPER (POBLA) LIKE 'MADRID' AND
+(SELECT NOTA FROM NOTAS WHERE DNI = (SELECT DNI FROM ALUMNOS WHERE UPPER (POBLA) LIKE 'MADRID') >=5);
+
+14.Mostrar los nombres de alumnos que tengan misma nota que tiene Díaz Fernández, Maria en "FOL" en alguna asignatura.
+
+SELECT APENOM FROM ALUMNOS WHERE DNI = 
+(SELECT DNI FROM NOTAS WHERE COD = (SELECT COD FROM ASIGNATURAS WHERE UPPER (NOMBRE) LIKE 'FOL') AND DNI = (SELECT DNI FROM ALUMNOS WHERE UPPER (APENOM) LIKE 'Díaz Fernández, Maria'));
