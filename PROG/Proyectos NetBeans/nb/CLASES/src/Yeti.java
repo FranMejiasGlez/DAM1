@@ -84,7 +84,7 @@ public class Yeti{
         if (obj instanceof Yeti){
             j = (Yeti)obj; 
             esIgual= this.color == j.color && this.sexo == j.sexo;
-        }
+        }//Fin Si
     return esIgual;
     }//Fin Metodo
     @Override

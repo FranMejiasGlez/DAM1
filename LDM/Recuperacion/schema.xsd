@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Usuarios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Usuario" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NombreCompleto">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Za-z]+\s[A-Za-z]+\s[A-Za-z]+"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="CorreoElectronico">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\S+@\S+\.\S+"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Telefono">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[6-9][0-9]{8}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="DNI">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" >
+                                        <xs:pattern value="\d{8}[A-HJ-NP-TV-Z]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="FechaDeNacimiento" >
+                                <xs:simpleType >
+                                    <xs:restriction base="xs:date">
+                                        <xs:pattern value="[0-9][0-9][0-9][0-9]\/[0-1][0-2]\/[0-3][0-1]|[0-2][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

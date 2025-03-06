@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<Usuarios>
+    <Usuario>
+        <NombreCompleto>Francisco Mejias Gonzalez</NombreCompleto>
+        <CorreoElectronico>franciscomejias.24@campuscamara.es</CorreoElectronico>
+        <Telefono>632484124</Telefono>
+        <DNI>54223600L</DNI>
+        <FechaDeNacimiento>1998/4/11</FechaDeNacimiento>
+    </Usuario>
+     <Usuario>
+        <NombreCompleto>Maria Gonzalez Fernandez</NombreCompleto>
+        <CorreoElectronico>mariagonzalez.24@campuscamara.es</CorreoElectronico>
+        <Telefono>632484124</Telefono>
+        <DNI>54223600F</DNI>
+        <FechaDeNacimiento>1998/4/11</FechaDeNacimiento>
+    </Usuario>
+</Usuarios>
