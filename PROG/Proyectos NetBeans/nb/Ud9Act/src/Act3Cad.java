@@ -25,13 +25,17 @@ public class Act3Cad {
         System.out.println("Introduzca una frase");
         cadena = Leer.dato();
         cadena=cadena.trim();
-        cadena=cadena+" ";
         cadenaInvertida = "";
-        do {
-            palabra = cadena.substring(0, cadena.indexOf(' '));
-            cadenaInvertida = cadenaInvertida + inviertePalabra(palabra) + " ";
-            cadena = cadena.replaceAll(cadena.substring(0, cadena.indexOf(' ') + 1), "");
-        }while (cadena.indexOf(' ') != -1);
+        while (cadena.indexOf(' ') != -1){
+            //Busca la primera palabra
+            palabra = cadena.substring(0, cadena.indexOf(' ')); 
+            //Construccion de la cadena invertida
+            cadenaInvertida = cadenaInvertida + inviertePalabra(palabra) + " "; 
+            //Reemplaza la primera palabra y el espacio con vacio
+            cadena = cadena.replaceAll(cadena.substring(0, cadena.indexOf(' ') 
+                    + 1), ""); 
+        }//Fin Mientras
+        cadenaInvertida = cadenaInvertida + inviertePalabra(cadena); 
         System.out.println(cadenaInvertida.trim());
     }//Fin Programa
 }

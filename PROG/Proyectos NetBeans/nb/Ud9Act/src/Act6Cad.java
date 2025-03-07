@@ -31,7 +31,8 @@ public class Act6Cad {
         cadenaDescifrada = "";
          while (cadena.indexOf(' ') != -1) {
             palabra = cadena.substring(0, cadena.indexOf(' ')); 
-            cadenaDescifrada = cadenaDescifrada + descifraPalabra(palabra, clave) + " ";
+            cadenaDescifrada = cadenaDescifrada 
+                    + descifraPalabra(palabra, clave) + " ";
             cadena = cadena.substring(cadena.indexOf(' ') + 1); 
         }//Fin Mientras
         System.out.println(cadenaDescifrada);

@@ -25,7 +25,8 @@ public class Act4Cad {
         do {
             palabra = cadena.substring(0, cadena.indexOf(' '));
             cadenaInvertida = cadenaInvertida + inviertePalabra(palabra) + " ";
-            cadena = cadena.replaceAll(cadena.substring(0, cadena.indexOf(' ') + 1), "");
+            cadena = cadena.replaceAll(cadena.substring(0, cadena.indexOf(' ') 
+                    + 1), "");
         }while (cadena.indexOf(' ') != -1);
         System.out.println(cadenaInvertida.trim());
     }
