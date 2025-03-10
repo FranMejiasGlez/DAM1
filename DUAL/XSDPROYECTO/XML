@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="XSD" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<FamiliasProfesionales>
+    <FamiliaProfesional Nombre="" Descripcion="">
+    
+        <Titulo>
+            <Nombre></Nombre>
+            <Duracion></Duracion>
+            <Denominacion></Denominacion>
+            <CompetenciaGeneral></CompetenciaGeneral>
+        </Titulo>
+        <ObjetivoGeneral></ObjetivoGeneral>
+        <Modulo></Modulo>
+        <CompetenciaProfesionalPersonalySocial></CompetenciaProfesionalPersonalySocial>
+        <BloqueDeContenidoBasico></BloqueDeContenidoBasico>
+        <ResultadoDeAprendizaje></ResultadoDeAprendizaje>
+        <CriterioDeEvaluacion></CriterioDeEvaluacion>
+    </FamiliaProfesional>
+</FamiliasProfesionales>
