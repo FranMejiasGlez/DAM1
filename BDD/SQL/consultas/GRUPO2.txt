@@ -71,9 +71,8 @@ SELECT APENOM FROM ALUMNOS WHERE DNI =
 
 12. Visualizar los nombres de asignaturas que no tengan suspensos.
 
-SELECT NOMBRE FROM ASIGNATURAS WHERE COD = (SELECT COD FROM NOTAS WHERE NOTA >=5);
+SELECT NOMBRE FROM ASIGNATURAS WHERE COD IN (SELECT COD FROM NOTAS WHERE NOTA >=5);
 
-DEVUELVE MAS DE UNA FILA.
 
 13. Visualizar los nombres de alumnos de Madrid que tengan alguna asignatura suspendida.
 
