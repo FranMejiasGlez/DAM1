@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="XSD" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="XSD.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <FamiliasProfesionales>
-    <FamiliaProfesional Nombre="" Descripcion="">
-    
-        <Titulo>
-            <Nombre></Nombre>
-            <Duracion></Duracion>
-            <Denominacion></Denominacion>
-            <CompetenciaGeneral></CompetenciaGeneral>
-        </Titulo>
-        <ObjetivoGeneral></ObjetivoGeneral>
-        <Modulo></Modulo>
-        <CompetenciaProfesionalPersonalySocial></CompetenciaProfesionalPersonalySocial>
-        <BloqueDeContenidoBasico></BloqueDeContenidoBasico>
-        <ResultadoDeAprendizaje></ResultadoDeAprendizaje>
-        <CriterioDeEvaluacion></CriterioDeEvaluacion>
-    </FamiliaProfesional>
+    <FamiliaProfesional Nombre="Desarrollo de Aplicaciones Multiplataforma" Descripcion="" />
+
+    <ObjetivoGeneral>
+        <Codigo></Codigo>
+        <Descripcion></Descripcion>
+    </ObjetivoGeneral>
+
+    <CompetenciaProfesionalPersonalySocial>
+        <Codigo></Codigo>
+        <Descripcion></Descripcion>
+    </CompetenciaProfesionalPersonalySocial>
+
+    <Modulo>
+        <Codigo></Codigo>
+        <Nombre></Nombre>
+        <HorasAnuales></HorasAnuales>
+        <HorasSemanales></HorasSemanales>
+        <ResultadosDeAprendizaje>
+            <codigo></codigo>
+            <nombre></nombre>
+            <CriteriosDeEvaluacion>
+                <numeroRA></numeroRA>
+                <codigo></codigo>
+                <nombre></nombre>
+            </CriteriosDeEvaluacion>
+        </ResultadosDeAprendizaje>
+    </Modulo>
 </FamiliasProfesionales>
