@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tienda>
+  <producto>
+    <id>1</id>
+    <nombre>Portátil Lenovo ThinkPad</nombre>
+    <categoria>Electrónica</categoria>
+    <precio>850</precio>
+    <stock>15</stock>
+  </producto>
+  <producto>
+    <id>2</id>
+    <nombre>Smartphone Samsung Galaxy S22</nombre>
+    <categoria>Electrónica</categoria>
+    <precio>999</precio>
+    <stock>20</stock>
+  </producto>
+  <producto>
+    <id>3</id>
+    <nombre>Monitor LG UltraWide</nombre>
+    <categoria>Electrónica</categoria>
+    <precio>299</precio>
+    <stock>10</stock>
+  </producto>
+  <producto>
+    <id>4</id>
+    <nombre>Silla Ergonómica Oficina</nombre>
+    <categoria>Muebles</categoria>
+    <precio>199</precio>
+    <stock>30</stock>
+  </producto>
+  <producto>
+    <id>5</id>
+    <nombre>Teclado Mecánico RGB</nombre>
+    <categoria>Accesorios</categoria>
+    <precio>120</precio>
+    <stock>40</stock>
+  </producto>
+  <producto>
+    <id>6</id>
+    <nombre>Mouse Logitech G Pro</nombre>
+    <categoria>Accesorios</categoria>
+    <precio>85</precio>
+    <stock>35</stock>
+  </producto>
+  <producto>
+    <id>7</id>
+    <nombre>Impresora HP DeskJet</nombre>
+    <categoria>Electrónica</categoria>
+    <precio>180</precio>
+    <stock>25</stock>
+  </producto>
+  <producto>
+    <id>8</id>
+    <nombre>Escritorio Gamer LED</nombre>
+    <categoria>Muebles</categoria>
+    <precio>250</precio>
+    <stock>12</stock>
+  </producto>
+  <producto>
+    <id>9</id>
+    <nombre>Smartwatch Apple Watch Series 8</nombre>
+    <categoria>Electrónica</categoria>
+    <precio>429</precio>
+    <stock>8</stock>
+  </producto>
+  <producto>
+    <id>10</id>
+    <nombre>Audífonos Sony WH-1000XM4</nombre>
+    <categoria>Accesorios</categoria>
+    <precio>350</precio>
+    <stock>18</stock>
+  </producto>
+  <producto>
+    <id>11</id>
+    <nombre>Tablet iPad Air</nombre>
+    <categoria>Electrónica</categoria>
+    <precio>599</precio>
+    <stock>22</stock>
+  </producto>
+  <producto>
+    <id>12</id>
+    <nombre>Micrófono Blue Yeti</nombre>
+    <categoria>Accesorios</categoria>
+    <precio>129</precio>
+    <stock>16</stock>
+  </producto>
+  <producto>
+    <id>13</id>
+    <nombre>Cámara Canon EOS Rebel</nombre>
+    <categoria>Electrónica</categoria>
+    <precio>799</precio>
+    <stock>9</stock>
+  </producto>
+  <producto>
+    <id>14</id>
+    <nombre>Router WiFi TP-Link</nombre>
+    <categoria>Redes</categoria>
+    <precio>99</precio>
+    <stock>50</stock>
+  </producto>
+  <producto>
+    <id>15</id>
+    <nombre>Disco Duro Externo 1TB</nombre>
+    <categoria>Almacenamiento</categoria>
+    <precio>89</precio>
+    <stock>42</stock>
+  </producto>
+  <producto>
+    <id>16</id>
+    <nombre>Tarjeta Gráfica NVIDIA RTX 4070</nombre>
+    <categoria>Electrónica</categoria>
+    <precio>649</precio>
+    <stock>5</stock>
+  </producto>
+  <producto>
+    <id>17</id>
+    <nombre>Disco SSD NVMe 2TB</nombre>
+    <categoria>Almacenamiento</categoria>
+    <precio>179</precio>
+    <stock>20</stock>
+  </producto>
+  <producto>
+    <id>18</id>
+    <nombre>Cámara de Seguridad Xiaomi</nombre>
+    <categoria>Seguridad</categoria>
+    <precio>55</precio>
+    <stock>30</stock>
+  </producto>
+  <producto>
+    <id>19</id>
+    <nombre>Silla Gamer Corsair T3 Rush</nombre>
+    <categoria>Muebles</categoria>
+    <precio>299</precio>
+    <stock>10</stock>
+  </producto>
+  <producto>
+    <id>20</id>
+    <nombre>Consola PlayStation 5</nombre>
+    <categoria>Videojuegos</categoria>
+    <precio>499</precio>
+    <stock>15</stock>
+  </producto>
+  <producto>
+    <id>21</id>
+    <nombre>Control Inalámbrico Xbox Series X</nombre>
+    <categoria>Videojuegos</categoria>
+    <precio>60</precio>
+    <stock>25</stock>
+  </producto>
+  <producto>
+    <id>22</id>
+    <nombre>Lámpara LED Escritorio</nombre>
+    <categoria>Hogar</categoria>
+    <precio>35</precio>
+    <stock>40</stock>
+  </producto>
+  <producto>
+    <id>23</id>
+    <nombre>Altavoces Bluetooth JBL</nombre>
+    <categoria>Audio</categoria>
+    <precio>99</precio>
+    <stock>18</stock>
+  </producto>
+  <producto>
+    <id>24</id>
+    <nombre>Mochila Antirrobo para Laptop</nombre>
+    <categoria>Accesorios</categoria>
+    <precio>45</precio>
+    <stock>50</stock>
+  </producto>
+  <producto>
+    <id>25</id>
+    <nombre>Adaptador USB-C a HDMI</nombre>
+    <categoria>Accesorios</categoria>
+    <precio>25</precio>
+    <stock>60</stock>
+  </producto>
+</tienda>

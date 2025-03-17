@@ -1,31 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="XSD.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <FamiliasProfesionales>
-    <FamiliaProfesional Nombre="Desarrollo de Aplicaciones Multiplataforma" Descripcion="" />
+    <FamiliaProfesional>
+        <Titulo Nombre="DAM" Duracion="2000" Denominacion="asd" CompetenciaGeneral="asd">
+            <ObjetivoGeneral Codigo="" Descripcion=""/>
+            <CompetenciaProfesionalPersonalySocial Codigo="" Descripcion=""/>
+            <Modulo Codigo="" Nombre="">
+                <BloqueDeContenidoBasico id="" Descripcion=""/>
+                <ResultadoDeAprendizaje Codigo="" Descripcion="">
+                    <CriterioDeEvaluacion Codigo="" Descripcion=""/>
+                </ResultadoDeAprendizaje>
+            </Modulo>
+        </Titulo>
+    </FamiliaProfesional>
 
-    <ObjetivoGeneral>
-        <Codigo></Codigo>
-        <Descripcion></Descripcion>
-    </ObjetivoGeneral>
-
-    <CompetenciaProfesionalPersonalySocial>
-        <Codigo></Codigo>
-        <Descripcion></Descripcion>
-    </CompetenciaProfesionalPersonalySocial>
-
-    <Modulo>
-        <Codigo></Codigo>
-        <Nombre></Nombre>
-        <HorasAnuales></HorasAnuales>
-        <HorasSemanales></HorasSemanales>
-        <ResultadosDeAprendizaje>
-            <codigo></codigo>
-            <nombre></nombre>
-            <CriteriosDeEvaluacion>
-                <numeroRA></numeroRA>
-                <codigo></codigo>
-                <nombre></nombre>
-            </CriteriosDeEvaluacion>
-        </ResultadosDeAprendizaje>
-    </Modulo>
 </FamiliasProfesionales>
