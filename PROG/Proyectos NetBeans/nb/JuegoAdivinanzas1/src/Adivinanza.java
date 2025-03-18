@@ -31,8 +31,12 @@ public class Adivinanza {
     public static String meteAsteriscos(byte n) {
         //Entorno
         String pistaAsteriscos;
-        
         //Algoritmo
+        pistaAsteriscos="";
+        for(int i = 0, i < n;i++){
+            pistaAsteriscos=pistaAsteriscos+"*";
+        }//Fin Para
+        System.out.println(pistaAsteriscos);
     }//Fin Metodo
 
     //Getters&Setters
