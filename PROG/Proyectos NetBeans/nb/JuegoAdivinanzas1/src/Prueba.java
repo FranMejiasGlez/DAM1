@@ -9,19 +9,23 @@
  */
 public class Prueba {
 
+    public static byte getCifrasIncognita(int numero) {
+        //Entorno
+        byte cifras;
+        int i;
+        //Algoritmo
+        cifras = 1;
+        i = 10;
+        while (numero >= i) {
+            i = i * 10;
+            cifras++;
+        }//Fin Mientras
+        return cifras;
+    }//Fin Metodo
+
     public static void main(String[] args) {
-        byte numeroMenosDigitos = 3, j, digitoSecreto, digitoEstimado, digitosAcertados;
-        short numeroSecreto, numeroEstimado;
-        numeroSecreto=325;
-        numeroEstimado=225;
-        digitosAcertados = 0;
-        for (j = 0; j < numeroMenosDigitos; j++) {
-            digitoSecreto = (byte) (numeroSecreto / Math.pow(10, j) % 10);
-            digitoEstimado = (byte) (numeroEstimado / Math.pow(10, j) % 10);
-            if (digitoSecreto == digitoEstimado) {
-                digitosAcertados++;
-            }//Fin Si
-        }//Fin Para
-        System.out.println(digitosAcertados);
+        int numero;
+        numero = 1000;
+        System.out.println(getCifrasIncognita(numero));
     }
 }
