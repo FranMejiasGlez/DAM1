@@ -12,6 +12,7 @@ public class Adivinanza {
 
     public Adivinanza() {
         this.incognita = (int) (Math.random() * 1000000 + 1);
+        this.intentos = 10;
     }//Fin Constructor
 
     //Metodos
@@ -57,4 +58,4 @@ public class Adivinanza {
     public byte getIntentos() {
         return this.intentos;
     }//Fin Metodo
-}
+}//Fin Clase
