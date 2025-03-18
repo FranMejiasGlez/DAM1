@@ -9,14 +9,14 @@
  */
 public class Prueba {
 
-    public static byte getCifrasIncognita(int numero) {
+    public static byte cifras(int n) {
         //Entorno
         byte cifras;
         int i;
         //Algoritmo
         cifras = 1;
         i = 10;
-        while (numero >= i) {
+        while (n >= i) {
             i = i * 10;
             cifras++;
         }//Fin Mientras
@@ -24,8 +24,26 @@ public class Prueba {
     }//Fin Metodo
 
     public static void main(String[] args) {
-        int numero;
-        numero = 1000;
-        System.out.println(getCifrasIncognita(numero));
+        //Entorno
+        int incognita, numeroPrueba;
+        String pista;
+        Byte i, j,digito;
+        //Algoritmo
+        incognita = 1123;
+        numeroPrueba = 1123;
+        i = cifras(incognita);
+        j = cifras(numeroPrueba);
+        pista = "";
+
+        if (incognita / Math.pow(10, cifras(incognita) % 10)
+                == numeroPrueba / Math.pow(10, cifras(numeroPrueba)) % 10) {
+            digito=(byte)(incognita / Math.pow(10, cifras(incognita) % 10));
+            pista = pista + digito.toString();
+        } else {
+            pista = pista + "*";
+        }
+
+        i = 1;
+        System.out.println(pista);
     }
 }
