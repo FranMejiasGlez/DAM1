@@ -37,17 +37,7 @@ public class Adivinanza {
         //Algoritmo
         i = 1;
         pista = "";
-        do {
-            if (this.incognita * Math.pow(10, cifras(this.incognita))
-                    == this.numeroPrueba * Math.pow(10, cifras(this.numeroPrueba))) {
-                digito = (byte) (this.incognita
-                        * Math.pow(10, cifras(this.incognita)));
-                pista = pista + digito.toString();
-            } else {
-                pista = pista + "*";
-            }
-        } while (i < this.incognita || i < this.numeroPrueba);
-        i = 1;
+        
         return pista;
     }//Fin Metodo
 
@@ -78,17 +68,7 @@ public class Adivinanza {
     //Getters&Setters
 
     public byte getCifrasIncognita() {
-        //Entorno
-        byte cifras;
-        int i;
-        //Algoritmo
-        cifras = 1;
-        i = 10;
-        while (this.incognita >= i) {
-            i = i * 10;
-            cifras++;
-        }//Fin Mientras
-        return cifras;
+        return cifras(this.incognita);
     }//Fin Metodo
 
     public byte getIntentos() {

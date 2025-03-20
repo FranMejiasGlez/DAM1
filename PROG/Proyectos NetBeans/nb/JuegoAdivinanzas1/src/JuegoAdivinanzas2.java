@@ -45,14 +45,14 @@ public class JuegoAdivinanzas2 {
             System.out.println("J1 Introduce un número de máximo 5 cifras: ");
             numeroSecreto = Leer.datoInt();
         } while (cifras(numeroSecreto) > 5 || cifras(numeroSecreto) < 1
-                || numeroSecreto < 0);
+              ||numeroSecreto<=0  );
         intentos = 10;
         do {
             do {
                 System.out.println("J2 Introduce numero de máximo 5 cifras: ");
                 numeroEstimado = Leer.datoInt();
-            } while (cifras(numeroSecreto) > 5 || cifras(numeroSecreto) < 1 
-                    || numeroEstimado < 0 );
+            } while (cifras(numeroEstimado) > 5 || cifras(numeroEstimado) < 1 
+                    || numeroEstimado <= 0 );
             System.out.println(comparaNumeros(numeroEstimado, numeroSecreto)
                     +" Digitos bien colocados");
             intentos--;
