@@ -83,3 +83,9 @@ SELECT APENOM FROM ALUMNOS WHERE UPPER (POBLA) LIKE 'MADRID' AND
 
 SELECT APENOM FROM ALUMNOS WHERE DNI = 
 (SELECT DNI FROM NOTAS WHERE COD = (SELECT COD FROM ASIGNATURAS WHERE UPPER (NOMBRE) LIKE 'FOL') AND DNI = (SELECT DNI FROM ALUMNOS WHERE UPPER (APENOM) LIKE 'Díaz Fernández, Maria'));
+
+15. lista de los apellidos de todos los empleados y los nombres de los departamentos en los que trabajan.
+Solo deben incluirse los empleados que esten asignados a un departamento.
+
+SELECT D.DNOMBRE,E.APELLIDO FROM EMPLE E,DEPART D
+WHERE E.DEPT_NO = D.DEPT_NO ;
