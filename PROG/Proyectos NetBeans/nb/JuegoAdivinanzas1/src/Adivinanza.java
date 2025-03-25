@@ -32,46 +32,39 @@ public class Adivinanza {
     public String getPista() {
         //Entorno
         String pista;
-        byte i;
-        Byte digito;
         //Algoritmo
-        i = 1;
-        pista = "";
-        
-        return pista;
+        pista=Adivinanza.meteAsteriscos(cifras(this.incognita));
+       return pista ;
     }//Fin Metodo
 
     public static String meteAsteriscos(byte n) {
         //Entorno
         String pistaAsteriscos;
         //Algoritmo
-        pistaAsteriscos = "";
-        for (int i = 0; i < n; i++) {
-            pistaAsteriscos = pistaAsteriscos + "*";
+        pistaAsteriscos="";
+        for (int i = 1; i <= n; i++) {
+            pistaAsteriscos=pistaAsteriscos+"* ";
         }//Fin Para
         return pistaAsteriscos;
     }//Fin Metodo
 
     public static byte cifras(int n) {
         //Entorno
-        byte cifras;
-        int i;
-        //Algoritmo
-        cifras = 1;
-        i = 10;
-        while (n >= i) {
-            i = i * 10;
-            cifras++;
-        }//Fin Mientras
-        return cifras;
+        return (byte)Integer.toString(n).length();
     }//Fin Metodo
     //Getters&Setters
 
     public byte getCifrasIncognita() {
-        return cifras(this.incognita);
+        //entorno
+        Integer incognita;
+        incognita = this.incognita;
+        return (byte)incognita.toString().length();
     }//Fin Metodo
 
     public byte getIntentos() {
         return this.intentos;
     }//Fin Metodo
+    public int getIncognigta(){
+    return this.incognita;
+    }
 }//Fin Clase

@@ -9,41 +9,17 @@
  */
 public class Prueba {
 
-    public static byte cifras(int n) {
-        //Entorno
-        byte cifras;
-        int i;
-        //Algoritmo
-        cifras = 1;
-        i = 10;
-        while (n >= i) {
-            i = i * 10;
-            cifras++;
-        }//Fin Mientras
-        return cifras;
-    }//Fin Metodo
-
     public static void main(String[] args) {
         //Entorno
-        int incognita, numeroPrueba;
-        String pista;
-        Byte i, j,digito;
+        Adivinanza uno;
         //Algoritmo
-        incognita = 1123;
-        numeroPrueba = 1123;
-        i = cifras(incognita);
-        j = cifras(numeroPrueba);
-        pista = "";
+        System.out.println("!!JUEGO DE ADIVINANZAS¡¡"
+                + "\nEl Sistema Genera un numero entre 1 y 1.000.000\n"
+                + "\nCada digito bien colocado se desvelara, tienes 10 intentos:"
+                + "\n ");
+        uno = new Adivinanza();
+        System.out.println(uno.getPista());
+        System.out.println("\nJugador te toca adivinar: \n");
 
-        if (incognita / Math.pow(10, cifras(incognita) % 10)
-                == numeroPrueba / Math.pow(10, cifras(numeroPrueba)) % 10) {
-            digito=(byte)(incognita / Math.pow(10, cifras(incognita) % 10));
-            pista = pista + digito.toString();
-        } else {
-            pista = pista + "*";
-        }
-
-        i = 1;
-        System.out.println(pista);
     }
 }
