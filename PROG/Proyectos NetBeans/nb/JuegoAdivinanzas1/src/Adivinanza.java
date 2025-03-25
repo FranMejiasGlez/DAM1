@@ -30,20 +30,22 @@ public class Adivinanza {
 
     public String getPista() {
         //Entorno
-        String pista;
+        String pista, numP, incog;
         Integer numeroPrueba1, incognita1;
-        byte j;
         //Algoritmo
-        j=1;
         numeroPrueba1 = this.numeroPrueba;
         incognita1 = this.incognita;
-        pista = Adivinanza.meteAsteriscos(cifras(this.incognita));
-        for (int i = 0 - 1; i <numeroPrueba1.toString().length(); i++) {
-            if (numeroPrueba1.toString().charAt(i) == incognita1.toString()
-                    .charAt(i)) {
-                pista =meteAsteriscos((byte) (cifras(this.incognita) - j))
-                        +numeroPrueba1.toString().charAt(i);
-                j++;
+        numP = numeroPrueba1.toString();
+        incog = incognita1.toString();
+        while (numP.length() < incog.length()) {
+            numP = ";" + numP;
+        }//Fin Mientras
+        pista = "";
+        for (int i = 0; i <= incog.length()-1; i++) {
+            if (numP.charAt(i) == incog.charAt(i)) {
+                pista = pista + numP.charAt(i);
+            }else{
+                pista = pista + "*";
             }//Fin Si
         }//Fin Para
         return pista;
