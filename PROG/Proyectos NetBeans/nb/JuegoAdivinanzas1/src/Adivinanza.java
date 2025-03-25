@@ -17,7 +17,6 @@ public class Adivinanza {
 
     //Metodos
     public void juega(int num) {
-        System.out.println("Jugador, adivina el numero: ");
         this.numeroPrueba = num;
     }//Fin Metodo
 
@@ -32,25 +31,38 @@ public class Adivinanza {
     public String getPista() {
         //Entorno
         String pista;
+        Integer numeroPrueba1, incognita1;
+        byte j;
         //Algoritmo
-        pista=Adivinanza.meteAsteriscos(cifras(this.incognita));
-       return pista ;
+        j=1;
+        numeroPrueba1 = this.numeroPrueba;
+        incognita1 = this.incognita;
+        pista = Adivinanza.meteAsteriscos(cifras(this.incognita));
+        for (int i = 0 - 1; i <numeroPrueba1.toString().length(); i++) {
+            if (numeroPrueba1.toString().charAt(i) == incognita1.toString()
+                    .charAt(i)) {
+                pista =meteAsteriscos((byte) (cifras(this.incognita) - j))
+                        +numeroPrueba1.toString().charAt(i);
+                j++;
+            }//Fin Si
+        }//Fin Para
+        return pista;
     }//Fin Metodo
 
     public static String meteAsteriscos(byte n) {
         //Entorno
         String pistaAsteriscos;
         //Algoritmo
-        pistaAsteriscos="";
+        pistaAsteriscos = "";
         for (int i = 1; i <= n; i++) {
-            pistaAsteriscos=pistaAsteriscos+"* ";
+            pistaAsteriscos = pistaAsteriscos + "*";
         }//Fin Para
         return pistaAsteriscos;
     }//Fin Metodo
 
     public static byte cifras(int n) {
         //Entorno
-        return (byte)Integer.toString(n).length();
+        return (byte) Integer.toString(n).length();
     }//Fin Metodo
     //Getters&Setters
 
@@ -58,13 +70,14 @@ public class Adivinanza {
         //entorno
         Integer incognita;
         incognita = this.incognita;
-        return (byte)incognita.toString().length();
+        return (byte) incognita.toString().length();
     }//Fin Metodo
 
     public byte getIntentos() {
         return this.intentos;
     }//Fin Metodo
-    public int getIncognigta(){
-    return this.incognita;
+
+    public int getIncognigta() {
+        return this.incognita;
     }
 }//Fin Clase
