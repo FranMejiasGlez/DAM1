@@ -1,3 +1,4 @@
+
 /**
  *
  * @author Mejias Gonzalez Francisco
@@ -21,10 +22,9 @@ public class Adivinanza {
 
     public boolean haGanado() {
         //Entorno
-        boolean haGanado = false;
+        boolean haGanado;
         //Algoritmo
-
-        return haGanado;
+        return haGanado = this.numeroPrueba == this.incognita;
     }//Fin Metodo
 
     public String getPista() {
@@ -40,17 +40,22 @@ public class Adivinanza {
             numP = ";" + numP;
         }//Fin Mientras
         pista = "";
-        for (int i = 0; i <= incog.length()-1; i++) {
+        if (numP.isEmpty()) {
+            pista = Adivinanza.meteAsteriscos(
+                    Adivinanza.cifras(this.incognita));
+        }//Fin Si
+        for (int i = 0; i <= incog.length() - 1; i++) {
             if (numP.charAt(i) == incog.charAt(i)) {
                 pista = pista + numP.charAt(i);
-            }else{
+            } else {
                 pista = pista + "*";
             }//Fin Si
         }//Fin Para
+        this.intentos--;
         return pista;
     }//Fin Metodo
 
-    public static String meteAsteriscos(byte n) {
+    private static String meteAsteriscos(byte n) {
         //Entorno
         String pistaAsteriscos;
         //Algoritmo
@@ -61,7 +66,7 @@ public class Adivinanza {
         return pistaAsteriscos;
     }//Fin Metodo
 
-    public static byte cifras(int n) {
+    private static byte cifras(int n) {
         //Entorno
         return (byte) Integer.toString(n).length();
     }//Fin Metodo
@@ -69,9 +74,9 @@ public class Adivinanza {
 
     public byte getCifrasIncognita() {
         //entorno
-        Integer incognita;
-        incognita = this.incognita;
-        return (byte) incognita.toString().length();
+        Integer incog;
+        incog = this.incognita;
+        return (byte) incog.toString().length();
     }//Fin Metodo
 
     public byte getIntentos() {
