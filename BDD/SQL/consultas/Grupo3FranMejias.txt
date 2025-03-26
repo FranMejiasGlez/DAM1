@@ -1,0 +1,107 @@
+1. A partir de la tabla EMPLE, visualizar cuántos apellidos de los empleados empiezan por la letra 'A'.
+SELECT COUNT(APELLIDO) FROM EMPLE WHERE APELLIDO LIKE 'A%';
+
+2. Dada la tabla EMPLE, obtener el sueldo medio, el número de comisiones no nulas, el máximo sueldo
+y el mínimo sueldo de los empleados del departamento 30. Emplear el formato adecuado para la
+salida para las cantidades numéricas.
+SELECT AVG(SALARIO),COUNT(COMISION),MAX(SALARIO),MIN(SALARIO) FROM EMPLE WHERE DEPT_NO=30;
+
+3. Contar las filas de LIBRERÍA cuyo tema tenga, por lo menos, una 'a'
+SELECT COUNT(TEMA) FROM LIBRERIA WHERE LOWER(TEMA) LIKE '%a%';
+
+4. Visualizar los temas con mayor número de ejemplares de la tabla LIBRERÍA y que tengan, al menos,
+una 'e' (pueden ser un tema o varios).
+SELECT TEMA FROM LIBRERIA WHERE EJEMPLARES IN (SELECT MAX(EJEMPLARES) FROM LIBRERIA WHERE LOWER(TEMA) LIKE '%e%');
+
+5. Visualizar el número de estantes diferentes que hay en la tabla LIBRERÍA.
+SELECT COUNT( DISTINCT ESTANTE) FROM LIBRERIA;
+
+6. Visualizar el número de estantes distintos que hay en la tabla LIBRERÍA de aquellos temas que
+contienen, al menos, una 'e'.
+SELECT COUNT(DISTINCT ESTANTE) FROM LIBRERIA WHERE TEMA LIKE '%e%';
+
+7. Visualizar los títulos de la tabla MISTEXTOS sin los caracteres punto y comillas, y en minúscula, de
+dos formas conocidas.
+SELECT RTRIM(LOWER(REPLACE(TITULO,'"','')),'.') FROM MISTEXTOS;
+SELECT INITCAP(RTRIM(LOWER(REPLACE(TITULO,'"','')),'.')) FROM MISTEXTOS;
+
+8. Dada la tabla LIBROS: Escribir la sentencia SELECT que visualice dos columnas, una con el
+AUTOR y otra con el apellido del autor.
+SELECT SUBSTR(AUTOR,1,INSTR(AUTOR,',',1)-1)AS APELLIDO,LTRIM(AUTOR,SUBSTR(AUTOR,1,INSTR(AUTOR,',',1)+1)) AS NOMBRE FROM LIBROS;
+
+9. Escribir la sentencia SELECT que visualice las columnas de AUTOR y otra columna con el nombre
+del autor (sin el apellido) de la tabla LIBROS.
+SELECT LTRIM(AUTOR,SUBSTR(AUTOR,1,INSTR(AUTOR,',',1)+1)) AS NOMBRE,SUBSTR(AUTOR,1,INSTR(AUTOR,',',1)-1)AS APELLIDO FROM LIBROS;
+
+10. A partir de la tabla LIBROS, realizar una sentencia SELECT que visualice en una columna, primero
+el nombre del autor y, luego, su apellido.
+SELECT LTRIM(AUTOR,SUBSTR(AUTOR,1,INSTR(AUTOR,',',1)+1))||' '||SUBSTR(AUTOR,1,INSTR(AUTOR,',',1)-1) AS AUTOR FROM LIBROS;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
