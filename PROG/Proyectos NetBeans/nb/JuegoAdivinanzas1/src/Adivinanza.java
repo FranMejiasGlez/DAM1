@@ -1,4 +1,3 @@
-
 /**
  *
  * @author Mejias Gonzalez Francisco
@@ -81,5 +80,5 @@ public class Adivinanza {
 
     public int getIncognigta() {
         return this.incognita;
-    }
+    }//Fin Metodo
 }//Fin Clase
