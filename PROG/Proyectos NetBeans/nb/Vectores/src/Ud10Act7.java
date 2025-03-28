@@ -11,15 +11,23 @@ public class Ud10Act7 {
         int[] tabla = {7, 8, 3, 0, 33};
         char continuar;
         //Algoritmo
-        System.out.println("Que numero quieres consultar?: ");
-        numero = Leer.datoInt();
-        i = 0;
         do {
-            if (tabla[i]==numero) {
-                System.out.println("Posicion: "+i);
-            }
-        } while (tabla[i] != numero && i < tabla.length);
-
-
+            System.out.println("Que numero quieres consultar?: ");
+            numero = Leer.datoInt();
+            i = 0;
+            while (tabla[i] != numero && i < tabla.length - 1) {
+                i++;
+            } //Fin Mientras
+            if (tabla[i] == numero) {
+                System.out.println("Posicion: " + i);
+            } else {
+                System.out.println("No se ecuentra el numero: " + numero);
+            }//FIn Si
+            do {
+                System.out.println("¿Quieres continuar?: S/N");
+                continuar = Leer.datoChar();
+            } while (continuar != 's' && continuar != 'S' 
+                    && continuar != 'n' && continuar != 'N');
+        } while (continuar == 'S' || continuar == 's');
     }//Fin Programa
 }

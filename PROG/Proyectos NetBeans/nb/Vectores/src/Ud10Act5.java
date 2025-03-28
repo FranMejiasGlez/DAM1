@@ -25,7 +25,7 @@ public class Ud10Act5 {
                 tabla[i] = numero;
             } while (numero <= 0);//Fin Repetir
             salida=salida+"-"+tabla[i];
-            if (tabla[i]<menor) {
+            if (tabla[i]<=menor) {
                 menor=tabla[i];
                 posicion=i;
             }//Fin Si
