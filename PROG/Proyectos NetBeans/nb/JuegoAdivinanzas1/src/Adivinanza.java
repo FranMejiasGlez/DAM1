@@ -13,6 +13,7 @@ public class Adivinanza {
     public Adivinanza() {
         this.incognita = (int) (Math.random() * 1000000 + 1);
         this.intentos = 10;
+        this.numeroPrueba = -1;
     }//Fin Constructor
 
     //Metodos
@@ -24,6 +25,7 @@ public class Adivinanza {
         //Entorno
         boolean haGanado;
         //Algoritmo
+       
         return haGanado = this.numeroPrueba == this.incognita;
     }//Fin Metodo
 
@@ -40,18 +42,19 @@ public class Adivinanza {
             numP = ";" + numP;
         }//Fin Mientras
         pista = "";
-        if (numP.isEmpty()) {
+        if (this.numeroPrueba == -1) {
             pista = Adivinanza.meteAsteriscos(
                     Adivinanza.cifras(this.incognita));
+        } else {
+            this.intentos--;
+            for (int i = 0; i <= incog.length() - 1; i++) {
+                if (numP.charAt(i) == incog.charAt(i)) {
+                    pista = pista + numP.charAt(i);
+                } else {
+                    pista = pista + "*";
+                }//Fin Si
+            }//Fin Para
         }//Fin Si
-        for (int i = 0; i <= incog.length() - 1; i++) {
-            if (numP.charAt(i) == incog.charAt(i)) {
-                pista = pista + numP.charAt(i);
-            } else {
-                pista = pista + "*";
-            }//Fin Si
-        }//Fin Para
-        this.intentos--;
         return pista;
     }//Fin Metodo
 
