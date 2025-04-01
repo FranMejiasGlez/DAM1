@@ -66,13 +66,13 @@
 
     <xs:simpleType name="RegexModuloHorasAnuales">
         <xs:restriction base="xs:string">
-            <xs:pattern value="\d{3}"></xs:pattern>
+            <xs:pattern value="\d{3}|\d{2}|\d{1}"></xs:pattern>
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="RegexModuloHorasSemanales">
         <xs:restriction base="xs:string">
-            <xs:pattern value=""></xs:pattern>
+            <xs:pattern value="\d{2}|\d{1}"></xs:pattern>
         </xs:restriction>
     </xs:simpleType>
 
@@ -147,8 +147,10 @@
                                                 <xs:attribute name="Codigo" type="RegexModuloCodigo" />
                                                 <xs:attribute name="Nombre"
                                                     type="Nombre" />
-                                                <xs:attribute name="HorasAnuales" type="RegexModuloHorasAnuales"></xs:attribute>
-                                                <xs:attribute name="HorasSemanales" type="RegexModuloHorasSemanales"></xs:attribute>
+                                                <xs:attribute name="HorasAnuales"
+                                                    type="RegexModuloHorasAnuales"></xs:attribute>
+                                                <xs:attribute name="HorasSemanales"
+                                                    type="RegexModuloHorasSemanales"></xs:attribute>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
