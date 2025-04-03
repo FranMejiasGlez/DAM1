@@ -1,0 +1,31 @@
+1. Visualizar los departamentos en los que el salario medio es mayor o igual que la media de todos 
+los salarios. 
+
+SELECT DEPT_NO,AVG(SALARIO) FROM EMPLE 
+GROUP BY DEPT_NO HAVING AVG(SALARIO)>=(SELECT AVG(SALARIO) FROM EMPLE);
+
+2. A partir de la tabla EMPLE, visualizar el número de vendedores del departamento 'VENTAS'.
+
+SELECT COUNT(*) FROM EMPLE WHERE DEPT_NO = (SELECT DEPT_NO FROM DEPART WHERE DNOMBRE LIKE 'VENTAS');
+
+3. Partiendo de la tabla EMPLE, visualizar por cada oficio de los empleados del departamento 'VENTAS'
+ la suma de salarios.
+
+SELECT OFICIO,SUM(SALARIO) FROM EMPLE,DEPART WHERE DNOMBRE LIKE 'VENTAS'
+GROUP BY OFICIO;
+
+4. Seleccionar aquellos apellidos de la tabla EMPLE cuyo salario sea igual a la media del
+ salario en su departamento.
+
+SELECT APELLIDO,SALARIO FROM EMPLE
+WHERE SALARIO IN(SELECT AVG(SALARIO) FROM EMPLE GROUP BY DEPT_NO);
+
+
+5. A partir de la tabla EMPLE, visualizar el número de empleados de cada departamento cuyo oficio
+sea 'EMPLEADO'.
+
+SELECT COUNT(*),DEPT_NO FROM EMPLE WHERE OFICIO='EMPLEADO' GROUP BY DEPT_NO;
+
+6. Desde la tabla EMPLE, visualizar el departamento que tenga más empleados cuyo oficio sea
+'EMPLEADO'.
+
