@@ -63,6 +63,11 @@
         </xs:restriction>
     </xs:simpleType>
 
+    <xs:simpleType name="RegexModuloCurso">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="\d{1}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:simpleType name="RegexModuloHorasAnuales">
         <xs:restriction base="xs:string">
@@ -81,6 +86,7 @@
             <xs:pattern value="\d"></xs:pattern>
         </xs:restriction>
     </xs:simpleType>
+
 
     <xs:simpleType name="RegexCECodigo">
         <xs:restriction base="xs:string">
@@ -105,17 +111,18 @@
                                         <xs:element name="ObjetivoGeneral" maxOccurs="unbounded">
                                             <xs:complexType>
                                                 <xs:attribute name="Codigo"
-                                                    type="RegexObjetivoGeneralCodigo" />
+                                                    type="RegexObjetivoGeneralCodigo" use="required" />
                                                 <xs:attribute name="Descripcion"
-                                                    type="Descripciones" />
+                                                    type="Descripciones" use="required" />
                                             </xs:complexType>
                                         </xs:element>
                                         <xs:element name="CompetenciaProfesionalPersonalySocial"
                                             maxOccurs="unbounded">
                                             <xs:complexType>
-                                                <xs:attribute name="Codigo" type="RegexCPPSCodigo" />
+                                                <xs:attribute name="Codigo" type="RegexCPPSCodigo"
+                                                    use="required" />
                                                 <xs:attribute name="Descripcion"
-                                                    type="Descripciones" />
+                                                    type="Descripciones" use="required" />
                                             </xs:complexType>
                                         </xs:element>
                                         <xs:element name="Modulo" maxOccurs="unbounded">
@@ -130,39 +137,44 @@
                                                                     maxOccurs="unbounded">
                                                                     <xs:complexType>
                                                                         <xs:attribute name="Codigo"
-                                                                            type="RegexCECodigo" />
+                                                                            type="RegexCECodigo"
+                                                                            use="required" />
                                                                         <xs:attribute
                                                                             name="Descripcion"
-                                                                            type="Descripciones" />
+                                                                            type="Descripciones"
+                                                                            use="required" />
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
                                                             <xs:attribute name="Codigo"
-                                                                type="RegexModuloRACodigo" />
+                                                                type="RegexModuloRACodigo"
+                                                                use="required" />
                                                             <xs:attribute name="Descripcion"
-                                                                type="Descripciones" />
+                                                                type="Descripciones" use="required" />
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
-                                                <xs:attribute name="Codigo" type="RegexModuloCodigo" />
+                                                <xs:attribute name="Codigo" type="RegexModuloCodigo"
+                                                    use="required" />
                                                 <xs:attribute name="Nombre"
-                                                    type="Nombre" />
+                                                    type="Nombre" use="required" />
                                                 <xs:attribute name="HorasAnuales"
-                                                    type="RegexModuloHorasAnuales"></xs:attribute>
+                                                    type="RegexModuloHorasAnuales" use="required"></xs:attribute>
                                                 <xs:attribute name="HorasSemanales"
-                                                    type="RegexModuloHorasSemanales"></xs:attribute>
+                                                    type="RegexModuloHorasSemanales" use="required"></xs:attribute>
+                                                <xs:attribute name="Curso" type="RegexModuloCurso"
+                                                    use="required"></xs:attribute>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute name="Nombre" type="Nombre" />
-                                    <xs:attribute name="Duracion" type="RegexTituloDuracion" />
-                                    <xs:attribute name="Denominacion" type="Nombre"></xs:attribute>
+                                    <xs:attribute name="Nombre" type="Nombre" use="required" />
+                                    <xs:attribute name="Duracion" type="RegexTituloDuracion"
+                                        use="required" />
+                                    <xs:attribute name="Denominacion" type="Nombre" use="required" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="Nombre" type="Nombre" />
-                        <xs:attribute name="Duracion" type="RegexFamiliaProfesionalDuracion" />
-                        <xs:attribute name="Denominacion" type="xs:string" />
+
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>

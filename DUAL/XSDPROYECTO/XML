@@ -160,7 +160,7 @@ iniciativa en su actividad profesional con sentido de la responsabilidad social.
 acuerdo con lo establecido en la legislación vigente, participando activamente en la vida económica, social y cultural." />
 
             <Modulo Codigo="0623" Nombre="Gestión económica y financiera de la empresa"
-                HorasAnuales="192" HorasSemanales="6">
+                HorasAnuales="192" HorasSemanales="6" Curso="1">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Recopila información sobre iniciativas emprendedoras y oportunidades de creación de empresas, valorando el impacto sobre el entorno de actuación e incorporando valores éticos.">
                     <CriterioDeEvaluacion Codigo="a"
@@ -348,7 +348,7 @@ cálculo de la rentabilidad de la empresa." />
                 </ResultadoDeAprendizaje>
             </Modulo>
             <Modulo Codigo="0930" Nombre="Políticas de Marketing" HorasAnuales="256"
-                HorasSemanales="8">
+                HorasSemanales="8" Curso="1">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Evalúa las oportunidades de mercado, para el lanzamiento de un producto, la entrada en nuevos
 mercados o la mejora del posicionamiento del producto o servicio, analizando las variables de
@@ -554,7 +554,7 @@ medidas correctoras.
                 </ResultadoDeAprendizaje>
 
             </Modulo>
-            <Modulo Codigo="0931" Nombre="Marketing Digital" HorasAnuales="126" HorasSemanales="6">
+            <Modulo Codigo="0931" Nombre="Marketing Digital" HorasAnuales="126" HorasSemanales="6" Curso="1">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Administra los accesos y conexiones a redes públicas, semipúblicas y privadas, utilizando navegadores y buscadores de información especializados en la red pública Internet.
 ">
@@ -717,7 +717,7 @@ de las operaciones." />
 
             </Modulo>
             <Modulo Codigo="1007" Nombre="Diseño y elaboración de material de comunicación"
-                HorasAnuales="105" HorasSemanales="5">
+                HorasAnuales="105" HorasSemanales="5" Curso="1">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Prepara el contenido de los materiales de comunicación y publicidad en todo tipo de soportes,
 utilizando la información disponible.
@@ -821,7 +821,7 @@ según lo previsto en el briefing y en los contratos acordados." />
                 </ResultadoDeAprendizaje>
             </Modulo>
             <Modulo Codigo="1008" Nombre="Medios y soportes de comunicación" HorasAnuales="84"
-                HorasSemanales="4">
+                HorasSemanales="4" Curso="1">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Recopila referencias y datos relevantes de diferentes fuentes de información, organizando el plan
 de medios publicitarios.">
@@ -943,7 +943,7 @@ no escritos, visionando las imágenes y tomando los datos de tiempo." />
             </Modulo>
             <Modulo Codigo="1009"
                 Nombre="Relaciones públicas y organización de eventos de marketing"
-                HorasAnuales="84" HorasSemanales="4">
+                HorasAnuales="84" HorasSemanales="4" Curso="2">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Establece los objetivos e instrumentos de las relaciones públicas de la empresa, cumpliendo con
 lo establecido en la estrategia de comunicación del plan de marketing.">
@@ -1068,7 +1068,7 @@ marketing y las posibles medidas para subsanarlos." />
 
             </Modulo>
             <Modulo Codigo="1010" Nombre="Investigacion Comercial" HorasAnuales="160"
-                HorasSemanales="5">
+                HorasSemanales="5" Curso="2">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Analiza las variables del mercado y del entorno de la empresa u organización, valorando su influencia en la actividad de la empresa y en la aplicación de las diferentes estrategias comerciales.">
                     <CriterioDeEvaluacion Codigo="a"
@@ -1285,7 +1285,7 @@ información." />
                 </ResultadoDeAprendizaje>
             </Modulo>
             <Modulo Codigo="1011" Nombre="Trabajo de campo en la investigación comercial"
-                HorasAnuales="84" HorasSemanales="4">
+                HorasAnuales="84" HorasSemanales="4" Curso="2">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Planifica el trabajo de campo de los encuestadores/entrevistadores, estableciendo los medios y
 recursos necesarios y las pautas de actuación de acuerdo con el plan de investigación.">
@@ -1459,7 +1459,7 @@ en su caso, recomendaciones, sugerencias y/o propuestas de mejora." />
 
             </Modulo>
             <Modulo Codigo="1109" Nombre="Lanzamiento de productos y servicios" HorasAnuales="84"
-                HorasSemanales="4">
+                HorasSemanales="4" Curso="2">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Recopila la información necesaria para el lanzamiento de un producto o servicio, organizando
 la información disponible en el SIM de la empresa, el briefing del producto o servicio, la red de
@@ -1625,7 +1625,7 @@ comunicación y las acciones de marketing directo, utilizando la hoja de cálcul
 
             </Modulo>
             <Modulo Codigo="1110" Nombre="Atención al cliente consumidor y usuario"
-                HorasAnuales="128" HorasSemanales="4">
+                HorasAnuales="128" HorasSemanales="4" Curso="2">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Organiza el departamento de atención al cliente, definiendo sus funciones y estructura y su
 relación con otros departamentos, para transmitir la imagen más adecuada de la empresa u organización.">
@@ -1822,7 +1822,7 @@ utilizando la información disponible en la herramienta de gestión de las relac
 disponible." />
                 </ResultadoDeAprendizaje>
             </Modulo>
-            <Modulo Codigo="0179" Nombre="Inglés" HorasAnuales="128" HorasSemanales="4">
+            <Modulo Codigo="0179" Nombre="Inglés" HorasAnuales="128" HorasSemanales="4" Curso="2">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Reconoce información profesional y cotidiana contenida en todo tipo de discursos orales emitidos por cualquier medio de comunicación en lengua estándar, interpretando con precisión el
 contenido del mensaje.
@@ -1941,7 +1941,7 @@ extranjera." />
                 </ResultadoDeAprendizaje>
             </Modulo>
             <Modulo Codigo="1709" Nombre="Itinerario personal para la empleabilidad I"
-                HorasAnuales="50" HorasSemanales="3">
+                HorasAnuales="50" HorasSemanales="3" Curso="1">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título..">
                     <CriterioDeEvaluacion Codigo="a"
@@ -2038,7 +2038,7 @@ extranjera." />
 
             </Modulo>
             <Modulo Codigo="1710" Nombre="Itinerario personal para la empleabilidad II"
-                HorasAnuales="50" HorasSemanales="3">
+                HorasAnuales="50" HorasSemanales="3" Curso="2">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion=" Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.">
                     <CriterioDeEvaluacion Codigo="a"
@@ -2136,7 +2136,7 @@ colaboración con el entorno.
 
             </Modulo>
             <Modulo Codigo="1665" Nombre="Digitalización aplicada a los sectores productivos"
-                HorasAnuales="30" HorasSemanales="1">
+                HorasAnuales="30" HorasSemanales="1" Curso="1">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Analiza el concepto de digitalización y su repercusión en los sectores productivos teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology: tecnología de la información) y OT (Operation Technology: tecnología de operación) característicos. ">
                     <CriterioDeEvaluacion Codigo="a"
@@ -2253,7 +2253,7 @@ colaboración con el entorno.
                 </ResultadoDeAprendizaje>
             </Modulo>
             <Modulo Codigo="1708" Nombre="Sostenibilidad aplicada al sistema productivo"
-                HorasAnuales="30" HorasSemanales="1">
+                HorasAnuales="30" HorasSemanales="1" Curso="1">
                 <ResultadoDeAprendizaje Codigo="1"
                     Descripcion="Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la
 sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos
