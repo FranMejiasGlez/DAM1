@@ -18,5 +18,22 @@ public class Alumno {
         this.nota = nota;
     }//Fin Constructor
     //Metodos
-    //GetterSetter
+
+//    @Override
+//    public String toString() {
+//        //Entorno
+//        String salida;
+//        //Algoritmo
+//       // salida ="Cod: "+thi
+//        return salida;
+//    }
+//    //GetterSetter
+
+    public byte getNota() {
+        return this.nota;
+    }//Fin Getter
+    
+    public byte getCod() {
+        return this.cod;
+    }//Fin Getter
 }//Fin Clase

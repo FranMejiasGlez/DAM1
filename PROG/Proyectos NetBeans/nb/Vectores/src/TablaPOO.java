@@ -15,8 +15,8 @@ public class TablaPOO {
         Alumno[] alumnos;
         byte codigo,nota;
         //Algoritmo
-        alumnos = new Alumno[8];
-        for (int i = 0; i < alumnos.length - 1; i++) {
+        alumnos = new Alumno[3];
+        for (int i = 0; i < alumnos.length -1; i++) {
                System.out.println("Introduce Cod: ");
                codigo=(byte)Leer.datoShort();
                System.out.println("Introduce Nota: ");
@@ -27,5 +27,6 @@ public class TablaPOO {
         for (int i = 0; i < alumnos.length; i++) {
             System.out.println(alumnos[i]);
         }//Fin Para
-    }
+        System.out.println(alumnos[2]);
+    }//Fin Programa
 }
