@@ -54,7 +54,7 @@ public class ListaTelefonos {
     public void aniadir(Persona p) {
         //Entorno
         //Algoritmo
-        unElementoMas(this.listaTelefonos);
+        this.unElementoMas(this.listaTelefonos);
         this.listaTelefonos[this.nElementos - 1] = p;
     }//Fin Metodo
 
@@ -65,10 +65,9 @@ public class ListaTelefonos {
         //Algoritmo
         haSidoEliminado = false;
         for (i = 0; i < this.listaTelefonos.length; i++) {
-            if (this.listaTelefonos[i] != null
-                    && this.listaTelefonos[i].obtenerTelefono() == tel) {
+            if (this.listaTelefonos[i].obtenerTelefono() == tel) {
                 this.listaTelefonos[i] = null;
-                unElementoMenos(this.listaTelefonos);
+                this.unElementoMenos(this.listaTelefonos);
                 haSidoEliminado = true;
             }//Fin Si
         }//Fin Para
@@ -98,12 +97,25 @@ public class ListaTelefonos {
     }//Fin Getter
 
     public Persona valorEn(int pos) {
-        return this.listaTelefonos[pos];
-    }
-
-    public void ponerValorEn(int pos, Persona p) {
         //Entorno
         //Algoritmo
-        this.listaTelefonos[pos] = p;
+
+        if (pos < this.nElementos || pos > this.nElementos) {
+            System.out.println("Indice fuera de rango");
+        }//Fin Si
+
+
+            return this.listaTelefonos[pos];
+        
+    }//Fin Getter
+
+    public void ponerValorEn(int pos, Persona p) {
+        //Algoritmo
+        if (pos < this.nElementos || pos > this.nElementos) {
+            System.out.println("Indice fuera de rango");
+        } else {
+            this.listaTelefonos[pos] = p;
+        }//Fin Si
+
     }//Fin Setter
 }//Fin Clase

@@ -18,6 +18,7 @@ public class Agenda {
     
         do {
             do {
+                System.out.println("\n");
                 System.out.println("1.- Buscar.");
                 System.out.println("2.- Buscar siguiente.");
                 System.out.println("3.- Añadir.");
@@ -103,7 +104,7 @@ public class Agenda {
                             System.out.println("Registro eliminado.");
                         } else {
                             System.out.println("Teléfono no encontrado.");
-                        }//Fin SI
+                        }//Fin Si
                     } else {
                         System.out.println("Agenda vacía.");
                     }//Fin Si
