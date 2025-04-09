@@ -16,6 +16,11 @@ public class Persona {
 
     public Persona() {
     }
+    
+      public Persona(String nombre,String apellidos) {
+          this.nombre=nombre;
+          this.apellidos=apellidos;
+    }
     //Metodos
     //GettersSetters
 

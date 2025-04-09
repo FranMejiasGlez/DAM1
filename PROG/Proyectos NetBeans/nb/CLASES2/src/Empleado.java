@@ -7,13 +7,19 @@
  *
  * @author Mejias Gonzalez Francisco
  */
-public class Empleado {
+public class Empleado extends Persona {
     //Atributos
 
-    protected float sueldoBase;
+    private float sueldoBase;
     //Constructores
 
     public Empleado() {
+    }
+
+    public Empleado(String nombre, String apellidos, float sueldo) {
+        setNombre(nombre);
+        setApellidos(apellidos);
+        this.sueldoBase = sueldo;
     }
     //Metodos
     //GetterSetter
@@ -21,7 +27,8 @@ public class Empleado {
     public float getSueldoBase() {
         return this.sueldoBase;
     }
-    public void serSueldoBase(float sueldoBase){
-        this.sueldoBase=sueldoBase;
+
+    public void setSueldoBase(float sueldoBase) {
+        this.sueldoBase = sueldoBase;
     }
 }//Fin Clase

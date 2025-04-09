@@ -7,14 +7,21 @@
  *
  * @author Mejias Gonzalez Francisco
  */
-public class Encargado extends Empleado{
+public class Encargado extends Empleado {
     //Atributos
     //Constructores
-    public Encargado(){
+
+    public Encargado() {
+    }
+     public Encargado(String nombre, String apellidos, float sueldo) {
+        setNombre(nombre);
+        setApellidos(apellidos);
+        setSueldoBase(sueldo);
     }
     //Metodos
     //GetterSetter
-    public float getSueldoBase(){
-    return 
+
+    public float getSueldoBase() {
+        return super.getSueldoBase() * 1.10F;
     }
 }
