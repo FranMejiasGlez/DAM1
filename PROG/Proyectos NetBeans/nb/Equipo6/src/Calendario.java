@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author Mejias Gonzalez Francisco
@@ -47,7 +42,7 @@ public class Calendario {
                 salida = "OCTUBRE";
                 break;
             case 11:
-                salida = "NOMVIEMBRE";
+                salida = "NOVIEMBRE";
                 break;
             case 12:
                 salida = "DICIEMBRE";
@@ -77,8 +72,9 @@ public class Calendario {
         calendario = new GregorianCalendar(anio, mes - 1, 1);
         System.out.println("Mes: " + mes);
         System.out.println("Año: " + anio);
-        diasMaxMes = calendario.getActualMaximum(GregorianCalendar.DAY_OF_MONTH);
-        primerDiaMes = calendario.get(GregorianCalendar.DAY_OF_WEEK);//7
+        diasMaxMes = calendario.getActualMaximum(GregorianCalendar.DAY_OF_MONTH)
+                ;
+        primerDiaMes = calendario.get(GregorianCalendar.DAY_OF_WEEK);
         salida = "";
         diaSemanaActual = primerDiaMes - 1;
         System.out.println("\tCALENDARIO DE " + nombreMes(mes).toUpperCase()
