@@ -31,7 +31,7 @@ public class FrecuenciaPalabra {
 
     private void insertarPalabra(Palabra p) {
         this.unaPalabraMas(listaPalabras);
-        this.listaPalabras[this.numPalabras-1] = p;
+        this.listaPalabras[this.numPalabras - 1] = p;
     }//Fin Metodo
 
     public void cuentaPalabra(String cad) {
@@ -44,18 +44,13 @@ public class FrecuenciaPalabra {
      */
     private int buscarPalabra(String cad) {
         //entorno
-        Palabra p;
-        String palabra, repe;
-        int i;
+        int siguiente;
+        String palabra;
         //algoritmo
-        repe = "";
-        i = 0;
-        palabra = cad.substring(0, cad.indexOf(" "));
-        cad = cad.replaceFirst(palabra, "").trim();
-        p = new Palabra(palabra);
-       
-       
-        return i; 
+        siguiente = 0;
+        palabra = cad.substring(siguiente, cad.indexOf(" "));
+        siguiente = cad.indexOf(palabra) + 1;
+        return i;
     }//Fin Metodo
     //Getter/Setter
 
