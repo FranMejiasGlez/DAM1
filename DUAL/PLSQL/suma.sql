@@ -1,8 +1,11 @@
+SET SERVEROUTPUT ON;
 CREATE OR REPLACE
-  PROCEDURE suma(num1 IN,num2 IN)
+  PROCEDURE suma(num1 IN NUMBER,num2 IN NUMBER)
   IS
-    suma NUMBER;
+    resultado NUMBER(6);
   BEGIN
-      suma:=num1+num2;
-      DBMS_OUTPUT.PUT_LINE(suma);
-	END
+      resultado:=num1+num2;
+      DBMS_OUTPUT.PUT_LINE('La suma es: ' || resultado);
+	END suma;
+/
+
