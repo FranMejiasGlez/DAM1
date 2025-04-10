@@ -70,7 +70,7 @@ public class Agenda {
                                         +siguiente);
                                 ultimaPosicion = siguiente;
                             }//Fin Si
-                        }//FIn SI
+                        }//Fin Si
                     } else {
                         System.out.println("Agenda vacia.");
                     }//Fin SI 

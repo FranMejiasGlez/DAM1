@@ -12,8 +12,14 @@ public class FrecuenciaPalabra {
 
     private Palabra[] listaPalabras;
     private int numPalabras = 0;
+    //Constructores
 
+    public FrecuenciaPalabra() {
+        this.listaPalabras = new Palabra[0];
+        this.numPalabras = 0;
+    }//Fin Constructor
     //Metodos
+
     /**
      * Crea una lista con un elemento mas y lo asigna a la misma del parametro
      */
@@ -25,18 +31,37 @@ public class FrecuenciaPalabra {
         for (int i = 0; i < listaActual.length; i++) {
             aux[i] = listaActual[i];
         }//Fin Para
-        listaActual = aux;
+        this.listaPalabras = aux;
         this.numPalabras++;
     }//Fin Metodo
 
     private void insertarPalabra(Palabra p) {
-        this.unaPalabraMas(listaPalabras);
         this.listaPalabras[this.numPalabras - 1] = p;
     }//Fin Metodo
 
     public void cuentaPalabra(String cad) {
         //Entorno
+        int siguiente, espacio;
+        Palabra p;
+        String palabra;
         //Algoritmo
+        siguiente = 0;
+        espacio = cad.indexOf(" ");
+        //Busca las palabras
+        while (espacio != -1) {
+            palabra = cad.substring(siguiente, espacio);
+            siguiente = espacio + 1;
+            espacio = cad.indexOf(" ", siguiente);
+            //Si existe la palabra en la lista incrementa
+            if (buscarPalabra(palabra) != -1) {
+                this.listaPalabras[buscarPalabra(palabra)].incrementaFrecuencia();
+                //Si no existe crea palabra y aumenta lista e inserta
+            } else {
+                p = new Palabra(palabra);
+                unaPalabraMas(this.listaPalabras);
+                insertarPalabra(p);
+            }//Fin Si
+        }//Fin Mientras
     }//Fin Metodo
 
     /**
@@ -44,13 +69,22 @@ public class FrecuenciaPalabra {
      */
     private int buscarPalabra(String cad) {
         //entorno
-        int siguiente;
-        String palabra;
+        int salida, i;
         //algoritmo
-        siguiente = 0;
-        palabra = cad.substring(siguiente, cad.indexOf(" "));
-        siguiente = cad.indexOf(palabra) + 1;
-        return i;
+        salida = -1;
+        i = 0;
+        //Busco la palabra pasada por parametro
+        while (i < this.listaPalabras.length
+                && !cad.equals(this.listaPalabras[i].obtenerPalabra())) {
+            i++;
+        }//FIN MIENTRAS
+        //Si es igual a la palabra en la lista en i posicion
+        if (i < this.listaPalabras.length
+                && cad.equals(this.listaPalabras[i].obtenerPalabra())) {
+            salida = i;
+        }//FIN SI
+
+        return salida;
     }//Fin Metodo
     //Getter/Setter
 
