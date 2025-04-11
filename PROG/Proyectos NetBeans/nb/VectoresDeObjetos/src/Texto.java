@@ -11,8 +11,7 @@ public class Texto {
 
     public static void main(String[] args) {
         //Entorno
-        String cad, palabra;
-        int siguiente, espacio;
+        String cad;
         FrecuenciaPalabra listaPalabras;
         //Algoritmo
         cad = "hola ola que la ola";
@@ -20,8 +19,9 @@ public class Texto {
         listaPalabras = new FrecuenciaPalabra();
         listaPalabras.cuentaPalabra(cad);
         for (int i = 0; i < listaPalabras.obtenerNumPalabras(); i++) {
-            System.out.println(listaPalabras.obtenerObjPalabra(i).obtenerPalabra()
-                    + " - " + listaPalabras.obtenerObjPalabra(i).obtenerFrecuencia());
-        }
-    }
+            System.out.println(listaPalabras.obtenerObjPalabra(i)
+                    .obtenerPalabra() + " - "
+                    + listaPalabras.obtenerObjPalabra(i).obtenerFrecuencia());
+        }//Fin para 
+    }//Fin Programa
 }
