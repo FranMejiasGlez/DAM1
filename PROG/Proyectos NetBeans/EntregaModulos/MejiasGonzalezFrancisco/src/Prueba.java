@@ -1,3 +1,4 @@
+
 /**
  *
  * @author Mejias Gonzalez Francisco
@@ -55,10 +56,9 @@ public class Prueba {
         //Entorno:
         byte digito;
         int numero, numeroIndexado, numeroAnexado, numeroMayor, numeroMenor;
-        char caracter;
         boolean continuar;
         //Algoritmo:
-        continuar = true;
+
         do {
             digito = Prueba.LeeByte();
             System.out.println("Numero: ");
@@ -83,7 +83,7 @@ public class Prueba {
                     System.out.println(i);
                 }//Fin Si
             }//Fin Para
-             continuar = Utilidades.continuar();
-        }while(continuar);
+            continuar = Utilidades.continuar();
+        } while (continuar);//Fin Repetir
     }//Fin Programa
 }
