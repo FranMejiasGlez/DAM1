@@ -65,7 +65,7 @@ public class Electrodomestico {
         float precioFinal;
         //Algoritmo
         precioFinal = this.precioBase;
-        switch (this.consumoEnergetico) {
+        switch (this.consumoEnergetico) { //NO SE HACE SWITCH!!!!!!!!!
             case 'A':
                 precioFinal = precioFinal + listaPreciosLetra[0];
                 break;
@@ -89,7 +89,7 @@ public class Electrodomestico {
         if (peso >= 0 && peso <= 19) {
             precioFinal = precioFinal + listaPreciosPeso[0];
         } else {
-            if (peso >= 20 && peso <= 49) {
+            if (peso >= 20 && peso <= 49) { //Sobra la pregunta del >=20
                 precioFinal = precioFinal + listaPreciosPeso[1];
             } else {
                 if (peso >= 50 && peso <= 79) {

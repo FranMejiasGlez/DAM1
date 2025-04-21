@@ -2,10 +2,6 @@ package ejercicio1;
 
 import java.util.GregorianCalendar;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
  *
  * @author Mejias Gonzalez Francisco
@@ -42,7 +38,7 @@ public class Especial extends Camion {
 
     @Override
     public float getCarga() {
-        return super.getCarga() / compartimentos;
+        return super.getCarga() / this.compartimentos;
     }//Fin Metodo
 
     public String getDescripcion() {
