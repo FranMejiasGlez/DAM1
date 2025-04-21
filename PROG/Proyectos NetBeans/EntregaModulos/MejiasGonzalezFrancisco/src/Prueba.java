@@ -56,7 +56,6 @@ public class Prueba {
         //Entorno:
         byte digito;
         int numero, numeroIndexado, numeroAnexado, numeroMayor, numeroMenor;
-        boolean continuar;
         //Algoritmo:
 
         do {
@@ -83,7 +82,6 @@ public class Prueba {
                     System.out.println(i);
                 }//Fin Si
             }//Fin Para
-            continuar = Utilidades.continuar();
-        } while (continuar);//Fin Repetir
+        } while (Utilidades.continuar());//Fin Repetir
     }//Fin Programa
 }
