@@ -11,7 +11,7 @@ SELECT COUNT(*) FROM EMPLE WHERE DEPT_NO = (SELECT DEPT_NO FROM DEPART WHERE DNO
 3. Partiendo de la tabla EMPLE, visualizar por cada oficio de los empleados del departamento 'VENTAS'
  la suma de salarios.
 
-SELECT OFICIO,SUM(SALARIO) FROM EMPLE,DEPART WHERE DNOMBRE LIKE 'VENTAS'
+SELECT OFICIO,SUM(SALARIO) FROM EMPLE WHERE DEPT_NO=(SELECT DEPT_NO FROM DEPART WHERE DNOMBRE='VENTAS') 
 GROUP BY OFICIO;
 
 4. Seleccionar aquellos apellidos de la tabla EMPLE cuyo salario sea igual a la media del
@@ -28,4 +28,22 @@ SELECT COUNT(*),DEPT_NO FROM EMPLE WHERE OFICIO='EMPLEADO' GROUP BY DEPT_NO;
 
 6. Desde la tabla EMPLE, visualizar el departamento que tenga más empleados cuyo oficio sea
 'EMPLEADO'.
+SELECT DEPT_NO,COUNT(*)"N EMPLE" FROM EMPLE WHERE OFICIO='EMPLEADO'
+GROUP BY DEPT_NO
+HAVING COUNT(*)=(SELECT MAX(COUNT(*)) FROM EMPLE WHERE OFICIO='EMPLEADO' 
+GROUP BY DEPT_NO);
 
+7.A partir de las tablas EMPLE y DEPART, visualizar el número de departamento y el nombre de
+departamento que tenga más empleados cuyo oficio sea 'EMPLEADO'.
+
+9.Dada la tabla LÍBRERIA, visualizar por cada estante la suma de los ejemplares.
+SELECT SUM(EJEMPLARES) FROM LIBRERIA
+GROUP BY ESTANTE;
+
+10.Visualizar el estante con más ejemplares de la tabla LÍBRERIA.
+SELECT ESTANTE,SUM(EJEMPLARES) FROM LIBRERIA
+GROUP BY ESTANTE
+HAVING SUM(EJEMPLARES)=(SELECT MAX(SUM(EJEMPLARES)) FROM LIBRERIA GROUP BY ESTANTE);
+
+11.Obtener el apellido de los empleados que trabajan para 'JIMÉNEZ'.
+SELECT APELLIDO,DIR FROM EMPLE WHERE DIR=(SELECT EMP_NO FROM EMPLE WHERE APELLIDO='JIMÉNEZ');

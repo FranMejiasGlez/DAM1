@@ -37,9 +37,15 @@ SELECT LTRIM(AUTOR,SUBSTR(AUTOR,1,INSTR(AUTOR,',',1)+1)) AS NOMBRE,SUBSTR(AUTOR,
 el nombre del autor y, luego, su apellido.
 SELECT LTRIM(AUTOR,SUBSTR(AUTOR,1,INSTR(AUTOR,',',1)+1))||' '||SUBSTR(AUTOR,1,INSTR(AUTOR,',',1)-1) AS AUTOR FROM LIBROS;
 
+14. A partir de la tabla NACIMIENTOS, visualizar en una columna el NOMBRE seguido de su fecha de
+nacimiento formateada (quitar blancos del nombre).
+SELECT RTRIM(NOMBRE) || TO_CHAR(FECHANAC,' dd "de" Month "de" yyyy') "Nombre y fecha" FROM NACIMIENTOS;
 
-
-
+16 Visualizar aquellos temas de la tabla Librería cuyos ejemplares sean 7 con el nombre de tema de
+'SEVEN'; el resto de temas que no tengan 7 ejemplares se visualizarán como están.
+SELECT TEMA,EJEMPLARES,DECODE(EJEMPLARES,7,'SEVEN',TEMA) FROM LIBRERIA;
+//FUNCION DECODE:
+DECODE(TABLA,BUSQUEDA I,RESULTADO I,[RESULTADO POR DEFECTO],...)
 
 
 
