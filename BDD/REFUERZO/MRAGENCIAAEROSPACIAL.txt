@@ -16,19 +16,22 @@ ASTRONAUTAS(dni,nombre,apellidos,titulo)
 PK(id)
 
 ESTUDIA(id_Mision,id_MisionSecundaria,id_Planeta)
-PK(id_Mision,,id_Planeta)
+PK(id_Mision,id_Planeta)
 
 SATELITES(id_Planeta,id)
 PK(id)
 FK(id_Planeta)/PLANETAS
 
-SISTEMAS(id_Sistema,id_Estrella)
+SISTEMAS(id_Sistema,nomb_Estrella)
 PK(id_Sistema)
-FK(id_Estrella)
+FK(nomb_Estrella)/UNICO NO NULO
 
 NAVES(id,id_Mision,tipo,antiguedad)
 PK(id)
 FK(id_Mision)/MISIONES
 
-VUELA(f_fin_vuelo,nplazas,dni_Astronauta,titulacion)
-PK(f_fin,nplazas,dni_Astronauta,titulacion)
+VUELA(f_fin_vuelo,nplazas,dni_Astronauta)
+PK(f_fin,nplazas,dni_Astronauta)
+
+
+------------------------------------------------------
