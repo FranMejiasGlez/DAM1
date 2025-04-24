@@ -1,0 +1,7 @@
+DEPARTAMENTOS(dept_no,dnombre,loc)
+PK(dept_no) 
+
+EMPLEADOS(emp_no,dni,apellido,oficio,dir,fecha_alt,salario,comision,dept_no)
+PK(emp_no)
+FK(dir)/EMPLEADOS
+FK(dept_no)/DEPARTAMENTOS)
