@@ -47,3 +47,21 @@ HAVING SUM(EJEMPLARES)=(SELECT MAX(SUM(EJEMPLARES)) FROM LIBRERIA GROUP BY ESTAN
 
 11.Obtener el apellido de los empleados que trabajan para 'JIMÉNEZ'.
 SELECT APELLIDO,DIR FROM EMPLE WHERE DIR=(SELECT EMP_NO FROM EMPLE WHERE APELLIDO='JIMÉNEZ');
+
+13. Obtener por cada centro el número de empleados. Si el centro carece de empleados, ha de aparecer
+un 0 como número de empleados.
+
+SELECT CENTROS.COD_CENTRO,NOMBRE,COUNT(DNI) AS EMPLEADOS FROM CENTROS,PERSONAL
+WHERE CENTROS.COD_CENTRO=PERSONAL.COD_CENTRO(+)
+GROUP BY CENTROS.COD_CENTRO,NOMBRE;
+
+14.Realizar una consulta en la que aparezca por cada centro y en cada especialidad el número de
+profesores. Si el centro no tiene profesores, debe aparecer un 0 en la columna de número de
+profesores:
+NOMBRE 			ESPECIALIDAD 		Núm.Profesores
+------------ --------------------- --------------
+
+SELECT NOMBRE,ESPECIALIDAD,COUNT(DNI) AS NUMPROFESORES 
+FROM CENTROS, PROFESORES 
+WHERE CENTROS.COD_CENTRO=PROFESORES.COD_CENTRO(+)
+GROUP BY NOMBRE,ESPECIALIDAD;

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Biblioteca.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<Biblioteca>
+    <Libros>
+        <libro id="1">
+            <Título>Fundación</Título>
+            <Autor>Isaac Asimov</Autor>
+            <Anio>1951</Anio>
+            <Género>Ciencia Ficción</Género>
+            <Disponible>Sí</Disponible>
+        </libro>
+    </Libros>
+    <Libros>
+        <libro id="2">
+            <Título>1984</Título>
+            <Autor>George Orwell</Autor>
+            <Anio>1949</Anio>
+            <Género>Distopía</Género>
+            <Disponible>No</Disponible>
+        </libro>
+    </Libros>
+    <Libros>
+        <libro id="3">
+            <Título>El marciano</Título>
+            <Autor>Andy Weir</Autor>
+            <Anio>2011</Anio>
+            <Género>Ciencia Ficción</Género>
+            <Disponible>Sí</Disponible>
+        </libro>
+    </Libros>
+    <Libros>
+        <libro id="4">
+            <Título>La sombra del viento</Título>
+            <Autor>Carlos Ruiz Zafón</Autor>
+            <Anio>2001</Anio>
+            <Género>Misterio</Género>
+            <Disponible>Sí</Disponible>
+        </libro>
+    </Libros>
+    <Libros>
+        <libro id="5">
+            <Título>El código Da Vinci</Título>
+            <Autor>Dan Brown</Autor>
+            <Anio>2003</Anio>
+            <Género>Thriller</Género>
+            <Disponible>No</Disponible>
+        </libro>
+    </Libros>
+    <Libros>
+        <libro id="6">
+            <Título>Ready Player One</Título>
+            <Autor>Ernest Cline</Autor>
+            <Anio>2011</Anio>
+            <Género>Ciencia Ficción</Género>
+            <Disponible>Sí</Disponible>
+        </libro>
+    </Libros>
+</Biblioteca>

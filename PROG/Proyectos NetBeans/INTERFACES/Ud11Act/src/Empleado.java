@@ -34,20 +34,39 @@ public class Empleado implements Comparable<Empleado> {
     }//Fin Metodo
 
     @Override
-    public int CompareTo(Empleado empleado) {
+    public int compareTo(Empleado empleado) {
         //Entorno
         int estado;
         //Algoritmo
         if (this.getSueldo() < empleado.getSueldo()) {
-            estado = -1;
+            estado = (int) (this.getSueldo() - empleado.getSueldo());
         } else {
-            if (this.getSueldo() < empleado.getSueldo()) {
-                estado = +1;
+            if (this.getSueldo() > empleado.getSueldo()) {
+                estado = (int) (this.getSueldo() - empleado.getSueldo());
             } else {
-                estado = 0;
+                estado = (int) (this.getSueldo() - empleado.getSueldo());
             }//Fin Si
-        } // Fin SI
+        } // Fin Si
         return estado;
+    }//Fin Metodo
+
+    @Override
+    public boolean equals(Object obj) {
+        //Entorno
+        boolean esIgual;
+        Empleado emple;
+        String nomApe1, nomApe2;
+        //ALgoritmo
+        esIgual = false;
+        nomApe1 = "";
+        nomApe2 = "";
+        if (obj instanceof Empleado) {
+            emple=(Empleado)obj;
+            nomApe1 = this.getNombre() + " " + this.getApellidos();
+            nomApe2 = emple.getNombre() + " " + emple.getApellidos();
+        }//Fin Si
+        esIgual = nomApe1.equals(nomApe2);
+        return esIgual;
     }//Fin Metodo
 
     public String getNombre() {
