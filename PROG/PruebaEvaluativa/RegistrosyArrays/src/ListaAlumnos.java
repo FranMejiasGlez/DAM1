@@ -12,7 +12,7 @@ public class ListaAlumnos {
 
     private Alumno[] lista;
     private int numeroAlumnos;
-    //Constructores
+    //Constructores 
 
     public ListaAlumnos() {
         //Entorno
@@ -24,27 +24,29 @@ public class ListaAlumnos {
     //Metodos
     public void aniadirAlumno(Alumno alu) {
         unElementoMas();
-        this.lista[lista.length - 1] = alu;
+        this.lista[this.lista.length - 1] = alu;
     }//Fin Metodo
 
     public void eliminarAlumno(int pos) {
         //Entorno
-        String nombre, eliminar;
-        int i, posicion;
+        String eliminar, nombre;
+        int i;
         //Algoritmo
         i = 0;
-        System.out.println("Introduzca Nombre: ");
-        nombre = Leer.dato();
-        posicion = buscarAlumno(nombre);
-        if (posicion != -1) {
-            System.out.println("Encontrado alumno:\n"
-                    + this.getAlumno(posicion).getNombre()
-                    + "\n" + this.getAlumno(posicion).getNota());
-            System.out.println("Confirmar eliminacion: S/N");
-            eliminar = Leer.dato();
-            if (eliminar.equals("S|s")) {
-                this.lista[posicion] = null;
+        if (pos != -1) {
+            System.out.println("Encontrado alumno:\nNombre: "
+                    + this.getAlumno(pos).getNombre()
+                    + "\nNota: " + this.getAlumno(pos).getNota());
+            do {
+                System.out.println("Confirmar eliminacion: S/N");
+                eliminar = Leer.dato();
+            } while (!eliminar.equalsIgnoreCase("S")
+                    && !eliminar.equalsIgnoreCase("N"));//Fin Mientras
+            if (eliminar.equalsIgnoreCase("S")) {
+                nombre = this.lista[pos].getNombre();
+                this.lista[pos] = null;
                 unElementoMenos();
+                System.out.println("Eliminado alumno: " + nombre);
             } else {
                 System.out.println("No se ha eliminado el alumno");
             }//Fin Si
@@ -68,11 +70,11 @@ public class ListaAlumnos {
         posicion = -1;
         i = 0;
         while (i < this.lista.length - 1
-                && !this.lista[i].getNombre().equals(nom)) {
+                && !this.lista[i].getNombre().equalsIgnoreCase(nom)) {
             i++;
         }//Fin MIentras
         if (i < this.lista.length
-                && this.lista[i].getNombre().equals(nom)) {
+                && this.lista[i].getNombre().equalsIgnoreCase(nom)) {
             posicion = i;
         }//Fin Si
         return posicion;
