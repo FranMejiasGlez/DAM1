@@ -24,7 +24,7 @@ public class Alumno {
      * @return the nombre
      */
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }//Fin Metodo
 
     /**
@@ -34,7 +34,7 @@ public class Alumno {
      * @return the nota
      */
     public float getNota() {
-        return nota;
+        return this.nota;
     }//Fin Metodo
 
    

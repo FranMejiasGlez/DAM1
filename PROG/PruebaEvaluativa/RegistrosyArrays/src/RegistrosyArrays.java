@@ -1,13 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  *
  * @author Mejias Gonzalez Francisco
  */
-public class GrupoAlumnos {
+public class RegistrosyArrays {
 
     public static void main(String[] args) {
         //Entorno 
@@ -34,9 +30,10 @@ public class GrupoAlumnos {
                     Alumno alumno;
                     //Algoritmo
                     do {
-                        System.out.println("Nombre alumno: ");
-                        nombre = Leer.dato();
-                    } while (!nombre.matches("[A-Z][a-z]+(?: [A-Z][a-z]+){0,2}"));//Fin Repetir
+                        System.out.println("Nombre Ape1 [Ape2] alumno: ");
+                        nombre = Leer.dato().trim();
+                    } while (!nombre.matches("[A-Z][a-z]"
+                            + "+( [A-Z][a-z]+){1,2}"));//Fin Repetir
                     do {
                         System.out.println("Nota: ");
                         nota = Leer.datoFloat();
@@ -54,7 +51,8 @@ public class GrupoAlumnos {
                 case 3:
                     if (lista.tamanioLista() != 0) {
                         for (int i = 0; i < lista.tamanioLista(); i++) {
-                            System.out.println("Nombre: " + lista.getAlumno(i).getNombre() + "\n"
+                            System.out.println("Nombre: "
+                                    + lista.getAlumno(i).getNombre() + "\n"
                                     + "Nota: " + lista.getAlumno(i).getNota());
                             System.out.println("");
                         }//Fin Para
