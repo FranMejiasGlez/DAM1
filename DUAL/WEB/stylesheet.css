@@ -74,51 +74,66 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* Dos columnas de igual ancho */
-    gap: 80px;
+    column-gap:10px;
     /* Espacio entre los divs */
+    row-gap: 150px;
+
+}
+
+.desplegable {
+    background-color: red;
+    margin-top: 5%;
+    align-self: center;
 }
 
 .serviciosCulturales {
     border-style: solid;
-    width: 300;
-    height: 300;
-    margin-left: 10%;
+    max-width: 490px;
+    height: 525;
+    justify-self: center;
+    display: flex;
 
 }
 
 .informaticaVideojuegos {
-    margin-left: 10%;
+    justify-self: center;
     border-style: solid;
-    width: 490;
+    max-width: 490px;
     height: 525;
+    
+
 }
 
 .administracionMarketing {
     border-style: solid;
-    width: 490;
+    max-width: 490px;
     height: 525;
-    margin-left: 10%;
-    display: grid;
+    
+    justify-self: center;
+
 }
 
 .imagenSonido {
     border-style: solid;
-    width: 490;
+    max-width: 490px;
     height: 525;
-    margin-left: 10%;
+    justify-self: center;
+    
 }
 
 .hosteleriaTurismo {
     border-style: solid;
-    width: 490;
+    max-width: 490px;
     height: 525;
-    margin-left: 10%;
+    justify-self: center;
+    
 }
 
 .actividadesFisicas {
     border-style: solid;
-    width: 490;
+    max-width: 490px;
     height: 525;
-    margin-left: 10%;
-    margin-bottom: 0%;
+    justify-self: center;
+    
+
 }
