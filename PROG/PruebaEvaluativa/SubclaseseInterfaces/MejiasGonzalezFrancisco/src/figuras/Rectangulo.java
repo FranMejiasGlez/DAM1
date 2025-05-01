@@ -1,3 +1,5 @@
+package figuras;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -20,13 +22,33 @@ public class Rectangulo implements FiguraGeometrica {
     }//Fin Constructor
 
     //Metodos
-    public double area(){
+    @Override
+    public double area() {
         //Entorno
         double area;
         //Algoritmo
-        area=this.getAltura()*this.getBase()*Math.sin(area);
-    return area;
+        area = this.getAltura() * this.getBase();
+        return area;
+    }//Fin Metodo
+
+    public double perimetro() {
+        //Entorno
+        double perimetro;
+        //Algoritmo
+        perimetro = this.getBase() * 2 + this.getAltura() * 2;
+        return perimetro;
     }
+
+    @Override
+    public String getTipoFigura() {
+        //Entorno
+        String str;
+        //Algoritmo
+        str = "Rectangulo: \nAltura: " + this.getAltura()
+                + "\nBase: " + this.getBase();
+        return str;
+    }//Fin Metodo
+
     @Override
     public String toString() {
         String str;
