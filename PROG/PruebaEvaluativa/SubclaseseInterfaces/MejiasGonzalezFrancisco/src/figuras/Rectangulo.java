@@ -4,7 +4,6 @@ package figuras;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Mejias Gonzalez Francisco
@@ -31,6 +30,7 @@ public class Rectangulo implements FiguraGeometrica {
         return area;
     }//Fin Metodo
 
+    @Override
     public double perimetro() {
         //Entorno
         double perimetro;
@@ -41,35 +41,19 @@ public class Rectangulo implements FiguraGeometrica {
 
     @Override
     public String getTipoFigura() {
-        //Entorno
-        String str;
-        //Algoritmo
-        str = "Rectangulo: \nAltura: " + this.getAltura()
-                + "\nBase: " + this.getBase();
-        return str;
+        return "Rectangulo";
     }//Fin Metodo
 
     @Override
     public String toString() {
-        String str;
-        str = "Rectángulo: \nBase: "
-                + this.getBase() + "\nAltura: " + this.getAltura();
-        return str;
+        return "Base: " + this.getBase() + "\nAltura: " + this.getAltura();
     }//Fin metodo
 
     public float getBase() {
         return base;
     }//Fin metodo
 
-    public void setBase(float base) {
-        this.base = base;
-    }//Fin metodo
-
     public float getAltura() {
         return altura;
-    }//Fin metodo
-
-    public void setAltura(float altura) {
-        this.altura = altura;
     }//Fin metodo
 }//Fin Clase

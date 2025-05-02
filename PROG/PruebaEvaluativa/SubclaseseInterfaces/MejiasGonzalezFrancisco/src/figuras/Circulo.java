@@ -27,12 +27,7 @@ public class Circulo implements FiguraGeometricaPI {
 
     @Override
     public String getTipoFigura() {
-        //Entorno
-        String str;
-
-        //Algoritmo
-        str = "Circulo: \nRadio: " + this.getDiametro() / 2;
-        return str;
+      return "Circulo";
     }//Fin Metodo
 
     @Override
@@ -55,7 +50,7 @@ public class Circulo implements FiguraGeometricaPI {
     @Override
     public String toString() {
         String str;
-        str = "Circulo: \nRadio: " + this.getDiametro() / 2;
+        str = "Radio: " + this.getDiametro() / 2;
         return str;
     }//Fin Metodo
 }//Fin clase

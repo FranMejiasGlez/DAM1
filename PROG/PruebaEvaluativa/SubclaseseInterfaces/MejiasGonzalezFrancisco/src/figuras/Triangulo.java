@@ -4,7 +4,6 @@ package figuras;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Mejias Gonzalez Francisco
@@ -28,7 +27,7 @@ public class Triangulo implements FiguraGeometricaPI {
         //Entorno
         double area;
         //Algoritmo
-        area = 0.5 * this.getLado1() * this.getLado2() 
+        area = 0.5 * this.getLado1() * this.getLado2()
                 * Math.sin(Math.toRadians(this.angulo));
         return area;
     }//Fin Metodo
@@ -50,19 +49,14 @@ public class Triangulo implements FiguraGeometricaPI {
 
     @Override
     public String getTipoFigura() {
-        //Entorno
-        String str;
-        //Algoritmo
-        str = "Triangulo: \nLado1: " + this.getLado1()
-                + "\nLado2: " + this.getLado2() + "\nAngulo: " + this.angulo;
-        return str;
+        return "Triangulo";
     }//Fin Metodo
 
     @Override
     public String toString() {
         String str;
-        str = "Triangulo: \nLado 1: "
-                + this.getLado1() + "\nLado 2: " + this.getLado2();
+        str = "Lado1: " + this.getLado1() + "\nLado2: " + this.getLado2()
+                + "\nAngulo: " + this.angulo;;
         return str;
     }//Fin Metodo
 

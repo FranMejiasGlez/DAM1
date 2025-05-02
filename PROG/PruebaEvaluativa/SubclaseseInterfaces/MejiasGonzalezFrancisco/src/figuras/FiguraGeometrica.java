@@ -1,6 +1,4 @@
 package figuras;
-
-
 /**
  *
  * @author Mejias Gonzalez Francisco

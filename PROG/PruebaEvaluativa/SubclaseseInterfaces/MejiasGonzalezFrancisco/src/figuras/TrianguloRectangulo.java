@@ -1,6 +1,5 @@
 package figuras;
 
-
 /**
  *
  * @author Mejias Gonzalez Francisco
@@ -16,12 +15,7 @@ public class TrianguloRectangulo extends Triangulo {
     //Metodos
     @Override
     public String getTipoFigura() {
-        //entorno
-        String str;
-        //Algoritmo
-        str = "Triangulo rectangulo: \nLado 1: " + this.getLado1()
-                + "\nLado 2: " + this.getLado2() + "\nAngulo: 90º";
-        return str;
+        return "Triangulo rectangulo";
     }//Fin  Metodo
 
     public double getHipotenusa() {

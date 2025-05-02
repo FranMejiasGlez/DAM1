@@ -15,33 +15,33 @@ public class Ud1112Act1 {
         Cuadrado cuadrado1;
         //Algoritmo
         //Rectangulo
-        rect1 = new Rectangulo(5f, 3f);
+        rect1 = new Rectangulo(5, 3);
         System.out.println(rect1.getTipoFigura());
-        // System.out.println(rect1.toString());
+        System.out.println(rect1.toString());
         System.out.println("Area: " + rect1.area());
         System.out.println("Perimetro: " + rect1.perimetro());
         //Cuadrado
-        cuadrado1 = new Cuadrado(4f);
-        //  System.out.println(cuadrado1.toString());
+        cuadrado1 = new Cuadrado(4);
         System.out.println(cuadrado1.getTipoFigura());
+        System.out.println(cuadrado1.toString());
         System.out.println("Area: " + cuadrado1.area());
         System.out.println("Perimetro: " + cuadrado1.perimetro());
         //Circulo
-        circ1 = new Circulo(2f);
-        // System.out.println(circ1.toString());
+        circ1 = new Circulo(2);
         System.out.println(circ1.getTipoFigura());
+        System.out.println(circ1.toString());
         System.out.println("Area: " + circ1.area());
         System.out.println("Perimetro: " + circ1.perimetro());
         //Triangulo
-        triang1 = new Triangulo(3f, 4f, 120.0);
+        triang1 = new Triangulo(3, 4, 120.0);
         System.out.println(triang1.getTipoFigura());
-        // System.out.println(triang1.toString());
+        System.out.println(triang1.toString());
         System.out.println("Area: " + triang1.area());
         System.out.println("Perimetro: " + triang1.perimetro());
         //Triangulo rectangulo
-        triangRect1 = new TrianguloRectangulo(3f, 4f);
+        triangRect1 = new TrianguloRectangulo(3, 4);
         System.out.println(triangRect1.getTipoFigura());
-        //  System.out.println(triangRect1.toString());
+        System.out.println(triangRect1.toString());
         System.out.println("Area: " + triangRect1.area());
         System.out.println("Perimetro: " + triangRect1.perimetro());
         System.out.println("Hipotenusa: " + triangRect1.getHipotenusa());
