@@ -9,15 +9,27 @@ FK(dept_no)/DEPARTAMENTOS
 --dept_no tiene que tener el mismo dominio que dept_no en DEPARTAMENTOS
 --y tiene que haber las mismas tuplas--
 
-EMPLEADOS(emp_no,cargo,f.alta,dni,salario,nombre,apellidos,comision,oficio
---cargo(tesorero|coordinador)--
+<<"QUITANDO" SUBTIPOS>>
+
+EMPLEADOS(cargo,emp_no,f.alta,dni,salario,nombre,apellidos,comision,oficio)
+--cargo(tesorero|coordinador)opcional--
 PK(emp_no)
 FK(emp_no_coord)/EMPLEADOS
 --emp_no_coord tiene que tener el mismo dominio que emp_no en EMPLEADOS
 --y tiene que haber las mismas tuplas--
+--Garantizar que solo puede haber un cargo ya sea tesorero o coordinador.
 
 DIR(emp_no_empleado,emp_no_jefe)
 PK(emp_no_jefe)
 FK(emp_no_empleado)/EMPLEADOS
 --emp_no_empleado tiene que tener el mismo dominio que emp_no en EMPLEADOS--
 --y tiene que haber las mismas tuplas--
+ 
+DEPARTS(dept_no,dnombre,loc)
+PK(dept_no)
+--Garantizar que el departamento solo puede llegar a tener 1 coordinador.--
+
+PRESUPUESTOS(año,dept_no,cantidad)
+PK(dept_no,año)
+FK(dept_no)/DEPARTAMENTOS
+

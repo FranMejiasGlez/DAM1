@@ -74,66 +74,106 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* Dos columnas de igual ancho */
-    column-gap:10px;
+    gap: 10px;
     /* Espacio entre los divs */
-    row-gap: 150px;
+    row-gap: 100px;
 
 }
 
 .desplegable {
-    background-color: red;
+    background-color: rgba(0, 174, 255, 0.836);
     margin-top: 5%;
     align-self: center;
+    border-radius: 20px;
+    border-style: solid;
 }
 
 .serviciosCulturales {
-    border-style: solid;
+    /* border-style: solid;*/
+    border-radius: 10%;
     max-width: 490px;
     height: 525;
     justify-self: center;
     display: flex;
-
 }
 
 .informaticaVideojuegos {
     justify-self: center;
-    border-style: solid;
+    border-radius: 10%;
+    /* border-style: solid;*/
     max-width: 490px;
     height: 525;
-    
-
 }
 
 .administracionMarketing {
-    border-style: solid;
+    /* border-style: solid;*/
+    border-radius: 10%;
     max-width: 490px;
     height: 525;
-    
     justify-self: center;
-
 }
 
 .imagenSonido {
-    border-style: solid;
+    /* border-style: solid;*/
+    border-radius: 10%;
     max-width: 490px;
     height: 525;
     justify-self: center;
-    
 }
 
 .hosteleriaTurismo {
-    border-style: solid;
+    /* border-style: solid;*/
+    border-radius: 10%;
     max-width: 490px;
     height: 525;
     justify-self: center;
-    
 }
 
 .actividadesFisicas {
-    border-style: solid;
+    /* border-style: solid;*/
+    border-radius: 10%;
     max-width: 490px;
     height: 525;
     justify-self: center;
-    
+}
 
+
+.tarjeta img {
+    border-radius: 45px;
+    object-fit: cover;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.tarjeta {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textoTarjetas {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.pTarjetas {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.centradoParrafo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
