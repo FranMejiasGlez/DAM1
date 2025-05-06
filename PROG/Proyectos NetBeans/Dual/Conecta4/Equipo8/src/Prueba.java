@@ -12,7 +12,8 @@ public class Prueba {
         //algoritmo
         j1 = new Jugador('\u263A');
         j2 = new Jugador('\u263B');
-        partida=new Partida();
-        System.out.println(partida.getTablero());
+        partida = new Partida();
+        System.out.println(partida.mostrarTablero());
+        partida.pideColumna(Partida.);
     }//Fin Programa
 }

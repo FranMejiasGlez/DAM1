@@ -6,7 +6,7 @@
 public class Partida {
     //Atributos
 
-    private byte columna;
+    private byte columna, turno;
     private char[][] tablero;
     //Constructores
 
@@ -14,6 +14,7 @@ public class Partida {
         //entorno
         byte fila, col;
         //algoritmo
+        this.turno = 1;
         this.tablero = new char[6][8];
         for (fila = 0; fila < 6; fila++) {
             for (col = 0; col < 8; col++) {
@@ -56,7 +57,29 @@ public class Partida {
         return posicion;
     }//Fin Metodo
 
-    public char[][] getTablero() {
-        return this.tablero;
+    public String mostrarTablero() {
+        //Entorno
+        String salida;
+        //Algoritmo
+        salida = "";
+        int filas = 6;
+        int columnas = 8;
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                salida = salida + "[] ";
+            }//Fin Para
+            salida = salida + "\n";
+        }//Fin Para
+        return salida;
     }//Fin Metodo
-}//Fin Metodos
+
+    public static byte esTurnoDe() {
+        //entorno
+        byte jugador;
+        //algoritmo
+        jugador = 0;
+        if (this.turno == 1) {
+            jugador = 1;
+        }
+    }
+}//Fin Clase
