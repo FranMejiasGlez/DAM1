@@ -1,4 +1,5 @@
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -13,47 +14,38 @@ public class ListaTelefonos {
     //Constuctores
 
     public ListaTelefonos() {
-        listaTelefonos = new linkedList<>();
+        listaTelefonos = new LinkedList<>();
         this.nElementos = 0;
+
     }//Fin Constructor
 
     //Metodos
-    private void unElementoMas(Persona[] listaActual) {
+    private void unElementoMas() {
         //Entorno
-        Persona[] aux;
         //Algoritmo
+        this.listaTelefonos.add(null);
+        this.nElementos++;
 
-        aux = new Persona[this.longitud() + 1];
-        for (int indice = 0; indice < listaActual.length; indice++) {
-            aux[indice] = listaActual[indice];
-        }//Fin Para
-        this.listaTelefonos = aux;
-        this.nElementos = this.listaTelefonos.length;
     }//Fin Metodo
 
-    private void unElementoMenos(Persona[] listaActual) {
-        Persona[] aux;
+    private void unElementoMenos() {
+//        Persona[] aux;
+        int i;
         //Algoritmo
-        if (this.longitud() != 0) {
-            aux = new Persona[this.nElementos - 1];
-            int j = 0;
-            for (int i = 0; i < listaActual.length; i++) {
-                if (listaActual[i] != null) {
-                    aux[j] = listaActual[i];
-                    j++;
-                }//FIn SI
+        if (!this.listaTelefonos.isEmpty()) {
+            for (i = 0; i < this.listaTelefonos.size(); i++) {
+                if (this.listaTelefonos.get(i) == null) {
+                    this.listaTelefonos.remove(i);
+                }//Fin  Si
             }//Fin Para
-            this.listaTelefonos = aux;
-            this.nElementos = this.listaTelefonos.length;
         }//Fin Si
-
     }//Fin Metodo
 
     public void aniadir(Persona p) {
         //Entorno
         //Algoritmo
-        this.unElementoMas(this.listaTelefonos);
-        this.listaTelefonos[this.nElementos - 1] = p;
+        this.unElementoMas();
+        this.listaTelefonos.set(this.listaTelefonos.size() - 1, p);
     }//Fin Metodo
 
     public boolean eliminar(long tel) {
@@ -62,28 +54,27 @@ public class ListaTelefonos {
         int i;
         //Algoritmo
         haSidoEliminado = false;
-        for (i = 0; i < this.listaTelefonos.length; i++) {
-            if (this.listaTelefonos[i].obtenerTelefono() == tel) {
-                this.listaTelefonos[i] = null;
-                this.unElementoMenos(this.listaTelefonos);
+        for (i = 0; i < this.listaTelefonos.size(); i++) {
+            if (this.listaTelefonos.get(i).obtenerTelefono() == tel) {
+                this.listaTelefonos.set(i, null);
+                this.unElementoMenos();
                 haSidoEliminado = true;
             }//Fin Si
         }//Fin Para
-
         return haSidoEliminado;
     }//Fin Metodo
 
     public int buscar(String str, int pos) {
         //Entorno
-        int posicion, i;
+        int posicion;
         //Algoritmo
         posicion = -1;
-        while (pos < this.listaTelefonos.length
-                && !this.listaTelefonos[pos].obtenerNombre().equals(str)) {
+        while (pos < this.listaTelefonos.size()
+                && !this.listaTelefonos.get(pos).obtenerNombre().equals(str)) {
             pos++;
-        }//Fin MIentras
-        if (pos < this.listaTelefonos.length
-                && this.listaTelefonos[pos].obtenerNombre().equals(str)) {
+        }//Fin Mientras
+        if (pos < this.listaTelefonos.size()
+                && this.listaTelefonos.get(pos).obtenerNombre().equals(str)) {
             posicion = pos;
         }//Fin Si
         return posicion;
@@ -91,28 +82,31 @@ public class ListaTelefonos {
     //GetterSetters
 
     public int longitud() {
-        return this.nElementos;
+        return this.listaTelefonos.size();
     }//Fin Getter
 
     public Persona valorEn(int pos) {
         //Entorno
+        Persona p;
         //Algoritmo
-
+        p = null;
         if (pos < this.nElementos || pos > this.nElementos) {
             System.out.println("Indice fuera de rango");
+        } else {
+            p = this.listaTelefonos.get(pos);
         }//Fin Si
 
 
-            return this.listaTelefonos[pos];
-        
+        return p;
+
     }//Fin Getter
 
     public void ponerValorEn(int pos, Persona p) {
         //Algoritmo
-        if (pos < this.nElementos || pos > this.nElementos) {
+        if (pos < this.listaTelefonos.size() || pos > this.listaTelefonos.size()) {
             System.out.println("Indice fuera de rango");
         } else {
-            this.listaTelefonos[pos] = p;
+            this.listaTelefonos.set(pos, p);
         }//Fin Si
 
     }//Fin Setter

@@ -39,7 +39,7 @@ public class Agenda {
                     nombreBuscado = nombre;
                     if (lista.longitud() != 0) {
                         if (lista.buscar(nombre, pos) != -1) {
-                            ultimaPosicion = lista.buscar(nombre, pos);
+                            ultimaPosicion = lista.buscar(  nombre, pos);
                             System.out.println("Encontrado en posicion: "
                                     + lista.buscar(nombre, pos));
                         } else {
