@@ -25,7 +25,7 @@ public class Ud13Act5 {
                 } else {
                     frecuencia.put(pareja, 1);
                 }//Fin Si
-            }//Fin SI
+            }//Fin Si
 
         }//Fin Para
         for (Map.Entry<String, Integer> entry : frecuencia.entrySet()) {
