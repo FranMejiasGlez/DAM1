@@ -4170,8 +4170,7 @@ con los estándares de sostenibilidad más ampliamente utilizados." />
                     </Modulo>
                 </Modulos>
             </Titulo>
-            <Titulo Nombre="Técnico Superior en Gestión de Ventas y Espacios Comerciales"
-                Duracion="2000"
+            <Titulo Nombre="Técnico Superior en Gestión de Ventas y Espacios Comerciales" Duracion="2000"
                 Denominacion="Gestión de Ventas y Espacios Comerciales">
                 <ObjetivoGeneral Codigo="a"
                     Descripcion="Conocer y valorar las fuentes y productos financieros disponibles, tales como créditos, préstamos y otros instrumentos financieros, así como las posibles subvenciones y seleccionar los más convenientes para la empresa, analizando la información contable y evaluando los costes, riesgos, requisitos y garantías exigidas por las entidades financieras, para obtener los recursos financieros necesarios que se requieren en el desarrollo de la actividad." />
@@ -4347,8 +4346,7 @@ con los estándares de sostenibilidad más ampliamente utilizados." />
                                 Descripcion="Se ha realizado la composición y el montaje de escaparates" />
                         </ResultadoDeAprendizaje>
                     </Modulo>
-                    <Modulo Codigo="0927"
-                        Nombre="Gestión de productos y promociones en el punto de venta"
+                    <Modulo Codigo="0927" Nombre="Gestión de productos y promociones en el punto de venta"
                         HorasAnuales="84" HorasSemanales="4" Curso="2">
                         <ResultadoDeAprendizaje Codigo="1"
                             Descripcion="Determina la dimensión del surtido de productos, definiendo el posicionamiento estratégico para conseguir la gestión óptima del establecimiento">
