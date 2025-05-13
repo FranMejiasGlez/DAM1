@@ -6,20 +6,31 @@
 public class Prueba {
 
     public static void main(String[] args) {
-        //entorno
-        Partida partida;
-        //char j1, j2;
-        boolean turno;
-        //algoritmo
-        //j1 = '\u263A';
-        //j2 = '\u263B';
-        turno = false;
-        partida = new Partida();
-        do {
-            System.out.println(partida.mostrarTablero());
-            partida.pideColumna(turno);
-            partida.insertaFicha(turno);
-            turno = !turno;
-        } while (!partida.haGanado());
+        Partida partida = new Partida();
+        byte columna;
+        char fichaActual;
+
+        while (!partida.esFinPartida()) {
+            System.out.println("Turno del jugador " + (partida.getTurno() + 1));
+
+            // Mostrar el tablero
+
+
+            // Pedir columna válida
+            do {
+                System.out.print("Introduce la columna (0-7): ");
+                columna = (byte) Leer.datoInt();
+                if (columna < 0 || columna > 7) {
+                    System.out.println("Columna fuera de rango.");
+                } else if (!partida.tirada(columna)) {
+                    System.out.println("La columna está llena.");
+                }
+            } while (columna < 0 || columna > 7 || !partida.tirada(columna));
+            partida.
+            // Colocar ficha
+
+
+            // Cambiar turno si aún no ha terminado
+        }//Fin Mientras
     }//Fin Programa
 }

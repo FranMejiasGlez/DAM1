@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  *
@@ -35,42 +31,21 @@ public class Tablero {
     public boolean estaLleno() {
         //Entorno
         boolean lleno;
-        byte fila, columna;
         //Algoritmo
-        fila = 5;
-        columna = 0;
-        lleno = false;
-        while (fila > this.ultimaFila || columna < this.ultimaColumna
-                && this.matriz[fila][columna] != ' ') {
-            fila--;
-            if (fila == 0) {
-                fila = 5;
-                columna++;
-            }//Fin Si
-        }//Fin Mientras
-        if (fila == 0 && columna == 7) {
-            lleno = !lleno;
-        }//Fin Si
+        lleno = this.numeroFichasIntroducidas == 48;
         return lleno;
     }//Fin Metodo
 
     public byte buscaVacio(byte col) {
         //entorno
         byte posicion, fila;
-        char fichaNegra, fichaBlanca;
         //algoritmo
-        fichaNegra = '\u263A';
-        fichaBlanca = '\u263B';
-        fila = 5;
         posicion = -1;
-        while (fila > 0 && this.matriz[fila][col] == fichaNegra
-                || this.matriz[fila][col] == fichaBlanca) {
-            fila--;
-        }//Fin Mientras
-        if (this.matriz[fila][col] != fichaNegra
-                || this.matriz[fila][col] != fichaBlanca) {
-            posicion = fila;
-        }//Fin Si
+        for (fila = 5; fila >= 0; fila--) {
+            if (this.matriz[fila][col] == ' ') {
+                posicion = fila;
+            }//Fin Si
+        }//Fin Para
         return posicion;
     }//Fin Metodo
 
@@ -79,7 +54,7 @@ public class Tablero {
         boolean colocado;
         //Algoritmo
         colocado = true;
-        if (this.buscaVacio(fila) == -1) {
+        if (this.buscaVacio(columna) == -1) {
             colocado = !colocado;
         } else {
             this.matriz[fila][columna] = ficha;
@@ -131,17 +106,41 @@ public class Tablero {
     private boolean compruebaDiagonalPrincipal(char ficha) {
         //entorno
         boolean haGanado;
+        byte filas, columnas;
         //algoritmo
         haGanado = false;
+        for (filas = 0; filas < 2; filas++) {
+            for (columnas = 0; columnas < 4; columnas++) {
+                if (this.matriz[filas][columnas]
+                        == this.matriz[filas + 1][columnas + 1]
+                        && this.matriz[filas + 2][columnas + 2]
+                        == this.matriz[filas + 3][columnas + 2]) {
+                    haGanado = true;
+                }//Fin Si
+            }//Fin Para
+        }//Fin Para
+        return haGanado;
     }//Fin Metodo
 
     private boolean compruebaDiagonalSecundaria(char ficha) {
         //entorno
         boolean haGanado;
+        byte filas, columnas;
         //algoritmo
         haGanado = false;
-    }//Fin Metodo
+        for (filas = 3; filas < 5; filas++) {
+            for (columnas = 0; columnas < 4; columnas++) {
+                if (this.matriz[filas][columnas] == ficha
+                        && this.matriz[filas + 1][columnas + 1] == ficha
+                        && this.matriz[filas + 2][columnas + 2] == ficha
+                        && this.matriz[filas + 3][columnas + 2] == ficha) {
 
+                    haGanado = true;
+                }//Fin Si
+            }//Fin Para
+        }//Fin Para
+        return haGanado;
+    }//Fin Metodo
     public boolean haGanado(char ficha) {
         //Entorno
         boolean haGanado;
@@ -152,5 +151,16 @@ public class Tablero {
                 || this.compruebaDiagonalSecundaria(ficha);
         return haGanado;
     }//Fin Metodo
+
+    public void pintaTablero() {
+        System.out.println(" 0 1 2 3 4 5 6 7");
+        for (int fila = 0; fila < 6; fila++) {
+            for (int col = 0; col < 8; col++) {
+                System.out.print("|" + matriz[fila][col]);
+            }
+            System.out.println("|");
+        }
+        System.out.println("-----------------");
+    }
 }//Fin Clase
 
