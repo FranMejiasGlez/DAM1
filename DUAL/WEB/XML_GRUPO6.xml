@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="XSD.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-stylesheet href="GRUPO6.xslt" type="text/xsl"?>
 <!--Se
 trataran a parte los bloques de contenido basicos de cada modulo y titulo general-->
 <!--
