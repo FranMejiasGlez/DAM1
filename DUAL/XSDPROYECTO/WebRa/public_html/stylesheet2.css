@@ -1,0 +1,236 @@
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.header2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgb(0, 0, 114);
+  color: white;
+  font-size: 6px;
+}
+
+.header3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #0195db;
+  color: white;
+  font-size: 12px;
+}
+.header4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #ff9100;
+  color: white;
+  font-size: 12px;
+}
+.links-header {
+  display: inline;
+  padding: 20px;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: left;
+  border-radius: 0%;
+}
+
+.footer {
+  display: flex;
+  justify-content: right;
+  background-color: #222222;
+  height: 260px;
+}
+
+.logoFooter {
+  position: absolute;
+  margin-top: 3%;
+  margin-right: 85%;
+}
+
+.contacto {
+  position: absolute;
+  margin-right: 5%;
+  margin-top: 4%;
+}
+
+.li-footer {
+  display: flex;
+  justify-content: right;
+}
+
+.redes {
+  position: absolute;
+  background-color: white;
+  width: 175px;
+  height: 46px;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-right: 85%;
+  margin-top: 8%;
+}
+
+.contenedor-competencias {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-areas:
+    "competencias"
+    "competencia general"
+    "Competencias profesionales,personales y sociales";
+}
+
+.contenedor-objetivos {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-areas:
+    "objetivos"
+    "objetivos generales";
+}
+
+.contenedor-competencias > div {
+  background-color: white;
+  color: #000;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contenedor-objetivos > div {
+  background-color: white;
+  color: #000;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contenedor-modulos1 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-areas:
+    "modulos 1º"
+    "modulos";
+}
+
+.contenedor-modulos1 > div {
+  background-color: white;
+  color: #000;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contenedor-modulos2 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-areas:
+    "modulos 2º"
+    "modulos";
+}
+
+.contenedor-modulos2 > div {
+  background-color: white;
+  color: #000;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.rectangulos {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 999px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  border-style: solid 1px;
+  background-color: rgb(67, 40, 189);
+  height: 50px;
+  width: 200px;
+}
+
+.item1 {
+  grid-area: competencia general;
+}
+
+.item2 {
+  grid-area: competencias;
+}
+
+.item3 {
+  grid-area: Competencias profesionales, personales y sociales;
+}
+
+.item4 {
+  grid-area: objetivos;
+}
+
+.item5 {
+  grid-area: objetivos generales;
+}
+
+.item6 {
+  grid-area: modulos 1º;
+}
+
+.item7 {
+  grid-area: modulos;
+}
+
+.item8 {
+  grid-area: modulos 2º;
+}
+
+.item9 {
+  grid-area: modulos;
+}
+
+.dropdown-menu li:hover {
+  background-color: #007bff; /* color de fondo al pasar el mouse */
+  color: white; /* color del texto al pasar el mouse */
+  cursor: pointer; /* cursor tipo mano */
+}
+.desplegable {
+  background-color: rgba(0, 174, 255, 0.836);
+  margin-top: 5%;
+  align-self: center;
+  border-radius: 20px;
+  border-style: solid;
+}
+
+.centrado {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textoTarjetas {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.pTarjetas {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.centradoParrafo {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
