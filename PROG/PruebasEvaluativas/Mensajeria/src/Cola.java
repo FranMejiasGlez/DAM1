@@ -1,19 +1,48 @@
 
 import java.util.LinkedList;
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
+import java.util.Queue;
 /**
  *
  * @author Mejias Gonzalez Francisco
  */
 public class Cola {
     //Atributos
-    private LinkedList<Mensaje> tCola;
+
+    private Queue<Mensaje> tCola;
     //Constructores
+
+    public Cola() {
+        tCola = new LinkedList<>();
+    }//Fin Constructor
     //Metodos
+
+    public void meterEnCola(Object obj) {
+        //Entorno
+        Mensaje msg;
+        //Algoritmo
+        if (obj instanceof Mensaje) {
+            msg = (Mensaje) obj;
+            this.tCola.offer(msg);
+        }//Fin Si
+
+    }//Fin Metodo
+
+    public Object sacarDeCola() {
+        //Entorno
+        Mensaje msg;
+        //Algoritmo
+        msg = null;
+        if (this.tCola.peek() instanceof Mensaje) {
+            msg = this.tCola.poll();
+        }//Fin Si
+        return msg;
+    }//Fin 
+
+    public boolean esColaVacia() {
+        //Entorno 
+        boolean esVacio;
+        //Algoritmo
+        return esVacio = this.tCola.peek() == null;
+    }//Fin Metodo
 }//Fin Clase
 

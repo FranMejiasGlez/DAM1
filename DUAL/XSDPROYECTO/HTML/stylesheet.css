@@ -1,0 +1,178 @@
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.header2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #0195db;
+  color: white;
+  font-size: 13px;
+}
+
+.header3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgb(0, 0, 114);
+  color: white;
+  font-size: 20px;
+}
+
+.links-header {
+  display: inline;
+  padding: 20px;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: left;
+  border-radius: 0%;
+}
+
+.footer {
+  display: flex;
+  justify-content: right;
+  background-color: #222222;
+  height: 260px;
+}
+
+.logoFooter {
+  position: absolute;
+  margin-top: 3%;
+  margin-right: 85%;
+}
+
+.contacto {
+  position: absolute;
+  margin-right: 5%;
+  margin-top: 4%;
+}
+
+.li-footer {
+  display: flex;
+  justify-content: right;
+}
+
+.redes {
+  position: absolute;
+  background-color: white;
+  width: 175px;
+  height: 46px;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-right: 85%;
+  margin-top: 8%;
+}
+
+.contenedor-principal {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Dos columnas de igual ancho */
+  gap: 10px;
+  /* Espacio entre los divs */
+  row-gap: 100px;
+}
+
+.desplegable {
+  background-color: rgba(0, 174, 255, 0.836);
+  margin-top: 5%;
+  align-self: center;
+  border-radius: 20px;
+  border-style: solid;
+  text-align: center;
+}
+
+.serviciosCulturales {
+  /* border-style: solid;*/
+  border-radius: 10%;
+  max-width: 490px;
+  height: 525;
+  justify-self: center;
+  display: flex;
+}
+
+.informaticaVideojuegos {
+  justify-self: center;
+  border-radius: 10%;
+  /* border-style: solid;*/
+  max-width: 490px;
+  height: 525;
+}
+
+.administracionMarketing {
+  /* border-style: solid;*/
+  border-radius: 10%;
+  max-width: 490px;
+  height: 525;
+  justify-self: center;
+}
+
+.imagenSonido {
+  /* border-style: solid;*/
+  border-radius: 10%;
+  max-width: 490px;
+  height: 525;
+  justify-self: center;
+}
+
+.hosteleriaTurismo {
+  /* border-style: solid;*/
+  border-radius: 10%;
+  max-width: 490px;
+  height: 525;
+  justify-self: center;
+}
+
+.actividadesFisicas {
+  /* border-style: solid;*/
+  border-radius: 10%;
+  max-width: 490px;
+  height: 525;
+  justify-self: center;
+}
+
+.tarjeta img {
+  border-radius: 45px;
+  object-fit: cover;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.tarjeta {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.centrado {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textoTarjetas {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.pTarjetas {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.centradoParrafo {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

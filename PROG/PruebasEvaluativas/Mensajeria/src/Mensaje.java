@@ -97,16 +97,16 @@ public class Mensaje {
         String cadCifrada, cadena;
         //Algoritmo
         CLAVE = 3;
-        cadena = msg;
+        cadena = Mensaje.reverse(msg);
         cadCifrada = "";
         for (int i = 0; i <= cadena.length() - 1; i++) {
             if (cadena.charAt(i) != ' ') {
                 cadCifrada = cadCifrada
                         + (char) (cadena.charAt(i) - 'A' + CLAVE + 26) % 26;
-            }
+            }//Fin Si
         }//Fin Para
         return cadCifrada;
-    }
+    }//Fin Metodo
 
     private static String reverse(String cad) {
         //Entorno
@@ -114,19 +114,23 @@ public class Mensaje {
         //Algoritmo
         cadena = cad;
         salida = "";
-        palabraInvertida = "";
         while (cadena.indexOf(' ') != -1) {
             //Busca la primera palabra
             palabra = cadena.substring(0, cadena.indexOf(' '));
+            palabraInvertida = "";
             //Construccion de la cadena invertida
             for (int i = palabra.length() - 1; i >= 0; i--) {
                 palabraInvertida = palabraInvertida + palabra.substring(i, i + 1);
             }//Fin Para
             salida = salida + palabraInvertida + " ";
             //Reemplaza la primera palabra y el espacio con vacio
-            cadena = cadena.replaceAll(cadena.substring(0, cadena.indexOf(' ')
-                    + 1), "");
+            cadena = cadena.substring(cadena.indexOf(' ') + 1);
         }//Fin Mientras
+        // Invertir la última palabra
+        palabraInvertida = "";
+        for (int i = cadena.length() - 1; i >= 0; i--) {
+            palabraInvertida += cadena.charAt(i);
+        }//Fin Para
         salida = salida + palabraInvertida;
         return salida.trim();
     }//Fin Metodo
