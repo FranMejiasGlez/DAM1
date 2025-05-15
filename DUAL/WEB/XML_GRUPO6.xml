@@ -3917,8 +3917,7 @@ colaboración con el entorno.
                         </ResultadoDeAprendizaje>
 
                     </Modulo>
-                    <Modulo Codigo="1665"
-                        Nombre="Digitalización aplicada a los sectores productivos"
+                    <Modulo Codigo="1665" Nombre="Digitalización aplicada a los sectores productivos"
                         HorasAnuales="30" HorasSemanales="1" Curso="1">
                         <ResultadoDeAprendizaje Codigo="1"
                             Descripcion="Analiza el concepto de digitalización y su repercusión en los sectores productivos teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology: tecnología de la información) y OT (Operation Technology: tecnología de operación) característicos. ">

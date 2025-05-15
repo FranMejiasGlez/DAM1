@@ -10,7 +10,7 @@
     flex-direction: row;
     background-color: rgb(0, 0, 114);
     color: white;
-    font-size: 6px;
+    font-size: 13px;
 }
 
 .header3 {
@@ -19,16 +19,19 @@
     flex-direction: row;
     background-color: #0195db;
     color: white;
-    font-size: 12px;
+    font-size: 20px;
 }
-
+.accordion-button {
+  position: relative;           /* Necesario para posicionar el triángulo */
+  padding-right: 2.5rem;        /* Espacio para el triángulo */
+}
 .header4 {
     display: flex;
     justify-content: center;
     flex-direction: row;
     background-color: #ff9100;
     color: white;
-    font-size: 12px;
+    font-size: 19px;
 }
 
 .links-header {
@@ -40,6 +43,7 @@
     display: flex;
     justify-content: left;
     border-radius: 0%;
+    padding:10px
 }
 
 .footer {
@@ -76,29 +80,72 @@
     margin-right: 85%;
     margin-top: 8%;
 }
+.accordion-button::after {
+    text-align: center; 
+    content: "";
+    border-style: solid;
+    width: 0;
+    height: 0;
+    border-top: none;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid #ffffff; /* Color del triángulo */
+    transform: rotate(0deg); /* apuntando arriba */
+    transition: transform 0.2s ease;
+}
 
-.contenedor-competencias {
+.accordion-button.collapsed::after {
+    transform: rotate(180deg); /* apuntando abajo cuando está colapsado */
+}
+
+.contenedor-curso {
     margin-top: 10%;
     margin-bottom: 10%;
     display: grid;
     grid-template-areas:
-        "contenidos contenidos"
-        "contenidos objetivos"
-        "contenidos competencias";
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+        "curso contenidosbasicos"
+        "curso objetivosgenerales"
+        "curso competenciaspps";
 }
-boton {
-    white-space: normal;       /* Permite que el texto se divida en varias líneas */
-    word-wrap: break-word;     /* Rompe palabras largas si es necesario */
-    overflow-wrap: break-word; /* Alternativa moderna a word-wrap */
-    text-align: center;        /* Centra el texto dentro del botón */
-    padding: 10px 20px;        /* Espaciado interno */
-    max-width: 100%;           /* Evita que el botón crezca más del contenedor */
-    width: 100%;               /* Opcional, para ocupar todo el espacio disponible */
-    box-sizing: border-box;    /* Incluye padding en el ancho total */
+.contenedor-ResultadosAprendizaje {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas: "resultado ra";
 }
-.contenidos {
+.curso {
+    background-color: #1d1b58;
+    color: #ffffff;
+    font-size: 23px;
+    border-radius: 999px;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    justify-self: center;
+}
+.resultado {
+    background-color: #1d1b58;
+    color: #ffffff;
+    font-size: 23px;
+    border-radius: 999px;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    font-weight: bold;
+}
+
+.contenidosbasicos {
     grid-area: contenidos;
 }
 
@@ -109,60 +156,18 @@ boton {
 .competencias {
     grid-area: competencias;
 }
-
-.contenedor-ResultadosAprendizaje {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    display: grid;
-    grid-template-areas:
-        "resultado ra";
+.competenciaspps {
+    grid-area: competenciaspps;
 }
-.resultado{
-    grid-area:resultado;
-}
-.ra{
-    grid-area:ra;
-}
-.contenedor-competencias>div {
-    background-color: white;
-    color: #000;
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
+.curso {
+    grid-area: curso;
 }
 
-.rectangulos {
-    text-align: center;
-    display: flex;
-    justify-content: left;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 999px;
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
-    border-style: solid 1px;
-    background-color: rgb(67, 40, 189);
-    height: 50px;
-    width: 200px;
+.resultado {
+    grid-area: resultado;
 }
-
-
-.dropdown-menu li:hover {
-    background-color: #007bff;
-    /* color de fondo al pasar el mouse */
-    color: white;
-    /* color del texto al pasar el mouse */
-    cursor: pointer;
-    /* cursor tipo mano */
-}
-
-.desplegable {
-    background-color: rgba(0, 174, 255, 0.836);
-    margin-top: 5%;
-    align-self: center;
-    border-radius: 20px;
-    border-style: solid;
+.ra {
+    grid-area: ra;
 }
 
 .centrado {

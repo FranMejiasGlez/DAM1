@@ -31,6 +31,7 @@
   display: flex;
   justify-content: left;
   border-radius: 0%;
+  padding:10px
 }
 
 .footer {
@@ -80,12 +81,12 @@
 }
 
 .desplegable {
-  background-color: rgba(0, 174, 255, 0.836);
+  background-color: rgba(17, 49, 194, 0.836);
   margin-top: 5%;
   align-self: center;
-  border-radius: 20px;
-  border-style: solid;
+  border-radius: 40px;
   text-align: center;
+  padding: 10px;
 }
 
 .serviciosCulturales {

@@ -32,12 +32,14 @@
 .links-header {
   display: inline;
   padding: 20px;
+  justify-self: center;
 }
 
 .logo-header {
   display: flex;
   justify-content: left;
   border-radius: 0%;
+  padding:10px
 }
 
 .footer {
@@ -79,135 +81,121 @@
   margin-top: 10%;
   margin-bottom: 10%;
   display: grid;
+   grid-template-rows: 100px 200px;
   grid-template-areas:
-    "competencias"
-    "competencia general"
-    "Competencias profesionales,personales y sociales";
+    "competencias competenciageneral"
+    "competencias competenciaspps";
 }
 
 .contenedor-objetivos {
   margin-top: 10%;
   margin-bottom: 10%;
   display: grid;
-  grid-template-areas:
-    "objetivos"
-    "objetivos generales";
-}
-
-.contenedor-competencias > div {
-  background-color: #f1f1f1;
-  color: #000;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.contenedor-objetivos > div {
-  background-color: #f1f1f1;
-  color: #000;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
+  grid-template-areas: "objetivos objetivosgenerales";
 }
 
 .contenedor-modulos1 {
   margin-top: 10%;
   margin-bottom: 10%;
   display: grid;
-  grid-template-areas:
-    "modulos 1º"
-    "modulos";
-}
-
-.contenedor-modulos1 > div {
-  background-color: #f1f1f1;
-  color: #000;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
+  grid-template-areas: "modulos modulos1";
 }
 
 .contenedor-modulos2 {
   margin-top: 10%;
   margin-bottom: 10%;
   display: grid;
-  grid-template-areas:
-    "modulos 2º"
-    "modulos";
+  grid-template-areas: "modulos modulos2";
 }
-
-.contenedor-modulos2 > div {
-  background-color: #f1f1f1;
-  color: #000;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.rectangulos {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+.competencias {
+  background-color: #1d1b58;
+  color: #ffffff;
+  font-size: 23px;
   border-radius: 999px;
-  color: white;
-  font-weight: bold;
-  font-size: 22px;
-  border-style: solid 1px;
-  background-color: rgb(67, 40, 189);
-  height: 50px;
   width: 200px;
+  height: 70px;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  align-content: center;
+}
+.objetivos {
+  background-color: #1d1b58;
+  color: #ffffff;
+  font-size: 23px;
+  border-radius: 999px;
+  width: 200px;
+  height: 70px;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  align-content: center;
+}
+.modulo {
+  background-color: #1d1b58;
+  color: #ffffff;
+  font-size: 23px;
+  border-radius: 999px;
+  width: 200px;
+  height: 70px;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  align-content: center;
 }
 
-.item1 {
-  grid-area: competencia general;
+
+.accordion-button::after {
+  display:flex; 
+  content: "";
+  border-style: solid;
+  width: 0;
+  height: 0;
+  border-top: none;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 25px solid #ffffff; /* Color del triángulo */
+  transform: rotate(0deg); /* apuntando arriba */
+  transition: transform 0.2s ease;
 }
 
-.item2 {
+.accordion-button.collapsed::after {
+  transform: rotate(180deg); /* apuntando abajo cuando está colapsado */
+}
+
+.competenciageneral {
+  grid-area: competenciageneral;
+}
+
+.competencias {
   grid-area: competencias;
 }
 
-.item3 {
-  grid-area: Competencias profesionales, personales y sociales;
+.competenciaspps {
+  grid-area: competenciaspps;
 }
 
-.item4 {
+.objetivos {
   grid-area: objetivos;
 }
 
-.item5 {
-  grid-area: objetivos generales;
+.objetivosgenerales {
+  grid-area: objetivosgenerales;
 }
 
-.item6 {
-  grid-area: modulos 1º;
+.modulos1 {
+  grid-area: modulos1;
 }
 
-.item7 {
+.modulos {
   grid-area: modulos;
 }
 
-.item8 {
-  grid-area: modulos 2º;
+.modulos2 {
+  grid-area: modulos2;
 }
 
-.item9 {
-  grid-area: modulos;
-}
 
-.dropdown-menu li:hover {
-  background-color: #007bff; /* color de fondo al pasar el mouse */
-  color: white; /* color del texto al pasar el mouse */
-  cursor: pointer; /* cursor tipo mano */
-}
-.desplegable {
-  background-color: rgba(0, 174, 255, 0.836);
-  margin-top: 5%;
-  align-self: center;
-  border-radius: 20px;
-  border-style: solid;
-}
 
 .centrado {
   position: absolute;

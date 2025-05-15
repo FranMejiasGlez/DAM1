@@ -1,236 +1,228 @@
 .header {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .header2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  background-color: rgb(0, 0, 114);
-  color: white;
-  font-size: 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(0, 0, 114);
+    color: white;
+    font-size: 6px;
 }
 
 .header3 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  background-color: #0195db;
-  color: white;
-  font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #0195db;
+    color: white;
+    font-size: 13px;
+}
+.accordion-button {
+    position: relative;           /* Necesario para posicionar el triángulo */
+    padding-right: 2.5rem;        /* Espacio para el triángulo */
 }
 .header4 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  background-color: #ff9100;
-  color: white;
-  font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #ff9100;
+    color: white;
+    font-size: 19px;
 }
 .links-header {
-  display: inline;
-  padding: 20px;
+    display: inline;
+    padding: 20px;
+    justify-self: center;
 }
 
 .logo-header {
-  display: flex;
-  justify-content: left;
-  border-radius: 0%;
+    display: flex;
+    justify-content: left;
+    border-radius: 0%;
+    padding:10px
 }
 
 .footer {
-  display: flex;
-  justify-content: right;
-  background-color: #222222;
-  height: 260px;
+    display: flex;
+    justify-content: right;
+    background-color: #222222;
+    height: 260px;
 }
 
 .logoFooter {
-  position: absolute;
-  margin-top: 3%;
-  margin-right: 85%;
+    position: absolute;
+    margin-top: 3%;
+    margin-right: 85%;
 }
 
 .contacto {
-  position: absolute;
-  margin-right: 5%;
-  margin-top: 4%;
+    position: absolute;
+    margin-right: 5%;
+    margin-top: 4%;
 }
 
 .li-footer {
-  display: flex;
-  justify-content: right;
+    display: flex;
+    justify-content: right;
 }
 
 .redes {
-  position: absolute;
-  background-color: white;
-  width: 175px;
-  height: 46px;
-  border-radius: 999px;
-  overflow: hidden;
-  margin-right: 85%;
-  margin-top: 8%;
+    position: absolute;
+    background-color: white;
+    width: 175px;
+    height: 46px;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-right: 85%;
+    margin-top: 8%;
 }
 
 .contenedor-competencias {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  display: grid;
-  grid-template-areas:
-    "competencias"
-    "competencia general"
-    "Competencias profesionales,personales y sociales";
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas:
+        "competencias competenciageneral"
+        "competencias competenciaspps";
 }
 
 .contenedor-objetivos {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  display: grid;
-  grid-template-areas:
-    "objetivos"
-    "objetivos generales";
-}
-
-.contenedor-competencias > div {
-  background-color: #f1f1f1;
-  color: #000;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.contenedor-objetivos > div {
-  background-color: #f1f1f1;
-  color: #000;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas: "objetivos objetivosgenerales";
 }
 
 .contenedor-modulos1 {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  display: grid;
-  grid-template-areas:
-    "modulos 1º"
-    "modulos";
-}
-
-.contenedor-modulos1 > div {
-  background-color: #f1f1f1;
-  color: #000;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas: "modulos modulos1";
 }
 
 .contenedor-modulos2 {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  display: grid;
-  grid-template-areas:
-    "modulos 2º"
-    "modulos";
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas: "modulos modulos2";
+}
+.competencias {
+    background-color: #1d1b58;
+    color: #ffffff;
+    font-size: 23px;
+    border-radius: 999px;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+.objetivos {
+    background-color: #1d1b58;
+    color: #ffffff;
+    font-size: 23px;
+    border-radius: 999px;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+.modulo {
+    background-color: #1d1b58;
+    color: #ffffff;
+    font-size: 23px;
+    border-radius: 999px;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
 }
 
-.contenedor-modulos2 > div {
-  background-color: #f1f1f1;
-  color: #000;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
+.accordion-button::after {
+    text-align: center;
+    content: "";
+    border-style: solid;
+    width: 0;
+    height: 0;
+    border-top: none;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid #ffffff; /* Color del triángulo */
+    transform: rotate(0deg); /* apuntando arriba */
+    transition: transform 0.2s ease;
 }
 
-.rectangulos {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 999px;
-  color: white;
-  font-weight: bold;
-  font-size: 22px;
-  border-style: solid 1px;
-  background-color: rgb(67, 40, 189);
-  height: 50px;
-  width: 200px;
+.accordion-button.collapsed::after {
+    transform: rotate(180deg); /* apuntando abajo cuando está colapsado */
 }
 
-.item1 {
-  grid-area: competencia general;
+.competenciageneral {
+    grid-area: competenciageneral;
 }
 
-.item2 {
-  grid-area: competencias;
+.competencias {
+    grid-area: competencias;
 }
 
-.item3 {
-  grid-area: Competencias profesionales, personales y sociales;
+.competenciaspps {
+    grid-area: competenciaspps;
 }
 
-.item4 {
-  grid-area: objetivos;
+.objetivos {
+    grid-area: objetivos;
 }
 
-.item5 {
-  grid-area: objetivos generales;
+.objetivosgenerales {
+    grid-area: objetivosgenerales;
 }
 
-.item6 {
-  grid-area: modulos 1º;
+.modulos1 {
+    grid-area: modulos1;
 }
 
-.item7 {
-  grid-area: modulos;
+.modulos {
+    grid-area: modulos;
 }
 
-.item8 {
-  grid-area: modulos 2º;
+.modulos2 {
+    grid-area: modulos2;
 }
 
-.item9 {
-  grid-area: modulos;
-}
 
-.dropdown-menu li:hover {
-  background-color: #007bff; /* color de fondo al pasar el mouse */
-  color: white; /* color del texto al pasar el mouse */
-  cursor: pointer; /* cursor tipo mano */
-}
-.desplegable {
-  background-color: rgba(0, 174, 255, 0.836);
-  margin-top: 5%;
-  align-self: center;
-  border-radius: 20px;
-  border-style: solid;
-}
 
 .centrado {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .textoTarjetas {
-  color: white;
-  font-weight: bold;
-  font-size: 22px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .pTarjetas {
-  color: white;
-  font-weight: bold;
-  font-size: 13px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .centradoParrafo {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
