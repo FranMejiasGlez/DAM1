@@ -1,6 +1,7 @@
 
 import java.util.LinkedList;
 import java.util.Queue;
+
 /**
  *
  * @author Mejias Gonzalez Francisco
@@ -31,18 +32,12 @@ public class Cola {
         //Entorno
         Mensaje msg;
         //Algoritmo
-        msg = null;
-        if (this.tCola.peek() instanceof Mensaje) {
-            msg = this.tCola.poll();
-        }//Fin Si
+        msg = this.tCola.poll();
         return msg;
     }//Fin 
 
     public boolean esColaVacia() {
-        //Entorno 
-        boolean esVacio;
-        //Algoritmo
-        return esVacio = this.tCola.peek() == null;
+        return this.tCola.isEmpty();
     }//Fin Metodo
 }//Fin Clase
 

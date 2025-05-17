@@ -8,7 +8,7 @@ import java.util.GregorianCalendar;
 public class Mensaje {
     //Atributos
 
-    private static String APIPA;
+    private static String APIPA = "169.254.0.1";
     private String usuario;
     private GregorianCalendar fecha;
     private String ip;
@@ -16,22 +16,20 @@ public class Mensaje {
     //Constructores
 
     public Mensaje() {
-        Mensaje.APIPA = "169.254.0.0";
         this.usuario = "System";
         this.ip = Mensaje.getAPIPA();
         this.fecha = new GregorianCalendar();
-        this.texto = "Por defecto";
+        this.texto = Mensaje.encripta(Mensaje.reverse("POR DEFECTO"));
     }//Fin Constructor
 
     public Mensaje(String usuario, String ip, String texto) {
-        Mensaje.APIPA = "169.254.0.0";
         this.usuario = usuario;
         if (Mensaje.esValida(ip)) {
             this.ip = ip;
         } else {
             this.ip = Mensaje.getAPIPA();
         }//Fin Si
-        this.texto = texto.toUpperCase();
+        this.texto = Mensaje.encripta(Mensaje.reverse(texto.toUpperCase()));
         this.fecha = new GregorianCalendar();
     }//Fin Constructor
     //Metodos
@@ -44,9 +42,9 @@ public class Mensaje {
         //Entorno
         int dia, mes, anio;
         //Algoritmo
-        dia = fecha.get(GregorianCalendar.DAY_OF_MONTH);
-        mes = fecha.get(GregorianCalendar.MONTH);
-        anio = fecha.get(GregorianCalendar.YEAR);
+        dia = this.fecha.get(GregorianCalendar.DAY_OF_MONTH);
+        mes = this.fecha.get(GregorianCalendar.MONTH) + 1;
+        anio = this.fecha.get(GregorianCalendar.YEAR);
         return "Fecha: " + dia + "/" + mes + "/" + anio;
     }//Fin Metodo
 
@@ -55,7 +53,7 @@ public class Mensaje {
     }//Fin Metodo
 
     public String getTexto() {
-        return this.texto;
+        return Mensaje.reverse(Mensaje.desencripta(this.texto));
     }//Fin Metodo
 
     public static String getAPIPA() {
@@ -63,49 +61,58 @@ public class Mensaje {
     }//Fin Metodo
 
     private static boolean esValida(String ip) {
-        boolean esValida = false;
-
-        if (ip != null && ip.matches(
-                "((25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)\\.){3}(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)")) {
-            String[] partes = ip.split("\\.");
-            esValida = partes.length == 4;
-        }//Fin Si
-
-        return esValida;
-    }//Fin Metodo
-
-    private static String encripta(String msg) {
         //Entorno
-        final int CLAVE;
-        String cadCifrada, cadena;
+        boolean valida = false;
         //Algoritmo
-        CLAVE = 3;
-        cadena = msg;
-        cadCifrada = "";
-        for (int i = 0; i <= cadena.length() - 1; i++) {
-            if (cadena.charAt(i) != ' ') {
-                cadCifrada = cadCifrada
-                        + (char) (cadena.charAt(i) - 'A' - CLAVE + 26) % 26;
-            }
+        if (ip.matches("((25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)(\\.|$)){4}")) {
+            valida = true;
+        }//Fin Si
+        return valida;
+    }//Fin Metodo
+    private static String encripta(String msg) {
+        //Entorno:
+        String encriptado;
+        char letra;
+        final byte DESPLAZAMIENTO = 3;
+
+        //Algoritmo:
+        encriptado = "";
+        for (short i = 0; i < msg.length(); i++) {
+            letra = msg.substring(i, i + 1).toUpperCase().charAt(0);
+            if (letra == ' ') {
+                letra = 'C';
+            } else {
+                letra = (char) (letra + DESPLAZAMIENTO);
+                if (letra > 'Z' + 1) {
+                    letra = (char) (('A' - 1) + (letra - ('Z' + 1)));
+                }//Fin Si
+            }//Fin Si
+            encriptado = encriptado + letra;
         }//Fin Para
-        return cadCifrada;
+        return encriptado;
     }//Fin Metodo
 
     private static String desencripta(String msg) {
-        //Entorno
-        final int CLAVE;
-        String cadCifrada, cadena;
-        //Algoritmo
-        CLAVE = 3;
-        cadena = Mensaje.reverse(msg);
-        cadCifrada = "";
-        for (int i = 0; i <= cadena.length() - 1; i++) {
-            if (cadena.charAt(i) != ' ') {
-                cadCifrada = cadCifrada
-                        + (char) (cadena.charAt(i) - 'A' + CLAVE + 26) % 26;
+        //Entorno:
+        String desencriptado;
+        char letra;
+        final byte DESPLAZAMIENTO = 3;
+
+        //Algoritmo:
+        desencriptado = "";
+        for (short i = 0; i < msg.length(); i++) {
+            letra = msg.substring(i, i + 1).toUpperCase().charAt(0);
+            if (letra == 'C') {
+                letra = ' ';
+            } else {
+                letra = (char) (letra - DESPLAZAMIENTO);
+                if (letra < 'A') {
+                    letra = (char) (('Z' + 2) - ('A' - letra));
+                }//Fin Si
             }//Fin Si
+            desencriptado = desencriptado + letra;
         }//Fin Para
-        return cadCifrada;
+        return desencriptado;
     }//Fin Metodo
 
     private static String reverse(String cad) {
@@ -129,7 +136,7 @@ public class Mensaje {
         // Invertir la última palabra
         palabraInvertida = "";
         for (int i = cadena.length() - 1; i >= 0; i--) {
-            palabraInvertida += cadena.charAt(i);
+            palabraInvertida = palabraInvertida + cadena.charAt(i);
         }//Fin Para
         salida = salida + palabraInvertida;
         return salida.trim();
