@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Comienzo REGEX-->
+
+    <xs:simpleType name="RegexFamiliaProfesionalNombre">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z\s]+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RegexFamiliaProfesionalDuracion">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Descripciones">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z\s\w+(-?:,\w+)*\.]+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Nombre">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-záéíóúñ\s]+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RegexTituloDuracion">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RegexTituloDenominacion">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z\s]+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RegexTituloCompetenciaGeneral">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z\s]+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RegexObjetivoGeneralCodigo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-x]|[ñ]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RegexCPPSCodigo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-rñ]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RegexModuloCodigo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RegexModuloCurso">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="\d{1}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RegexModuloHorasAnuales">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{3}|\d{2}|\d{1}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RegexModuloHorasSemanales">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}|\d{1}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RegexModuloRACodigo">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="\d"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="RegexCECodigo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-m]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <!-- Fin REGEX-->
+
+    <!-- Comienzo arbol-->
+
+    <xs:element name="FamiliasProfesionales">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="FamiliaProfesional" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Titulos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Titulo" maxOccurs="3">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ObjetivoGeneral"
+                                                        maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="Codigo"
+                                                                type="RegexObjetivoGeneralCodigo"
+                                                                use="required" />
+                                                            <xs:attribute name="Descripcion"
+                                                                type="Descripciones" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element
+                                                        name="CompetenciaProfesionalPersonalySocial"
+                                                        maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="Codigo"
+                                                                type="RegexCPPSCodigo"
+                                                                use="required" />
+                                                            <xs:attribute name="Descripcion"
+                                                                type="Descripciones" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="Modulos">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Modulo"
+                                                                    maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element
+                                                                                name="ResultadoDeAprendizaje"
+                                                                                maxOccurs="unbounded">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element
+                                                                                            name="CriterioDeEvaluacion"
+                                                                                            maxOccurs="unbounded">
+                                                                                            <xs:complexType>
+                                                                                                <xs:attribute
+                                                                                                    name="Codigo"
+                                                                                                    type="RegexCECodigo"
+                                                                                                    use="required" />
+                                                                                                <xs:attribute
+                                                                                                    name="Descripcion"
+                                                                                                    type="Descripciones"
+                                                                                                    use="required" />
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute
+                                                                                        name="Codigo"
+                                                                                        type="RegexModuloRACodigo"
+                                                                                        use="required" />
+                                                                                    <xs:attribute
+                                                                                        name="Descripcion"
+                                                                                        type="Descripciones"
+                                                                                        use="required" />
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="Codigo"
+                                                                            type="RegexModuloCodigo"
+                                                                            use="required" />
+                                                                        <xs:attribute name="Nombre"
+                                                                            type="Nombre"
+                                                                            use="required" />
+                                                                        <xs:attribute
+                                                                            name="HorasAnuales"
+                                                                            type="RegexModuloHorasAnuales"
+                                                                            use="required"></xs:attribute>
+                                                                        <xs:attribute
+                                                                            name="HorasSemanales"
+                                                                            type="RegexModuloHorasSemanales"
+                                                                            use="required"></xs:attribute>
+                                                                        <xs:attribute name="Curso"
+                                                                            type="RegexModuloCurso"
+                                                                            use="required"></xs:attribute>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="Nombre" type="Nombre"
+                                                    use="required" />
+                                                <xs:attribute name="Duracion"
+                                                    type="RegexTituloDuracion"
+                                                    use="required" />
+                                                <xs:attribute name="Denominacion" type="Nombre"
+                                                    use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+
+<!-- Fin arbol-->

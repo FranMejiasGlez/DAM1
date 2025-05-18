@@ -1,0 +1,228 @@
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.header2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(0, 0, 114);
+    color: white;
+    font-size: 6px;
+}
+
+.header3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #0195db;
+    color: white;
+    font-size: 13px;
+}
+.accordion-button {
+    position: relative;           /* Necesario para posicionar el triángulo */
+    padding-right: 2.5rem;        /* Espacio para el triángulo */
+}
+.header4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #ff9100;
+    color: white;
+    font-size: 19px;
+}
+.links-header {
+    display: inline;
+    padding: 20px;
+    justify-self: center;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: left;
+    border-radius: 0%;
+    padding:10px
+}
+
+.footer {
+    display: flex;
+    justify-content: right;
+    background-color: #222222;
+    height: 260px;
+}
+
+.logoFooter {
+    position: absolute;
+    margin-top: 3%;
+    margin-right: 85%;
+}
+
+.contacto {
+    position: absolute;
+    margin-right: 5%;
+    margin-top: 4%;
+}
+
+.li-footer {
+    display: flex;
+    justify-content: right;
+}
+
+.redes {
+    position: absolute;
+    background-color: white;
+    width: 175px;
+    height: 46px;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-right: 85%;
+    margin-top: 8%;
+}
+
+.contenedor-competencias {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas:
+        "competencias competenciageneral"
+        "competencias competenciaspps";
+}
+
+.contenedor-objetivos {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas: "objetivos objetivosgenerales";
+}
+
+.contenedor-modulos1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas: "modulos modulos1";
+}
+
+.contenedor-modulos2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas: "modulos modulos2";
+}
+.competencias {
+    background-color: #1d1b58;
+    color: #ffffff;
+    font-size: 23px;
+    border-radius: 999px;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+.objetivos {
+    background-color: #1d1b58;
+    color: #ffffff;
+    font-size: 23px;
+    border-radius: 999px;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+.modulo {
+    background-color: #1d1b58;
+    color: #ffffff;
+    font-size: 23px;
+    border-radius: 999px;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+}
+
+.accordion-button::after {
+    text-align: center;
+    content: "";
+    border-style: solid;
+    width: 0;
+    height: 0;
+    border-top: none;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid #ffffff; /* Color del triángulo */
+    transform: rotate(0deg); /* apuntando arriba */
+    transition: transform 0.2s ease;
+}
+
+.accordion-button.collapsed::after {
+    transform: rotate(180deg); /* apuntando abajo cuando está colapsado */
+}
+
+.competenciageneral {
+    grid-area: competenciageneral;
+}
+
+.competencias {
+    grid-area: competencias;
+}
+
+.competenciaspps {
+    grid-area: competenciaspps;
+}
+
+.objetivos {
+    grid-area: objetivos;
+}
+
+.objetivosgenerales {
+    grid-area: objetivosgenerales;
+}
+
+.modulos1 {
+    grid-area: modulos1;
+}
+
+.modulos {
+    grid-area: modulos;
+}
+
+.modulos2 {
+    grid-area: modulos2;
+}
+
+
+
+.centrado {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textoTarjetas {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.pTarjetas {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.centradoParrafo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
