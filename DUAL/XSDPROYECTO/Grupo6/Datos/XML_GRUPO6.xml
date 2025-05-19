@@ -4352,6 +4352,305 @@ con los estándares de sostenibilidad más ampliamente utilizados." />
                 <CompetenciaProfesionalPersonalySocial Codigo="r"
                     Descripcion="Ejercer sus derechos y cumplir con las obligaciones derivadas de su actividad profesional, de acuerdo con lo establecido en la legislación vigente, participando activamente en la vida económica, social y cultural." />
                 <Modulos>
+                    <Modulo Codigo="0623" Nombre="Gestión económica y financiera de la empresa"
+                        HorasAnuales="192" HorasSemanales="6" Curso="1">
+                        <ResultadoDeAprendizaje Codigo="1"
+                            Descripcion="Recopila información sobre iniciativas emprendedoras y oportunidades de creación de empresas, valorando el impacto sobre el entorno de actuación e incorporando valores éticos.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se ha reconocido el fenómeno de la responsabilidad social de la empresa y su importancia como
+elemento de estrategia empresarial." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han descrito individualmente las funciones básicas de la empresa y se han analizado todas en
+conjunto como un sistema integral." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han evaluado los conceptos de cultura empresarial e imagen corporativa, y su relación con
+los objetivos empresariales fijados en el plan de empresa." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han identificado los principales componentes del entorno general que rodea a la empresa:
+económico, social, demográfico y cultural." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han identificado prácticas que incorporan valores éticos y sociales." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha llevado a cabo un estudio de viabilidad económica y financiera de una pyme." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se ha evaluado el concepto de cultura emprendedora y su importancia como fuente de creación
+de empleo y bienestar social." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se ha valorado la importancia de la iniciativa individual, la creatividad, la formación y la colaboración, para tener éxito en la actividad emprendedora." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="2"
+                            Descripcion="Establece la forma jurídica de la empresa, ajustándose a la normativa vigente.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han evaluado las distintas formas jurídicas de las empresas" />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha seleccionado, a partir de un estudio comparativo, la forma jurídica más adecuada, valorando los costes, la responsabilidad y las obligaciones jurídicas." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han determinado los trámites administrativos, autorizaciones, licencias y capacitación profesional, en su caso, que se requieren para la puesta en marcha de una empresa." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han calculado los gastos de constitución y puesta en marcha de la empresa derivados de las
+distintas formas jurídicas, consultando la legislación vigente." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han determinado los trámites jurídicos y administrativos que se deben realizar para la constitución de la empresa, a partir de la información obtenida en las administraciones y organismos competentes" />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha obtenido información sobre las posibles ayudas y subvenciones oficiales para la creación
+de una empresa." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han identificado las obligaciones laborales y fiscales derivadas del ejercicio de la actividad
+económica de la empresa." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han analizado las funciones de los sindicatos, comités de empresa, representantes de personal,
+inspectores de trabajo y otras instituciones sociales que intervienen en el sector correspondiente." />
+                            <CriterioDeEvaluacion Codigo="i"
+                                Descripcion="Se han analizado las situaciones de insolvencia, quiebra y suspensión de pagos y el procedimiento de concurso de acreedores en casos de insolvencia, así como la responsabilidad del
+empresario." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="3"
+                            Descripcion="Organiza los trámites para la obtención de los recursos necesarios para la financiación de las
+inversiones y suministros, evaluando las distintas alternativas financieras posibles.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se ha obtenido información sobre los instrumentos financieros y de crédito más habituales para
+la financiación de las inversiones y demás operaciones de la empresa" />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha analizado información sobre el procedimiento, los requisitos, garantías y documentación
+que se exigen para obtener un crédito o un préstamo en una entidad financiera." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se ha seleccionado la alternativa financiera más ventajosa para la adquisición de vehículos, maquinaria y otros activos en función de costes, riesgos y garantías." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han calculado los costes y se han analizado los requisitos y garantías exigidos, en las operaciones de leasing y renting, para la compra de vehículos y otros inmovilizados." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han diferenciado los conceptos de interés nominal e interés efectivo y la tasa anual equivalente (TAE), tanto en inversiones como en instrumentos financieros (préstamos y créditos)." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han calculado los costes y las cuotas de amortización de un préstamo, mediante los sistemas
+de amortización más utilizados." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se ha analizado el procedimiento y las condiciones para solicitar los avales, fianzas y garantías
+bancarias que se requieren para realizar determinadas operaciones de transporte especial." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han identificado los organismos que informan sobre la obtención de ayudas y subvenciones
+públicas para la adquisición y renovación de activos." />
+                            <CriterioDeEvaluacion Codigo="i"
+                                Descripcion="Se han utilizado hojas de cálculo para analizar, mediante las funciones oportunas, diferentes
+operaciones financieras." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="4"
+                            Descripcion="Determina las formalidades para la compraventa y/o el alquiler de los vehículos y otros activos,
+analizando las necesidades de inversiones y suministros y los recursos financieros necesarios.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han determinado las necesidades de vehículos, instalaciones, maquinaria y otros activos y los
+suministros necesarios en las empresas.
+" />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han evaluado diferentes planes de inversión a partir de los costes y la previsión de ingresos" />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han identificado las variables de un plan de inversión, diferenciando la financiación propia y
+ajena y la recuperación de las inversiones a corto y a largo plazo." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han analizado las diferencias fundamentales entre la compraventa o el alquiler de vehículos,
+maquinaria e inmovilizados necesarios para el ejercicio de la actividad." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han determinado las necesidades de suministros y servicios de mantenimiento y repuestos, así
+como los costes que se derivan de los distintos sistemas de aprovisionamiento" />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han analizado las ventajas y los inconvenientes de los mercados de primera y segunda mano
+y de alquiler de vehículos y otros activos." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han evaluado las diferentes alternativas para la adquisición y renovación de vehículos, maquinaria e instalaciones, a partir del análisis comparativo de los presupuestos de compra y condiciones de pago" />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se ha contactado vía online y offline con diferentes proveedores y suministradores potenciales
+y se ha solicitado la presentación de ofertas y presupuestos de acuerdo con las especificaciones
+recibidas." />
+                            <CriterioDeEvaluacion Codigo="i"
+                                Descripcion="Se ha utilizado alguna aplicación informática que nos permita llevar la gestión de compras y el
+registro de terceros implicados, así como el registro de los bienes adquiridos o alquilados." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="5"
+                            Descripcion="Elabora facturas, recibos y documentos de cobro y pago de los productos y de los servicios prestados, aplicando las normas mercantiles y fiscales de facturación.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han interpretado las normas mercantiles y fiscales y los usos del comercio que regulan la facturación de productos o servicios, incluyendo la facturación electrónica." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han identificado los impuestos que gravan los servicios de transporte y los tipos de gravamen
+aplicables en cada caso." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han interpretado los aspectos del Impuesto sobre el Valor Añadido (IVA) y las obligaciones
+establecidas para la facturación de productos y/o servicios nacionales e internacionales." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han analizado las características, costes de gestión de cobro y negociación y los riesgos de los
+diferentes medios de pago o cobro y la normativa que los regula." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han supervisado las condiciones de pago y cobro de las operaciones en divisas" />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han gestionado los impagados de clientes, cumpliendo los requisitos y plazos contemplados
+en la normativa vigente." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se ha realizado la facturación de la venta de productos y/o la prestación de servicios, utilizando
+las aplicaciones informáticas adecuadas." />
+
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="6"
+                            Descripcion="Gestiona el proceso contable y fiscal de la empresa, aplicando la normativa mercantil y fiscal
+vigente y los principios y normas del Plan General Contable.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han diferenciado las distintas partidas del balance, analizando su relación funcional, activo
+(no corriente y corriente), pasivo (no corriente y corriente) y patrimonio neto." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han diferenciado los conceptos de inversión, gasto y pago, ingreso y cobro." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han registrado las operaciones realizadas y se ha calculado el resultado, de acuerdo con los
+principios generales y las normas de valoración del Plan General Contable." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha determinado la amortización de los vehículos y demás elementos del inmovilizado, de acuerdo con la normativa fiscal vigente y el Plan General Contable. " />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han elaborado las cuentas anuales, de acuerdo con del Plan General Contable para las pymes." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han determinado las obligaciones fiscales relativas a los impuestos que gravan los beneficios,
+en función de la forma jurídica de la empresa, IRPF e Impuesto de Sociedades." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han identificado las obligaciones fiscales derivadas de la aplicación y gestión del Impuesto
+sobre el Valor Añadido (IVA)." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han establecido las gestiones que se han de realizar para la liquidación del Impuesto de Circulación de Vehículos, interpretando la normativa que lo regula." />
+                            <CriterioDeEvaluacion Codigo="i"
+                                Descripcion="Se han identificado los impuestos sobre determinados vehículos, así como las tasas, cánones y
+derechos de uso que se han de pagar por la utilización de determinadas infraestructuras." />
+                            <CriterioDeEvaluacion Codigo="j"
+                                Descripcion="Se ha utilizado una aplicación informática de contabilidad." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="7"
+                            Descripcion="Determina la rentabilidad de las inversiones y la solvencia y eficiencia de la empresa, analizando
+los datos económicos y la información contable disponible.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han valorado las relaciones del equilibrio necesarias entre las inversiones realizadas y los recursos financieros propios y ajenos, diferenciando entre la financiación básica y la del circulante." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han aplicado los métodos más habituales para la evaluación de la rentabilidad de inversiones,
+tasa interna de rentabilidad (TIR), valor actual neto (VAN) y tasa de retorno." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se ha calculado el valor de adquisición, vida útil, valor actual, valor de reposición y valor residual de los elementos del inmovilizado." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha calculado el punto muerto o umbral de rentabilidad." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han calculado los flujos de tesorería o cash-flow y el período medio de maduración.
+" />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han calculado los principales ratios y los indicadores financieros, para analizar los estados
+financieros a través del balance y la cuenta de resultados." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han empleado las aplicaciones y utilidades de la información contable y los estados financieros, para una gestión eficaz de la empresa." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han utilizado hojas de cálculo para la determinación de los diferentes ratios financieros y el
+cálculo de la rentabilidad de la empresa." />
+                        </ResultadoDeAprendizaje>
+                    </Modulo>
+                    <Modulo Codigo="0625" Nombre="Logística de almacenamiento" HorasAnuales="70"
+                        HorasSemanales="4" Curso="1">
+                        <ResultadoDeAprendizaje Codigo="1"
+                            Descripcion="Relaciona la normativa específica del almacenaje, reconociendo las normas de contratación y de tratamiento de mercancías especiales.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han analizado las normas que reglamentan las actividades de almacenaje y distribución." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha aplicado la normativa en la cumplimentación del contrato de depósito." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han caracterizado las normas nacionales e internacionales sobre el almacenaje de productos." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han analizado los aspectos que caracterizan un depósito aduanero, una zona y depósito franco y un local autorizado, entre otros." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han definido las formalidades y trámites que deben realizarse en un almacén." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han planificado, en el almacén, sistemas de calidad homologables a nivel internacional." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="2"
+                            Descripcion="Organiza el proceso de almacenaje por tipo de actividad y volumen de mercancías, optimizando los espacios y los tiempos de manipulación.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han analizado las condiciones y modalidades de los sistemas de almacenaje según diferentes variables." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han secuenciado los diferentes subprocesos del proceso logístico de almacenaje." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se ha realizado el diseño en planta del almacén, en función de las operaciones y movimientos que hay que realizar." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han seleccionado equipos, medios y herramientas de manutención, según las características del almacén y de las mercancías almacenadas, aplicando criterios económicos, de calidad y servicio." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han aplicado métodos y técnicas de optimización de los espacios de almacenamiento." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han utilizado métodos de reducción en los tiempos de localización y manipulación de las mercancías." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han seleccionado diferentes sistemas modulares de envasado y embalaje de las mercancías del almacén." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han concretado procedimientos de prevención de riesgos en el almacén." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="3"
+                            Descripcion="Confecciona y controla el presupuesto del almacén, identificando desviaciones provenientes de la asignación de costes">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han determinado las partidas y conceptos que hay que tener en cuenta para elaborar un presupuesto estimativo del servicio de almacén.
+
+" />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha calculado periódicamente el coste de funcionamiento del almacén." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han identificado los indicadores o estándares económicos óptimos: coste por hora y coste por servicio, entre otros." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han calculado los costes de almacén en función de la urgencia, plazos de entrega, preparación de mercancías, co-packing y paletización, entre otros." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han analizado las desviaciones sobre los costes previstos, identificando su causa y origen, y proponiendo medidas correctoras de acuerdo con el procedimiento establecido por la empresa." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha preparado el presupuesto de gastos del almacén, teniendo en cuenta los costes de la actividad y el nivel de servicio establecido, utilizando hojas de cálculo informático." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han calculado periódicamente los costes de funcionamiento del almacén, utilizando hojas de cálculo informático." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="4"
+                            Descripcion="Gestiona los stocks del almacén, asegurando su aprovisionamiento y expedición.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han clasificado los diferentes tipos de inventarios y la finalidad de cada uno de ellos." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han aplicado los conceptos de stock medio, mínimo y óptimo, identificando las variables que intervienen en su cálculo y la velocidad de rotación de las existencias." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han previsto las unidades necesarias de existencias en almacén para evitar roturas de stock." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han valorado las existencias del almacén, utilizando diferentes métodos." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han controlado las existencias del almacén, supervisando el procedimiento y las normas establecidas para identificar desviaciones del inventario y plantear medidas rectificadoras." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han realizado las tareas necesarias para atender los pedidos de mercancías efectuados por los clientes y la expedición de las mismas." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han registrado las altas, bajas y modificaciones de productos (código EAN), proveedores, clientes y/o servicios por medio de herramientas informáticas." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han utilizado aplicaciones informáticas generales para gestionar los stocks y específicas para la identificación de materiales, gestión de pedidos, extracción y registro de salidas del almacén." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="5"
+                            Descripcion="Gestiona las operaciones sujetas a la logística inversa, determinando el tratamiento a dar a las mercancías retornadas.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han analizado las actividades relacionadas con la logística inversa según la política de devolución o acuerdos alcanzados con los clientes." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han previsto las acciones que hay que realizar con las mercancías retornadas: reparación, reciclado, eliminación o reutilización en mercados secundarios." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han definido las medidas necesarias para evitar la obsolescencia y/o contaminación de las mercancías retornadas." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han aplicado las normativas sanitarias y medioambientales vigentes." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se ha diseñado la recogida de los envases retornables con la entrega de nueva mercancía, aplicando la normativa vigente." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han clasificado las diferentes unidades y/o equipos de carga para su reutilización en otras operaciones de la cadena logística, evitando el transporte en vacío." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han clasificado los diferentes tipos de envases y embalajes para reutilizarlos, siguiendo las especificaciones, recomendaciones y normativa vigente." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="6"
+                            Descripcion="Supervisa los procesos realizados en el almacén, implantando sistemas de mejora de la calidad del servicio y planes de formación/reciclaje del personal.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han analizado los elementos necesarios para la implantación de un sistema de calidad en el almacén, siguiendo las pautas de la empresa y/o clientes." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha previsto la implantación de sistemas de calidad y seguridad para la mejora continua de los procesos y de los sistemas de almacenaje." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se ha valorado el cumplimiento de los procesos y protocolos del almacén, partiendo del plan o manual de calidad de la empresa." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha valorado la implantación y seguimiento de la mercancía por sistemas de radiofrecuencia o con otras innovaciones tecnológicas." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han investigado los elementos necesarios para asegurar la trazabilidad de las mercancías y el cumplimiento de la normativa relativa a la misma, utilizando sistemas de gestión de almacenes." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han fijado los objetivos de un plan de formación-tipo para mejorar la eficiencia y calidad del servicio de almacén" />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han detectado las necesidades de formación inicial y continua, tanto individuales como del equipo en su conjunto." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion=" Se han utilizado programas de gestión de tareas y cronogramas para controlar las tareas, los tiempos y el personal, cumpliendo con las normas de prevención de riesgos laborales." />
+                        </ResultadoDeAprendizaje>
+                    </Modulo>
                     <Modulo Codigo="0926" Nombre="Escaparatismo y Diseño de Espacios Comerciales"
                         HorasAnuales="84" HorasSemanales="4" Curso="2">
                         <ResultadoDeAprendizaje Codigo="1"
@@ -4679,49 +4978,212 @@ con los estándares de sostenibilidad más ampliamente utilizados." />
                                 Descripcion="Se ha valorado el coste de la posible rotura de stocks, la rotación y la estacionalidad de las ventas, entre otros, con el fin de lograr la satisfacción y fidelización del cliente" />
                         </ResultadoDeAprendizaje>
                     </Modulo>
-                    <Modulo Codigo="0930" Nombre="Políticas de Marketing"
-                        HorasAnuales="256" HorasSemanales="8" Curso="1">
+                    <Modulo Codigo="0930" Nombre="Políticas de Marketing" HorasAnuales="256"
+                        HorasSemanales="8" Curso="1">
                         <ResultadoDeAprendizaje Codigo="1"
-                            Descripcion="Evalúa las oportunidades de mercado, para el lanzamiento de un producto, la entrada en nuevos mercados o la mejora del posicionamiento del producto o servicio, analizando las variables de marketing-mix y las tendencias y evolución del mercado">
+                            Descripcion="Evalúa las oportunidades de mercado, para el lanzamiento de un producto, la entrada en nuevos
+mercados o la mejora del posicionamiento del producto o servicio, analizando las variables de
+marketing-mix y las tendencias y evolución del mercado.
+">
                             <CriterioDeEvaluacion Codigo="a"
-                                Descripcion="Se han analizado los datos disponibles relativos a la oferta y demanda del producto o servicio, comparándolos con los de la competencia y con los productos sustitutivos y complementarios" />
+                                Descripcion="Se han analizado los datos disponibles relativos a la oferta y demanda del producto o servicio,
+comparándolos con los de la competencia y con los productos sustitutivos y complementarios.
+" />
                             <CriterioDeEvaluacion Codigo="b"
-                                Descripcion="Se ha analizado información sobre la evolución y tendencia de las ventas por productos, líneas de productos o marcas, o según el tipo de clientes, calculando la cuota de mercado y las tasas de variación, utilizando la aplicación informática adecuada" />
+                                Descripcion="Se ha analizado información sobre la evolución y tendencia de las ventas por productos, líneas
+de productos o marcas, o según el tipo de clientes, calculando la cuota de mercado y las tasas
+de variación, utilizando la aplicación informática adecuada." />
                             <CriterioDeEvaluacion Codigo="c"
-                                Descripcion="Se ha analizado el perfil y hábitos de compra de los clientes reales y potenciales con el fin de adecuar el producto o servicio a las necesidades, motivaciones y hábitos de compra" />
+                                Descripcion="Se ha analizado el perfil y hábitos de compra de los clientes reales y potenciales con el fin de
+adecuar el producto o servicio a las necesidades, motivaciones y hábitos de compra." />
                             <CriterioDeEvaluacion Codigo="d"
-                                Descripcion="Se han identificado nichos de mercado en los que la empresa puede tener oportunidades comerciales, aplicando técnicas de análisis adecuadas" />
+                                Descripcion="Se han identificado nichos de mercado en los que la empresa puede tener oportunidades comerciales, aplicando técnicas de análisis adecuadas." />
                             <CriterioDeEvaluacion Codigo="e"
-                                Descripcion="Se ha analizado el mercado e identificado los segmentos o grupos de clientes con potencial de compra y comercialmente atractivos para la empresa, utilizando criterios de volumen y frecuencia de compra, grado de fidelización, identificación con la marca y capacidad de diferenciación del producto, entre otros" />
+                                Descripcion="Se ha analizado el mercado e identificado los segmentos o grupos de clientes con potencial de
+compra y comercialmente atractivos para la empresa, utilizando criterios de volumen y frecuencia de compra, grado de fidelización, identificación con la marca y capacidad de diferenciación
+del producto, entre otros." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han elaborado informes con las conclusiones de los análisis de datos realizados, utilizando la
+aplicación informática adecuada." />
+
                         </ResultadoDeAprendizaje>
                         <ResultadoDeAprendizaje Codigo="2"
-                            Descripcion="Define la política del producto, analizando las características, atributos y utilidades del producto o servicio para su adecuación a las necesidades y perfil de los clientes a los que va dirigido">
+                            Descripcion="Define la política del producto, analizando las características, atributos y utilidades del producto
+o servicio para su adecuación a las necesidades y perfil de los clientes a los que va dirigido.">
                             <CriterioDeEvaluacion Codigo="a"
-                                Descripcion="Se han identificado los atributos del producto o servicio, en función de su naturaleza, su utilidad y las necesidades que puede satisfacer y de la percepción y motivos de compra del consumidor al que va dirigido" />
+                                Descripcion="Se han identificado los atributos del producto o servicio, en función de su naturaleza, su utilidad
+y las necesidades que puede satisfacer y de la percepción y motivos de compra del consumidor
+al que va dirigido." />
                             <CriterioDeEvaluacion Codigo="b"
-                                Descripcion="Se ha elaborado una base de datos de los productos, líneas, familias y categorías de productos que comercializa la empresa, incorporando la información relevante sobre las características técnicas, usos, presentación, envase y marca de los mismos" />
+                                Descripcion="Se ha elaborado una base de datos de los productos, líneas, familias y categorías de productos
+que comercializa la empresa, incorporando la información relevante sobre las características
+técnicas, usos, presentación, envase y marca de los mismos." />
                             <CriterioDeEvaluacion Codigo="c"
-                                Descripcion="Se ha realizado un análisis comparativo de los productos o servicios con los de la competencia, comparando las características técnicas, utilidades, presentación, marca y envase, entre otros" />
+                                Descripcion="Se ha realizado un análisis comparativo de los productos o servicios con los de la competencia,
+comparando las características técnicas, utilidades, presentación, marca y envase, entre otros." />
                             <CriterioDeEvaluacion Codigo="d"
-                                Descripcion="Se ha determinado el posicionamiento del producto, servicio o gama de productos en el mercado utilizando distintos ratios, tasa de crecimiento, cuotas de mercado, matriz de crecimiento-participación de BCG y otras técnicas de análisis" />
+                                Descripcion="Se ha determinado el posicionamiento del producto, servicio o gama de productos en el mercado utilizando distintos ratios, tasa de crecimiento, cuotas de mercado, matriz de crecimientoparticipación de BCG y otras técnicas de análisis." />
                             <CriterioDeEvaluacion Codigo="e"
-                                Descripcion="Se ha analizado del ciclo de vida de diferentes productos para determinar en qué fase del mismo se encuentran" />
+                                Descripcion="Se ha analizado del ciclo de vida de diferentes productos para determinar en qué fase del mismo
+se encuentran." />
                             <CriterioDeEvaluacion Codigo="f"
-                                Descripcion="Se ha actualizado la información sobre productos o servicios, recogiendo la información de la red de ventas, los distribuidores y las tiendas o grupos de clientes, utilizando la herramienta informática adecuada" />
+                                Descripcion="Se ha actualizado la información sobre productos o servicios, recogiendo la información de la
+red de ventas, los distribuidores y las tiendas o grupos de clientes, utilizando la herramienta informática adecuada." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han definido las posibles estrategias comerciales en política de producto, teniendo en cuenta
+el ciclo de vida del producto y el perfil del cliente al que va dirigido" />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han elaborado informes sobre productos, servicios o líneas de productos, analizando la imagen de marca, el posicionamiento y las posibles estrategias comerciales." />
+
                         </ResultadoDeAprendizaje>
                         <ResultadoDeAprendizaje Codigo="3"
-                            Descripcion="Define la política de precios de los productos o servicios, analizando los costes, la demanda, la competencia y demás factores que intervienen en la formación y cálculo de los precios">
+                            Descripcion="Define la política de precios de los productos o servicios, analizando los costes, la demanda, la
+competencia y demás factores que intervienen en la formación y cálculo de los precios.">
                             <CriterioDeEvaluacion Codigo="a"
-                                Descripcion="Se ha identificado la normativa legal vigente relativa a precios y comercialización de los productos o servicios, para su aplicación en la política de precios de la empresa" />
+                                Descripcion="Se ha identificado la normativa legal vigente relativa a precios y comercialización de los productos o servicios, para su aplicación en la política de precios de la empresa." />
                             <CriterioDeEvaluacion Codigo="b"
-                                Descripcion="Se han identificado los factores que determinan el precio de venta del producto, considerando los costes de fabricación y distribución, las comisiones, márgenes y descuentos y teniendo en cuenta el ciclo de vida del producto, su posicionamiento y la estrategia de comercialización" />
+                                Descripcion="Se han identificado los factores que determinan el precio de venta del producto, considerando
+los costes de fabricación y distribución, las comisiones, márgenes y descuentos y teniendo en cuenta el ciclo de vida del producto, su posicionamiento y la estrategia de comercialización." />
                             <CriterioDeEvaluacion Codigo="c"
-                                Descripcion="Se ha evaluado el efecto de las variaciones en los costes de fabricación y comercialización sobre el precio de venta final del producto y sobre el volumen de ventas, analizando la elasticidad de la demanda del producto o servicio" />
+                                Descripcion="Se ha evaluado el efecto de las variaciones en los costes de fabricación y comercialización sobre
+el precio de venta final del producto y sobre el volumen de ventas, analizando la elasticidad de
+la demanda del producto o servicio." />
                             <CriterioDeEvaluacion Codigo="d"
-                                Descripcion="Se ha calculado el precio de venta del producto, a partir del escandallo de costes de fabricación y distribución" />
+                                Descripcion="Se ha calculado el precio de venta del producto, a partir del escandallo de costes de fabricación
+y distribución." />
                             <CriterioDeEvaluacion Codigo="e"
-                                Descripcion="Se ha calculado el margen bruto del producto o servicio, a partir del análisis de los componentes del coste, el punto muerto y la tendencia del mercado, proponiendo posibles mejoras en los márgenes" />
+                                Descripcion="Se ha calculado el margen bruto del producto o servicio, a partir del análisis de los componentes del coste, el punto muerto y la tendencia del mercado, proponiendo posibles mejoras en los
+márgenes." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha realizado un análisis comparativo del precio del producto o servicio respecto a los de la
+competencia, analizando las causas de las diferencias." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han analizado las distintas estrategias en política de precios, teniendo en cuenta los costes, el
+ciclo de vida del producto, los precios de la competencia y las características del segmento de
+mercado al que va dirigido." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han elaborado informes sobre precios de productos, servicios o líneas de productos, para la
+toma de decisiones.
+" />
                         </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="4"
+                            Descripcion="Selecciona la forma y canal de distribución más adecuado para cada producto, servicio o gama
+de productos, analizando las alternativas de distribución disponibles.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han identificado las funciones de la distribución comercial, valorando su importancia estratégica dentro del marketing-mix" />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han caracterizado las distintas formas de venta, en función del sector, el tipo de producto o
+servicio y tipo de cliente." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han clasificado los distintos canales de distribución en función del número y tipo de intermediarios, grado de asociación entre los mismos y funciones que realizan." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha calculado el coste de distribución comercial considerando todos los elementos que lo
+integran." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se ha realizado un análisis comparativo de distintas estructuras de distribución comercial, analizando los niveles del canal, número y tipo de intermediarios y valorando la posibilidad de
+distribución online." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha seleccionado el canal de distribución más adecuado, en función de la estrategia de distribución propia y ajena y de la cobertura del mercado que se pretende alcanzar." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han analizado los distintos tipos de contratos de intermediación comercial en los que se formaliza la relación entre los fabricantes y la red de distribución y venta." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han elaborado informes sobre distribución comercial, a partir de los datos de análisis de costes, tiempos, intermediarios disponibles y estrategias viables, para la toma de decisiones." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="5"
+                            Descripcion="Selecciona las acciones de comunicación más adecuadas para lanzar nuevos productos y servicios o prolongar su permanencia en el mercado y reforzar así la imagen corporativa y de marca,
+evaluando las distintas alternativas disponibles.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han definido los objetivos de la política de comunicación, considerando las características del
+público objetivo o targets que se pretenden alcanzar." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han caracterizado las distintas formas y tipos de acciones que integran el mix de comunicación." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han diferenciado los instrumentos y tipos de acciones de comunicación, en función del público objetivo, imagen corporativa y los objetivos y estrategias de la organización." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha realizado un análisis comparativo de distintas acciones de comunicación en función del
+impacto previsto, los objetivos, el presupuesto y medios y los soportes disponibles en el mercado
+de medios de comunicación." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han definido las variables de frecuencia, periodo y plazos de las acciones de comunicación,
+en función de criterios de eficiencia y efectividad del impacto en el público objetivo, de los logros de acciones anteriores, las acciones de los competidores y el presupuesto disponible." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha evaluado la capacidad de la organización para ejecutar o contratar las acciones de comunicación, en función de los recursos disponibles y de los medios de comunicación que han de
+utilizarse." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han seleccionado las acciones de comunicación y promoción más adecuadas para lanzar
+nuevos productos o prolongar su permanencia en el mercado, reforzando la imagen corporativa
+y de marca" />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se ha elaborado un informe base de la política de comunicación, conteniendo los objetivos y
+targets o público objetivo y el análisis de los medios disponibles.
+" />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="6"
+                            Descripcion="Elabora briefings de productos, servicios o marcas para la ejecución o la contratación externa de
+acciones de comunicación, relacionando las variables del marketing-mix, los objetivos comerciales y el perfil de los clientes.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han definido los objetivos y finalidad del briefing de un producto, servicio o marca, para el
+desarrollo de las acciones de marketing." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha caracterizado la estructura del briefing y los elementos que lo componen, en función del
+tipo de acción de marketing y del destinatario del mismo." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han seleccionado los datos que se requieren para elaborar la información de base o briefing
+del producto, servicio o marca, según el tipo de acción que se va a llevar a cabo." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha analizado la información contenida en un briefing, convenientemente caracterizado, señalando el objeto de la misma y obteniendo conclusiones relevantes" />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se ha redactado el briefing de un producto o servicio para una acción de comunicación determinada, de acuerdo con las especificaciones recibidas y utilizando herramientas informáticas y
+de presentación." />
+
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="7"
+                            Descripcion="Elabora el plan de marketing, seleccionando la información de base del producto, precio, distribución y comunicación y relacionando entre sí las variables del marketing-mix.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han caracterizado las etapas o fases del proceso de planificación comercial y se han identificado las utilidades del plan de marketing" />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han seleccionado los datos o información de base que será objeto de análisis." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se ha realizado un análisis de la situación, tanto externo como interno (DAFO), utilizando técnicas estadísticas y aplicaciones informáticas adecuadas." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han establecido los objetivos que se pretenden conseguir y se han elegido las estrategias de
+marketing más adecuadas para alcanzarlos.
+" />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han establecido las acciones de políticas del producto, precio, distribución y comunicación y
+las relaciones entre las mismas" />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha elaborado el presupuesto, especificando los recursos financieros y humanos que se requieren
+para llevar a cabo las políticas previstas y el tiempo necesario para la puesta en práctica del plan" />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se ha redactado y presentado el plan de marketing, utilizando las herramientas informáticas
+adecuadas." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="8"
+                            Descripcion="Elabora el plan de marketing, seleccionando la información de base del producto, precio, distribución y comunicación y relacionando entre sí las variables del marketing-mix.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han establecido los procedimientos de seguimiento y control de las políticas del plan de
+marketing, recogiendo la información de los departamentos y agentes implicados, y de la red de
+venta y distribución." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha actualizado la información obtenida en el proceso de control de las acciones de marketing,
+utilizando las aplicaciones y sistemas de información, el SIM, el CRM y otros." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han calculado los ratios de control de las acciones del plan de marketing a partir de la información obtenida de otros departamentos, de la red de venta y del SIM." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han comparado los resultados obtenidos con los objetivos previstos en el plan de marketing,
+determinando las desviaciones producidas en la ejecución del mismo." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion=" Se han propuesto medidas correctoras para subsanar las desviaciones y los errores cometidos en
+la ejecución de las políticas y acciones comerciales." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha revisado la efectividad ético-social de la estrategia de marketing implementada." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han elaborado informes de control y evaluación del plan de marketing, recogiendo la información obtenida en el proceso de seguimiento, las desviaciones detectadas y la propuesta de
+medidas correctoras.
+" />
+                        </ResultadoDeAprendizaje>
+
                     </Modulo>
                     <Modulo Codigo="0931" Nombre="Marketing digital"
                         HorasAnuales="126" HorasSemanales="6" Curso="2">
@@ -4798,6 +5260,223 @@ con los estándares de sostenibilidad más ampliamente utilizados." />
                                 Descripcion="Se han identificado posibles ayudas o subvenciones para la incorporación de las nuevas tecnologías de producción o de servicio que se proponen" />
                             <CriterioDeEvaluacion Codigo="i"
                                 Descripcion="Se ha elaborado el guión de trabajo que se va a seguir para la elaboración del proyecto" />
+                        </ResultadoDeAprendizaje>
+                    </Modulo>
+                    <Modulo Codigo="1010" Nombre="Investigacion Comercial" HorasAnuales="160"
+                        HorasSemanales="5" Curso="1">
+                        <ResultadoDeAprendizaje Codigo="1"
+                            Descripcion="Analiza las variables del mercado y del entorno de la empresa u organización, valorando su influencia en la actividad de la empresa y en la aplicación de las diferentes estrategias comerciales.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Analiza las variables del mercado y del entorno de la empresa u organización, valorando su influencia en la actividad de la empresa y en la aplicación de las diferentes estrategias comerciales." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han analizado los efectos de los principales factores del microentorno en la actividad comercial de la organización." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se ha analizado el impacto de las principales variables del macroentorno en la actividad comercial de la empresa u organización." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha analizado el impacto de las principales variables del macroentorno en la actividad comercial de la empresa u organización." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han analizado las necesidades del consumidor y se han clasificado según la jerarquía o el
+orden de prioridad en la satisfacción de las mismas" />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han analizado las fases del proceso de compra del consumidor y las variables internas y externas que influyen en el mismo." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han aplicado los principales métodos de segmentación de mercados, utilizando distintos criterios." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han definido distintos tipos de estrategias comerciales, aplicando la segmentación del mercado." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="2"
+                            Descripcion="Configura un sistema de información de marketing (SIM) adaptado a las necesidades de información de la empresa, definiendo las fuentes de información, los procedimientos y las técnicas de
+organización de los datos.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han determinado las necesidades de información de la empresa para la toma de decisiones
+de marketing.
+" />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha clasificado la información en función de su naturaleza, del origen o procedencia de los
+datos y de la disponibilidad de los mismos." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han caracterizado los subsistemas que integran un SIM, analizando las funciones y objetivos
+de cada uno de ellos." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han identificado los datos que son procesados y organizados por un sistema de información
+de marketing" />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han analizado las características de idoneidad que debe poseer un SIM, su tamaño, finalidad
+y objetivos, en función de las necesidades de información de la empresa u organización.
+" />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han clasificado los datos según la fuente de información de la que proceden." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han aplicado técnicas estadísticas para el tratamiento, análisis y organización de los datos, y
+para transformarlos en información útil para la toma de decisiones de la empresa u organización." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han utilizado herramientas informáticas para el tratamiento, registro e incorporación de la
+información a la base de datos de la empresa, así como su actualización permanente, de forma
+que pueda ser utilizada y consultada de manera ágil y rápida.
+" />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="3"
+                            Descripcion="Elabora el plan de la investigación comercial, definiendo los objetivos y finalidad del estudio,
+las fuentes de información y los métodos y técnicas aplicables para la obtención, tratamiento y
+análisis de los datos.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se ha establecido la necesidad de realizar un estudio de investigación comercial." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han identificado las fases de un proceso de investigación comercial." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se ha identificado y definido el problema o la oportunidad que se presenta en la empresa y que
+se pretende investigar." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha establecido el propósito de la investigación que hay que realizar, determinando la necesidad de información, el tiempo disponible para la investigación y el destino o persona que va a utilizar los resultados de la investigación" />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han formulado de forma clara y concreta los objetivos generales y específicos de la investigación, expresándolos como cuestiones que hay que investigar o hipótesis que se van a contrastar." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha determinado el diseño o tipo de investigación que hay que realizar, exploratoria, descriptiva o causal, en función de los objetivos que se pretenden." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se ha elaborado el plan de la investigación, estableciendo el tipo de estudio que hay realizar, la
+información que hay que obtener, las fuentes de datos, los instrumentos para la obtención de la
+información, las técnicas para el análisis de los datos y el presupuesto necesario." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han identificado las fuentes de información, primarias y secundarias, internas y externas, que
+pueden facilitar la información necesaria para la investigación, atendiendo a criterios de fiabilidad, representatividad y coste." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="4"
+                            Descripcion="Organiza la información secundaria disponible, de acuerdo con las especificaciones y criterios
+establecidos en el plan de investigación, valorando la suficiencia de los datos respecto a los objetivos de la investigación.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han seleccionado los datos de las fuentes de información online y offline, de los sistemas de
+información de mercados y bases de datos internas y externas, de acuerdo con los criterios, plazos y presupuesto establecidos en el plan de investigación comercial." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han establecido procedimientos de control para asegurar la fiabilidad y representatividad de
+los datos obtenidos de las fuentes secundarias y rechazar aquellos que no cumplan los estándares de calidad, actualidad y seguridad definidos." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se ha clasificado y organizado la información obtenida de las fuentes secundarias, presentándola
+de forma ordenada para su utilización en la investigación, en el diseño del trabajo de campo o
+en la posterior fase de análisis de datos" />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha analizado la información disponible, tanto cuantitativamente, para determinar si es suficiente para desarrollar la investigación, como cualitativamente, aplicando criterios utilidad,
+fiabilidad y representatividad, para evaluar su adecuación al objeto de estudio." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han detectado las necesidades de completar la información obtenida con la información
+primaria, comparando el grado de satisfacción de los objetivos planteados en el plan de investigación con la información obtenida de fuentes secundarias." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha procesado y archivado la información, los resultados y las conclusiones obtenidas, utilizando los procedimientos establecidos, para su posterior recuperación y consulta, de forma que
+se garantice su integridad y actualización permanente" />
+
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="5"
+                            Descripcion="Obtiene información primaria de acuerdo con las especificaciones y criterios establecidos en
+el plan de investigación, aplicando procedimientos y técnicas de investigación cualitativa y/o
+cuantitativa para la obtención de datos.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han identificado las técnicas y procedimientos para la obtención de información primaria
+en estudios comerciales y de opinión, de acuerdo con los objetivos establecidos en el plan de
+investigación comercial." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han definido los parámetros esenciales para juzgar la fiabilidad y la relación coste-beneficio
+de los métodos de recogida de información de fuentes primarias." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han determinado los instrumentos necesarios para obtener información cualitativa, mediante
+entrevistas en profundidad, dinámica de grupos, técnicas proyectivas, técnicas de creatividad y/o
+mediante la observación, definiendo su estructura y contenido." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han diferenciado los distintos tipos de encuestas ad hoc para la obtención de datos primarios,
+analizando las ventajas e inconvenientes de la encuesta personal, por correo, por teléfono o a
+través de Internet." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han descrito las ventajas de la utilización de medios informáticos, tanto en encuestas personales, como telefónicas o a través de la web (CAPI, MCAPI, CATI y CAWI)." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha seleccionado la técnica y el procedimiento de recogida de datos más adecuado a partir de
+unos objetivos de investigación, tiempo y presupuesto determinados." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han diseñado los cuestionarios y la guía de la entrevista o encuesta, necesarios para obtener la
+información, de acuerdo con las instrucciones recibidas, comprobando la redacción, comprensibilidad y coherencia de las preguntas, la extensión del cuestionario y la duración de la entrevista,
+utilizando las aplicaciones informáticas adecuadas." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han descrito los paneles como instrumentos de recogida de información primaria cuantitativa, analizando diferentes tipos de paneles de consumidores, paneles de detallistas y paneles de
+audiencias." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="6"
+                            Descripcion="Determina las características y el tamaño de la muestra de la población objeto de la investigación, aplicando técnicas de muestreo para la selección de la misma.
+">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han identificado las distintas variables que influyen en el cálculo del tamaño de la muestra en
+un estudio comercial." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han caracterizado los distintos métodos y técnicas de muestreo, probabilístico y no probabilístico, aplicables para la selección de una muestra representativa de la población en una investigación comercial, analizando sus ventajas e inconvenientes." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han analizado comparativamente las técnicas de muestreo probabilístico y no probabilístico,
+señalando sus ventajas e inconvenientes." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha descrito el proceso de desarrollo del muestreo aleatorio simple, analizando sus ventajas y
+las limitaciones que conlleva." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se ha descrito el proceso de muestreo, aplicando las diferentes técnicas de muestreo probabilístico, sistemático, estratificado, por conglomerados o por áreas, polietápico y por ruta aleatoria,
+analizando las ventajas e inconvenientes." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha analizado el proceso de muestreo, aplicando diferentes técnicas de muestreo no probabilístico, por conveniencia, por juicios, por cuotas y bola de nieve." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se ha calculado el tamaño óptimo de la muestra, las características y elementos que la componen y el procedimiento aplicable para la obtención de la misma." />
+
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="7"
+                            Descripcion="Realiza el tratamiento y análisis de los datos obtenidos y elabora informes con las conclusiones,
+aplicando técnicas de análisis estadístico y herramientas informáticas.
+">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han codificado, tabulado y representado gráficamente los datos obtenidos en la investigación
+comercial, de acuerdo con las especificaciones recibidas." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han calculado las medidas estadísticas de tendencia central y de dispersión de datos más significativas y las medidas que representan la forma de la distribución." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han aplicado técnicas de inferencia estadística, para extrapolar los resultados obtenidos en la
+muestra a la totalidad de la población con un determinado grado de confianza y admitiendo un
+determinado nivel de error muestral." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han determinado los intervalos de confianza y los errores de muestreo." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han utilizado hojas de cálculo para el análisis de los datos y el cálculo de las medidas estadísticas." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han obtenido conclusiones relevantes a partir del análisis de la información obtenida de la
+investigación comercial realizada." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han presentado los datos obtenidos en la investigación, convenientemente organizados, en
+forma de tablas estadísticas y acompañados de las representaciones gráficas más adecuadas." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han elaborado informes con los resultados obtenidos del análisis estadístico y las conclusiones de la investigación, utilizando herramientas informáticas." />
+                            <CriterioDeEvaluacion Codigo="i"
+                                Descripcion="Se han incorporado los datos y resultados de la investigación a una base de datos en el formato
+más adecuado para la introducción, recuperación y presentación de la información con rapidez
+y precisión." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="8"
+                            Descripcion="Gestiona bases de datos relacionales, de acuerdo con los objetivos de la investigación, determinando los formatos más adecuados para la introducción, recuperación y presentación de la
+información con rapidez y precisión.
+">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han identificado los diferentes elementos que conforman una base de datos, sus características y utilidades aplicables a la investigación comercial." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha diseñado una base de datos, relacionales de acuerdo con los objetivos de la investigación
+comercial." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han identificado los diferentes tipos de consultas disponibles en una base de datos, analizando la funcionalidad de cada uno de ellos.
+" />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han realizado búsquedas avanzadas de datos y diferentes tipos de consultas de información
+dirigidas." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han manejado las utilidades de una aplicación informática de gestión de bases de datos para
+consultar, procesar, editar, archivar y mantener la seguridad, integridad y confidencialidad de la
+información." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han diseñado diferentes formatos de presentación de la información, utilizando las herramientas disponibles.
+" />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han identificado los datos que es necesario presentar, determinando los archivos que los contienen o creando los archivos que debieran contenerlos" />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han creado los informes o etiquetas necesarias, presentando la información solicitada de forma ordenada y sintética en los formatos adecuados a su funcionalidad." />
+                            <CriterioDeEvaluacion Codigo="i"
+                                Descripcion="Se han creado los formularios acordes necesarios para la introducción de datos de forma personalizada o utilizando herramientas de creación automatizada." />
                         </ResultadoDeAprendizaje>
                     </Modulo>
                     <Modulo Codigo="1665"
@@ -5247,7 +5926,125 @@ colaboración con el entorno.
                         </ResultadoDeAprendizaje>
 
                     </Modulo>
+                    <Modulo Codigo="0179" Nombre="Inglés" HorasAnuales="128" HorasSemanales="4"
+                        Curso="2">
+                        <ResultadoDeAprendizaje Codigo="1"
+                            Descripcion="Reconoce información profesional y cotidiana contenida en todo tipo de discursos orales emitidos por cualquier medio de comunicación en lengua estándar, interpretando con precisión el
+contenido del mensaje.
+">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se ha identificado la idea principal del mensaje." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha reconocido la finalidad del mensaje radiofónicos y de otro material grabado o retransmitido pronunciado en lengua estándar identificando el estado de ánimo y el tono del hablante" />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se ha extraído información de grabaciones en lengua estándar relacionadas con la vida social,
+profesional o académica.
+" />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han identificado los puntos de vista y las actitudes del hablante." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han identificado las ideas principales de declaraciones y mensajes sobre temas concretos y
+abstractos, en lengua estándar y con un ritmo normal." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se ha comprendido con todo detalle lo que se le dice en lengua estándar, incluso en un ambiente
+con ruido de fondo." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han extraído las ideas principales de conferencias, charlas e informes, y otras formas de presentación académica y profesional lingüísticamente complejas." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se ha tomado conciencia de la importancia de comprender globalmente un mensaje, sin entender todos y cada uno de los elementos del mismo." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="2"
+                            Descripcion="Interpreta información profesional contenida en textos escritos complejos, analizando de forma
+comprensiva sus contenidos.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se ha leído con un alto grado de independencia, adaptando el estilo y la velocidad de la lectura
+a distintos textos y finalidades y utilizando fuentes de referencia apropiadas de forma selectiva" />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha interpretado la correspondencia relativa a su especialidad, captando fácilmente el significado esencial.
+" />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han interpretado, con todo detalle, textos extensos y de relativa complejidad, relacionados o
+no con su especialidad, siempre que pueda volver a leer las secciones difíciles." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha relacionado el texto con el ámbito del sector a que se refiere" />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se ha identificado con rapidez el contenido y la importancia de noticias, artículos e informes
+sobre una amplia serie de temas profesionales y decide si es oportuno un análisis más profundo." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han realizado traducciones de textos complejos utilizando material de apoyo en caso necesario." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han interpretado mensajes técnicos recibidos a través de soportes telemáticos. E-mail, fax.
+" />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se han interpretado instrucciones extensas y complejas, que estén dentro de su especialidad." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="3"
+                            Descripcion="Emite mensajes orales claros y bien estructurados, analizando el contenido de la situación y
+adaptándose al registro lingüístico del interlocutor.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han identificado los registros utilizados para la emisión del mensaje" />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha expresado con fluidez, precisión y eficacia sobre una amplia serie de temas generales,
+académicos, profesionales o de ocio, marcando con claridad la relación entre las ideas." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se ha comunicado espontáneamente, adoptando un nivel de formalidad adecuado a las circunstancias." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se han utilizado normas de protocolo en presentaciones formales e informales." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se ha utilizado correctamente la terminología de la profesión." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han expresado y defendido puntos de vista con claridad, proporcionando explicaciones y
+argumentos adecuados. 
+" />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se ha descrito y secuenciado un proceso de trabajo de su competencia." />
+                            <CriterioDeEvaluacion Codigo="h"
+                                Descripcion="Se ha argumentado con todo detalle, la elección de una determinada opción o procedimiento
+de trabajo elegido." />
+                            <CriterioDeEvaluacion Codigo="i"
+                                Descripcion="Se ha solicitado la reformulación del discurso o parte del mismo cuando se ha considerado necesario." />
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="4"
+                            Descripcion="Elabora documentos e informes propios del sector o de la vida académica y cotidiana, relacionando los recursos lingüísticos con el propósito del mismo.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han redactado textos claros y detallados sobre una variedad de temas relacionados con su
+especialidad, sintetizando y evaluando información y argumentos procedentes de varias fuentes. " />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se ha organizado la información de manera coherente y cohesionada. " />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han redactado informes, destacando los aspectos significativos y ofreciendo detalles relevantes que sirvan de apoyo. " />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha cumplimentado documentación específica de su campo profesional." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han aplicado las fórmulas establecidas y el vocabulario específico en la cumplimentación de
+documentos." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han resumido artículos, manuales de instrucciones y otros documentos escritos, utilizando un
+vocabulario amplio para evitar la repetición frecuente." />
+                            <CriterioDeEvaluacion Codigo="g"
+                                Descripcion="Se han utilizado las fórmulas de cortesía propias del documento a elaborar." />
 
+                        </ResultadoDeAprendizaje>
+                        <ResultadoDeAprendizaje Codigo="5"
+                            Descripcion="Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo
+las relaciones típicas características del país de la lengua extranjera.">
+                            <CriterioDeEvaluacion Codigo="a"
+                                Descripcion="Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se
+habla la lengua extranjera." />
+                            <CriterioDeEvaluacion Codigo="b"
+                                Descripcion="Se han descrito los protocolos y normas de relación social propios del país." />
+                            <CriterioDeEvaluacion Codigo="c"
+                                Descripcion="Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua
+extranjera." />
+                            <CriterioDeEvaluacion Codigo="d"
+                                Descripcion="Se ha identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto." />
+                            <CriterioDeEvaluacion Codigo="e"
+                                Descripcion="Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera." />
+                            <CriterioDeEvaluacion Codigo="f"
+                                Descripcion="Se han reconocido los marcadores lingüísticos de la procedencia regional." />
+
+                        </ResultadoDeAprendizaje>
+                    </Modulo>
                 </Modulos>
             </Titulo>
         </Titulos>
