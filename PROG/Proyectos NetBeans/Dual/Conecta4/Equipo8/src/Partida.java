@@ -20,6 +20,7 @@ public class Partida {
         this.fichas[0] = '\u263A';
         this.fichas[1] = '\u263B';
         this.turno = 0;
+        this.tablero.pintaTablero();
     }//Fin Constructor
     //Metodos
 
@@ -39,13 +40,29 @@ public class Partida {
     public boolean tirada(byte col) {
         //Entorno
         boolean esTirada;
+        byte fila;
         //Algoritmo
-      
-        esTirada = this.tablero.buscaVacio(col) != -1;
+        esTirada = false;
+
+        if (this.tablero.buscaVacio(col) != -1) {
+            fila = this.tablero.buscaVacio(col);
+            esTirada = true;
+            this.tablero.colocaFicha(this.fichas[this.getTurno()], fila, col);
+            this.tablero.pintaTablero();
+
+            //Verificar si se ha ganado
+
+            if (this.tablero.haGanado(this.fichas[this.getTurno()])) {
+                this.esFinPartida = true;
+            } else {
+                //Alternar entre turnos
+                this.turno = (byte) ((this.turno + 1) % 2);
+            }//Fin Si
+        }//Fin Si
         return esTirada;
     }//Fin Metodo
 
     public byte getGanador() {
-        return this.turno;
+        return this.getTurno();
     }//Fin Metodo
 }//Fin Clase

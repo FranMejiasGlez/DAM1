@@ -40,12 +40,14 @@ public class Tablero {
         //entorno
         byte posicion, fila;
         //algoritmo
-        posicion = -1;
-        for (fila = 5; fila >= 0; fila--) {
-            if (this.matriz[fila][col] == ' ') {
-                posicion = fila;
-            }//Fin Si
-        }//Fin Para
+        posicion = -1; //No existe vacio.
+        fila = 5;
+        while (fila > 0 && this.matriz[fila][col] != ' ') {
+            fila--;
+        }//Fin Mientras
+        if (this.matriz[fila][col] == ' ') {
+            posicion = fila;
+        }//Fin Si
         return posicion;
     }//Fin Metodo
 
@@ -68,17 +70,21 @@ public class Tablero {
         boolean haGanado;
         byte fila, columna, contadorSeguidas;
         //algoritmo
-        contadorSeguidas = 0;
-        for (fila = 0; fila < this.matriz[fila].length; fila++) {
-            for (columna = 0; columna < this.matriz[columna].length; columna++) {
-                if (this.matriz[fila][columna] == ficha
-                        && this.matriz[fila][columna + 1] == ficha) {
+        haGanado = false;
+
+        for (fila = 0; fila < this.matriz.length && !haGanado; fila++) {
+            contadorSeguidas = 0;
+            for (columna = 0; columna < this.matriz[fila].length && !haGanado; columna++) {
+                if (this.matriz[fila][columna] == ficha) {
                     contadorSeguidas++;
+                    if (contadorSeguidas == 4) {
+                        haGanado = true;
+                    }//Fin Si
+                } else {
+                    contadorSeguidas = 0;
                 }//Fin Si
             }//Fin Para
         }//Fin Para
-
-        haGanado = contadorSeguidas >= 4;
 
         return haGanado;
     }//Fin Metodo
@@ -88,40 +94,61 @@ public class Tablero {
         boolean haGanado;
         byte columna, fila, contadorSeguidas;
         //algoritmo
-        contadorSeguidas = 0;
-        for (columna = 0; columna < this.matriz[columna].length; columna++) {
-            for (fila = 0; fila < this.matriz[fila].length; fila++) {
-                if (this.matriz[fila][columna] == ficha
-                        && this.matriz[fila + 1][columna] == ficha) {
+        haGanado = false;
+        for (columna = 0; columna < this.matriz[0].length && !haGanado; columna++) {
+            contadorSeguidas = 0;
+            for (fila = 0; fila < this.matriz.length && !haGanado; fila++) {
+                if (this.matriz[fila][columna] == ficha) {
                     contadorSeguidas++;
+                    if (contadorSeguidas == 4) {
+                        haGanado = true;
+                    }//Fin Si
+                } else {
+                    contadorSeguidas = 0;
                 }//Fin Si
             }//Fin Para
         }//Fin Para
-
-        haGanado = contadorSeguidas >= 4;
-
         return haGanado;
     }//Fin Metodo
 
     private boolean compruebaDiagonalPrincipal(char ficha) {
         //entorno
         boolean haGanado;
-        byte filas, columnas;
+        byte fila, columna;
         //algoritmo
         haGanado = false;
-         
+        for (fila = 0; fila <= this.matriz.length - 4 && !haGanado; fila++) {
+            for (columna = 0; columna < this.matriz[0].length - 4 && !haGanado; columna++) {
+                if (this.matriz[fila][columna] == ficha
+                        && this.matriz[fila + 1][columna + 1] == ficha
+                        && this.matriz[fila + 2][columna + 2] == ficha
+                        && this.matriz[fila + 3][columna + 3] == ficha) {
+                    haGanado = true;
+                }//Fin Si
+            }//Fin Para
+        }//Fin Para
         return haGanado;
     }//Fin Metodo
 
     private boolean compruebaDiagonalSecundaria(char ficha) {
         //entorno
         boolean haGanado;
-        byte filas, columnas;
+        byte fila, columna;
         //algoritmo
         haGanado = false;
-        
+        for (fila = 0; fila <= this.matriz.length - 4 && !haGanado; fila++) {
+            for (columna = 3; columna < this.matriz[0].length && !haGanado; columna++) {
+                if (this.matriz[fila][columna] == ficha
+                        && this.matriz[fila + 1][columna - 1] == ficha
+                        && this.matriz[fila + 2][columna - 2] == ficha
+                        && this.matriz[fila + 3][columna - 3] == ficha) {
+                    haGanado = true;
+                }//Fin Si
+            }//Fin Para
+        }//Fin Para
         return haGanado;
     }//Fin Metodo
+
     public boolean haGanado(char ficha) {
         //Entorno
         boolean haGanado;
@@ -134,14 +161,19 @@ public class Tablero {
     }//Fin Metodo
 
     public void pintaTablero() {
-        System.out.println(" 0 1 2 3 4 5 6 7");
+        //Entorno
+        String salida;
+        //Algoritmo
+        salida = "";
         for (int fila = 0; fila < 6; fila++) {
+            salida = salida + "|_";
             for (int col = 0; col < 8; col++) {
-                System.out.print("|" + matriz[fila][col]);
-            }
-            System.out.println("|");
-        }
+                salida = salida + this.matriz[fila][col] + "_|";
+            }//Fin Para
+            salida = salida + "\n";
+        }//Fin Para
         System.out.println("-----------------");
-    }
+        System.out.println(salida);
+    }//Fin Metodo
 }//Fin Clase
 
