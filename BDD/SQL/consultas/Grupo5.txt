@@ -37,4 +37,24 @@ WHERE DEPT_NO IN
 (SELECT DEPT_NO FROM DEPART 
 WHERE DEPT_NO NOT IN (SELECT DISTINCT DEPT_NO FROM EMPLE));
 
-6.
+6.Modificar el número de plazas con un valor igual a la mitad en aquellos centros con menos de
+dos profesores.
+UPDATE CENTROS
+SET NUM_PLAZAS=NUM_PLAZAS/2 WHERE
+COD_CENTRO IN(
+SELECT COD_CENTRO FROM CENTROS
+WHERE COD_CENTRO IN
+(SELECT COD_CENTRO FROM PROFESORES
+GROUP BY COD_CENTRO 
+HAVING COUNT(DNI)<2));
+
+7. Eliminar los centros que no tengan personal.
+DELETE FROM CENTROS
+WHERE COD_CENTRO IN(
+SELECT COD_CENTRO FROM CENTROS
+WHERE COD_CENTRO NOT IN(SELECT P.COD_CENTRO FROM PROFESORES P, CENTROS C
+WHERE P.COD_CENTRO=C.COD_CENTRO));
+
+8.Añadir un nuevo profesor en el centro o en los centros cuyo número de administrativos sea 1 en
+la especialidad de 'IDIOMA', con DNI 8790055 Y de nombre 'Clara Salas'.
+

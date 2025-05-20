@@ -109,16 +109,7 @@ public class Tablero {
         byte filas, columnas;
         //algoritmo
         haGanado = false;
-        for (filas = 0; filas < 2; filas++) {
-            for (columnas = 0; columnas < 4; columnas++) {
-                if (this.matriz[filas][columnas]
-                        == this.matriz[filas + 1][columnas + 1]
-                        && this.matriz[filas + 2][columnas + 2]
-                        == this.matriz[filas + 3][columnas + 2]) {
-                    haGanado = true;
-                }//Fin Si
-            }//Fin Para
-        }//Fin Para
+         
         return haGanado;
     }//Fin Metodo
 
@@ -128,17 +119,7 @@ public class Tablero {
         byte filas, columnas;
         //algoritmo
         haGanado = false;
-        for (filas = 3; filas < 5; filas++) {
-            for (columnas = 0; columnas < 4; columnas++) {
-                if (this.matriz[filas][columnas] == ficha
-                        && this.matriz[filas + 1][columnas + 1] == ficha
-                        && this.matriz[filas + 2][columnas + 2] == ficha
-                        && this.matriz[filas + 3][columnas + 2] == ficha) {
-
-                    haGanado = true;
-                }//Fin Si
-            }//Fin Para
-        }//Fin Para
+        
         return haGanado;
     }//Fin Metodo
     public boolean haGanado(char ficha) {
