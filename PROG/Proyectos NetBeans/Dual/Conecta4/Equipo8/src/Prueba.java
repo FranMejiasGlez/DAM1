@@ -1,9 +1,19 @@
-
-/**
+ /**
  *
- * @author Mejias Gonzalez Francisco
+ * @author Grupo_8 Francisco Mejias Gonzalez
  */
 public class Prueba {
+
+    public static byte leerByte() {
+        short num;
+        do {
+            num = Leer.datoShort();
+            if (num < Byte.MIN_VALUE || num > Byte.MAX_VALUE) {
+                System.out.println("Teclee un dato válido: ");
+            }//Fin Si
+        } while (num < Byte.MIN_VALUE || num > Byte.MAX_VALUE);
+        return (byte) num;
+    }//Fin Modulo
 
     public static void main(String[] args) {
         //Entorno
@@ -16,8 +26,8 @@ public class Prueba {
             System.out.println("Turno del jugador " + (partida.getTurno() + 1));
             // Pedir columna válida
             do {
-                System.out.print("Introduce la columna (0-7): ");
-                columna = (byte) Leer.datoShort();
+                System.out.print("Introduce la columna (1-8): ");
+                columna = (byte) (Prueba.leerByte() - 1);
                 if (columna < 0 || columna > 7) {
                     System.out.println("Columna fuera de rango.");
                     tiradaExitosa = false;

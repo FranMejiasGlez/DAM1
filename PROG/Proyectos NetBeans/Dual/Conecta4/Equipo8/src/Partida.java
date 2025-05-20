@@ -1,7 +1,12 @@
 
 /**
+ * Clase que gestiona una partida completa de Conecta 4. Controla los turnos,
+ * victorias y flujo del juego.
  *
- * @author Mejias Gonzalez Francisco
+ */
+/**
+ *
+ * @author Grupo_8 Francisco Mejias Gonzalez
  */
 public class Partida {
     //Atributos
@@ -12,22 +17,34 @@ public class Partida {
     private boolean esFinPartida;
     //Constructores
 
+    /**
+     * Constructor que inicializa una nueva partida con tablero vacío
+     */
     public Partida() {
         //Entorno
         //Algoritmo
         this.tablero = new Tablero();
-        this.fichas = new char[2];
-        this.fichas[0] = '\u263A';
-        this.fichas[1] = '\u263B';
+        this.fichas = new char[]{'\u263A', '\u263B'};
         this.turno = 0;
+        this.esFinPartida = false;
         this.tablero.pintaTablero();
     }//Fin Constructor
     //Metodos
 
+    /**
+     * Obtiene el turno actual
+     *
+     * @return 0 para jugador 1, 1 para jugador 2
+     */
     public byte getTurno() {
         return this.turno;
     }//Fin Metodo
 
+    /**
+     * Comprueba si la partida ha terminado
+     *
+     * @return true si hay un ganador o el tablero está lleno
+     */
     public boolean esFinPartida() {
         //Entorno
         //Algoritmo
@@ -37,6 +54,12 @@ public class Partida {
         return this.esFinPartida;
     }//Fin Metodo
 
+    /**
+     * Realiza una tirada en la columna especificada
+     *
+     * @param col Columna donde colocar la ficha (0-7)
+     * @return true si la tirada fue válida, false si no se pudo realizar
+     */
     public boolean tirada(byte col) {
         //Entorno
         boolean esTirada;
@@ -50,19 +73,36 @@ public class Partida {
             this.tablero.colocaFicha(this.fichas[this.getTurno()], fila, col);
             this.tablero.pintaTablero();
 
-            //Verificar si se ha ganado
-
-            if (this.tablero.haGanado(this.fichas[this.getTurno()])) {
-                this.esFinPartida = true;
-            } else {
-                //Alternar entre turnos
+            //Verificar si es fin de partida habiendo ganado || estando el tablero lleno
+            this.esFinPartida = this.tablero.estaLleno()
+                    || this.tablero.haGanado(this.fichas[this.getTurno()]);
+            //Alternar entre turnos
+            if (!this.esFinPartida) {
                 this.turno = (byte) ((this.turno + 1) % 2);
+            } else {
+                System.out.println("Fin partida!");
+                System.out.println("El ganador es el jugador: " + (this.getGanador() + 1));
+
             }//Fin Si
+        } else {
+            esTirada = false;
         }//Fin Si
         return esTirada;
     }//Fin Metodo
 
+    /**
+     * Obtiene el ganador de la partida
+     *
+     * @return 0 para jugador 1, 1 para jugador 2, -1 si no hay ganador aún
+     */
     public byte getGanador() {
-        return this.getTurno();
+        //Entorno
+        byte ganador;
+        //Algoritmo
+        ganador = -1;
+        if (this.tablero.haGanado(this.fichas[this.getTurno()])) {
+            ganador = this.getTurno();
+        }//Fin Si
+        return ganador;
     }//Fin Metodo
 }//Fin Clase

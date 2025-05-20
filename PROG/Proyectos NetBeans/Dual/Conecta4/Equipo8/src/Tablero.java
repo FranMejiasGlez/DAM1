@@ -1,7 +1,14 @@
 
 /**
+ * Clase que representa el tablero del juego Conecta 4. Gestiona la lógica del
+ * tablero, incluyendo colocación de fichas, comprobación de victorias y estado
+ * del juego.
  *
- * @author Mejias Gonzalez Francisco
+ *
+ */
+/**
+ *
+ * @author Grupo_8 Francisco Mejias Gonzalez
  */
 public class Tablero {
     //Atributos
@@ -28,6 +35,11 @@ public class Tablero {
     }//Fin Constructor
     //Metodos
 
+    /**
+     * Comprueba si el tablero está completamente lleno
+     *
+     * @return true si el tablero está lleno, false en caso contrario
+     */
     public boolean estaLleno() {
         //Entorno
         boolean lleno;
@@ -36,6 +48,12 @@ public class Tablero {
         return lleno;
     }//Fin Metodo
 
+    /**
+     * Busca la primera posición vacía en una columna
+     *
+     * @param col Columna donde buscar (0-7)
+     * @return Fila donde hay espacio vacío o -1 si la columna está llena
+     */
     public byte buscaVacio(byte col) {
         //entorno
         byte posicion, fila;
@@ -51,6 +69,15 @@ public class Tablero {
         return posicion;
     }//Fin Metodo
 
+    /**
+     * Coloca una ficha en la posición especificada
+     *
+     * @param ficha Ficha a colocar ('\u263A' o '\u263B')
+     * @param fila Fila donde colocar (0-5)
+     * @param columna Columna donde colocar (0-7)
+     * @return true si se pudo colocar la ficha, false si la posición estaba
+     * ocupada
+     */
     public boolean colocaFicha(char ficha, byte fila, byte columna) {
         //Entorno
         boolean colocado;
@@ -149,6 +176,12 @@ public class Tablero {
         return haGanado;
     }//Fin Metodo
 
+    /**
+     * Comprueba si el jugador con la ficha especificada ha ganado
+     *
+     * @param ficha Ficha del jugador a comprobar ('\u263A' o '\u263B')
+     * @return true si el jugador ha ganado, false en caso contrario
+     */
     public boolean haGanado(char ficha) {
         //Entorno
         boolean haGanado;
@@ -160,15 +193,18 @@ public class Tablero {
         return haGanado;
     }//Fin Metodo
 
+    /**
+     * Muestra el tablero actual en la consola
+     */
     public void pintaTablero() {
         //Entorno
         String salida;
         //Algoritmo
         salida = "";
         for (int fila = 0; fila < 6; fila++) {
-            salida = salida + "|_";
             for (int col = 0; col < 8; col++) {
-                salida = salida + this.matriz[fila][col] + "_|";
+                salida = salida + " |_ ";
+                salida = salida + this.matriz[fila][col] + " _| ";
             }//Fin Para
             salida = salida + "\n";
         }//Fin Para
