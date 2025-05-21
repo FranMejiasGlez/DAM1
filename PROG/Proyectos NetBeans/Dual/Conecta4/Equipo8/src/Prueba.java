@@ -1,4 +1,5 @@
- /**
+
+/**
  *
  * @author Grupo_8 Francisco Mejias Gonzalez
  */
@@ -38,6 +39,7 @@ public class Prueba {
                     }//Fin Si
                 }//Fin Si
             } while (columna < 0 || columna > 7 || !tiradaExitosa);
+
         }//Fin Mientras
     }//Fin Programa
 }

@@ -62,30 +62,35 @@ public class Partida {
      */
     public boolean tirada(byte col) {
         //Entorno
-        boolean esTirada;
+        boolean esTirada, hayGanador, tableroLleno;
         byte fila;
         //Algoritmo
         esTirada = false;
-
         if (this.tablero.buscaVacio(col) != -1) {
             fila = this.tablero.buscaVacio(col);
             esTirada = true;
             this.tablero.colocaFicha(this.fichas[this.getTurno()], fila, col);
             this.tablero.pintaTablero();
 
-            //Verificar si es fin de partida habiendo ganado || estando el tablero lleno
-            this.esFinPartida = this.tablero.estaLleno()
-                    || this.tablero.haGanado(this.fichas[this.getTurno()]);
-            //Alternar entre turnos
-            if (!this.esFinPartida) {
-                this.turno = (byte) ((this.turno + 1) % 2);
-            } else {
-                System.out.println("Fin partida!");
-                System.out.println("El ganador es el jugador: " + (this.getGanador() + 1));
+            hayGanador = this.tablero.haGanado(this.fichas[this.getTurno()]);
+            tableroLleno = this.tablero.estaLleno();
+            this.esFinPartida = hayGanador || tableroLleno;
 
+            if (this.esFinPartida) {
+                System.out.println("Fin partida!");
+
+                // Manejo de resultados sin else-if
+                if (hayGanador) {
+                    System.out.println("El ganador es el jugador: " 
+                            + (this.getTurno() + 1)
+                            + this.fichas[this.getTurno()]);
+                }
+                if (tableroLleno && !hayGanador) {
+                    System.out.println("¡Empate! Tablero lleno sin ganador.");
+                }//Fin Si
+            } else {
+                this.turno = (byte) ((this.turno + 1) % 2);
             }//Fin Si
-        } else {
-            esTirada = false;
         }//Fin Si
         return esTirada;
     }//Fin Metodo

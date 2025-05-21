@@ -203,8 +203,8 @@ public class Tablero {
         salida = "";
         for (int fila = 0; fila < 6; fila++) {
             for (int col = 0; col < 8; col++) {
-                salida = salida + " |_ ";
-                salida = salida + this.matriz[fila][col] + " _| ";
+                salida = salida + "|_ ";
+                salida = salida + this.matriz[fila][col] + " _|";
             }//Fin Para
             salida = salida + "\n";
         }//Fin Para
