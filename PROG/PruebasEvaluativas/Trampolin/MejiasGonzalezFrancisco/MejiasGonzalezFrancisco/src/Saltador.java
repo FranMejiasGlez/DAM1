@@ -5,7 +5,7 @@ import java.util.GregorianCalendar;
  *
  * @author Mejias Gonzalez Francisco
  */
-public class Saltador implements Comparable {
+public class Saltador implements Comparable<Saltador> {
     //Atributos
 
     private int dorsal;
@@ -34,33 +34,78 @@ public class Saltador implements Comparable {
     //Metodos
 
     public boolean anotarSalto(double[] juez) {
-        byte salto;
-        double[] listaNota;
-        salto = (byte) this.numeroSaltos;
-        listaNota = new double[3];
-        listaNota[salto] = juez;
-        return this.numeroSaltos < 3;
-    }
+        byte i,j;
+        double mayor, menor, media;
+        boolean puedeSaltar;
+        puedeSaltar = this.numeroSaltos < 3;
+        if (puedeSaltar) {
+            //Encontrar mayor y menor
+            mayor = juez[0];
+            menor = juez[0];
+            for (i = 1; i < juez.length; i++) {
+                if (juez[i] > mayor) {
+                    mayor = juez[i];
+                } else {
+                    if (juez[i] < menor) {
+                        menor = juez[i];
+                    }//Fin Si
+                }//Fin Si
+            }//Fin Para
+            media=0;
+            for (j = 0; j < juez.length; j++) {
+                if (juez[j]!=mayor||jues[j]!=menor) {
+                    
+                }
+            }//Fin Para
+            return puedeSaltar;
+        }//Fin Metodo
 
-    @Override
-    public boolean equals(Object o) {
-    }
+        @Override
+        public boolean equals
+        (Object o
+        
+            ) {
+        //Entorno
+        Saltador s;
+            boolean igual;
+            //Algoritmo
+            igual = false;
+            if (o instanceof Saltador) {
+                s = (Saltador) o;
+                igual = this.getDorsal() == s.getDorsal();
+            }//Fin Si
+            return igual;
+        }//Fin Metodo
 
-    @Override
-    public String toString() {
+        @Override
+        public String toString
+        
+            () {
         return this.dorsal + " * " + this.nombre + " * " + this.pais
-                + " * " + this.sexo + " Saltos: " + this.numeroSaltos
-                + " * Puntos: " + this.puntos + " * " + this.ultimoSalto;
-    }//Fin Metodo
+                    + " * " + this.sexo + " Saltos: " + this.numeroSaltos
+                    + " * Puntos: " + this.puntos + " * " + this.ultimoSalto;
+        }//Fin Metodo
 
-    @Override
-    public int compareTo(Object t) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        @Override
+        public int compareTo
+        (Saltador s
+        
+            ) {
+        //Entorno
+        int num;
+            //Algoritmo
+            num = this.getPais().compareTo(s.getPais());
+            if (num == 0) {
+                num = this.getNombre().compareTo(s.getNombre());
+            }//Fin Si
+            return num;
+        }//Fin Metodo
 
-    /**
-     * @return the dorsal
-     */
+        /**
+         * @return the dorsal
+         */
+    
+
     public int getDorsal() {
         return this.dorsal;
     }
@@ -84,7 +129,7 @@ public class Saltador implements Comparable {
      */
     public char getSexo() {
         return this.sexo;
-    }
+    }//Fin Metodo
 
     /**
      * @return the puntos

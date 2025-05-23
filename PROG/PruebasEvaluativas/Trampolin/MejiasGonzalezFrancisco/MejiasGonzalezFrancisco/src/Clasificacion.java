@@ -24,17 +24,18 @@ public class Clasificacion implements Iterable<Saltador> {
 
     public Saltador buscar(int dorsal) {
         //Entorno
-        byte i, posicion;
+        byte i;
+        Saltador encontrado;
         //Algoritmo
         i = 0;
-        posicion = -1;
+        encontrado = null;
         while (i < this.lista.size() && lista.get(i).getDorsal() != dorsal) {
             i++;
         }//Fin Mientras
-        if (lista.get(i).getDorsal() == dorsal) {
-            posicion = i;
+        if (this.lista.get(i).getDorsal() == dorsal) {
+            encontrado = this.lista.get(i);
         }//Fin Si
-        return this.lista.get(posicion);
+        return encontrado;
     }//Fin Metodo
 
     public boolean aniadir(Saltador s) {
@@ -65,5 +66,5 @@ public class Clasificacion implements Iterable<Saltador> {
     @Override
     public Iterator<Saltador> iterator() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    }//Fin Metodo
 }//Fin Clase
