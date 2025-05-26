@@ -260,7 +260,7 @@ public class TorneoSaltoTrampolin {
                                 fSalida.write(asteriscos);
                                 while (iterador.hasNext()) {
                                     s = iterador.next();
-                                    linea = s.toString() + "\r\n";
+                                    linea = s.toString() + "\n";
                                     System.out.println(linea);
                                     fSalida.write(linea);
                                 }//Fin Mientras
